@@ -1,5 +1,5 @@
 ---
-title: SUSE Manager 3.1 FAQ
+title: SUSE Manager 3.1 FAQ (DEVEL Placeholder_content)
 permalink: suse-mgr31-faq.html
 sidebar: sumadoc-31_sidebar
 keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse

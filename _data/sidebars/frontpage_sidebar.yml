@@ -20,7 +20,7 @@ entries:
     folderitems:
 
     - title: How to Contribute
-      url: /overview.html
+      url: /first-steps.html
       output: web, pdf
       type: homepage
 

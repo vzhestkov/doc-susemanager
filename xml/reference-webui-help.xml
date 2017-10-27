@@ -55,7 +55,7 @@
     via &susemgr;.
    </para>
    <para>
-    The <guilabel>API</guilabel> page contains an overview of the API, with
+    The <guilabel>API</guilabel> page contains an first-steps of the API, with
     links to detailed descriptions of various API calls available to
     administrators and developers. There is also an <guilabel>FAQ</guilabel>
     page for answers to common questions about the &susemgr; API.

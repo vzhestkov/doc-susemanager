@@ -22,7 +22,7 @@
   listing of your <guimenu>Systems</guimenu> appears. Here you can select
   systems to perform actions on them and create system profiles.
  </para>
-<!-- z: s2-sm-system-overview ref.webui.systems.overview -->
+<!-- z: s2-sm-system-first-steps ref.webui.systems.first-steps -->
  <sect1 xml:id="ref.webui.systems.overview">
   <title>Overview</title>
 
@@ -4498,7 +4498,7 @@ will not be removed.
    </listitem>
   </orderedlist>
 
-<!-- z: s3-sm-ssm-overview ref.webui.systems.ssm.overview -->
+<!-- z: s3-sm-ssm-first-steps ref.webui.systems.ssm.first-steps -->
 
   <sect2 xml:id="ref.webui.systems.ssm.overview">
    <title><!--guimenu-->

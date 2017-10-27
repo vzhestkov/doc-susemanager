@@ -28,7 +28,7 @@
       "Home"?
  -->
 <!-- The following sections are part of the "Home" top level menu -->
-<!-- z: s1-sm-your-rhn-overview ref.webui.overview s1-sm-your-rhn -->
+<!-- z: s1-sm-your-rhn-first-steps ref.webui.first-steps s1-sm-your-rhn -->
  <sect1 xml:id="ref.webui.overview">
   <title>Overview</title>
 
@@ -230,7 +230,7 @@
   </para>
  </sect1>
 
-<!-- z: s2-sm-your-rhn-account ref.webui.overview.account -->
+<!-- z: s2-sm-your-rhn-account ref.webui.first-steps.account -->
  <sect1 xml:id="ref.webui.overview.account">
   <title>User Account</title>
 
@@ -284,7 +284,7 @@
   </note>
   </sect2>
 
-<!-- z: s3-sm-your-rhn-address ref.webui.overview.account.addresses -->
+<!-- z: s3-sm-your-rhn-address ref.webui.first-steps.account.addresses -->
   <sect2 xml:id="ref.webui.overview.account.addresses">
    <title>Addresses</title><indexterm>
    <primary>account</primary>
@@ -322,7 +322,7 @@
    </informalfigure>
   </sect2>
 
-<!-- z: s3-sm-your-rhn-email ref.webui.overview.account.email -->
+<!-- z: s3-sm-your-rhn-email ref.webui.first-steps.account.email -->
 
   <sect2 xml:id="ref.webui.overview.account.email">
    <title>Change Email</title><indexterm>
@@ -359,7 +359,7 @@
    </para>
   </sect2>
 
-<!-- z: s3-sm-your-rhn-credentials ref.webui.overview.account.credentials -->
+<!-- z: s3-sm-your-rhn-credentials ref.webui.first-steps.account.credentials -->
 
   <sect2 xml:id="ref.webui.overview.account.credentials">
    <title>Credentials</title><indexterm>
@@ -381,7 +381,7 @@
    </informalfigure>
   </sect2>
 
-<!-- z: s3-sm-your-rhn-deactivate ref.webui.overview.account.deactivate -->
+<!-- z: s3-sm-your-rhn-deactivate ref.webui.first-steps.account.deactivate -->
 
   <sect2 xml:id="ref.webui.overview.account.deactivate">
    <title>Account Deactivation</title><indexterm>
@@ -416,7 +416,7 @@
    </note>
   </sect2>
  </sect1>
-<!-- z: s2-sm-your-rhn-prefs ref.webui.overview.prefs -->
+<!-- z: s2-sm-your-rhn-prefs ref.webui.first-steps.prefs -->
  <sect1 xml:id="ref.webui.overview.prefs">
   <title>Your Preferences</title>
 
@@ -500,7 +500,7 @@
    Preferences</guimenu> button.
   </para>
  </sect1>
-<!-- z: s2-yourrhn-locale ref.webui.overview.locale -->
+<!-- z: s2-yourrhn-locale ref.webui.first-steps.locale -->
  <sect1 xml:id="ref.webui.overview.locale">
   <title>Locale Preferences</title><indexterm>
 
@@ -554,7 +554,7 @@
    </para>
   -->
  </sect1>
-<!-- z: == ref.webui.overview.org -->
+<!-- z: == ref.webui.first-steps.org -->
  <sect1 xml:id="ref.webui.overview.org">
   <title>Your Organization</title>
 
@@ -586,7 +586,7 @@
    </informalfigure>
   </sect2>
 
-<!-- z: yourrhn-orgtrusts ref.webui.overview.org.trust -->
+<!-- z: yourrhn-orgtrusts ref.webui.first-steps.org.trust -->
 
   <sect2 xml:id="ref.webui.overview.org.trust">
    <title>Organization Trusts</title>

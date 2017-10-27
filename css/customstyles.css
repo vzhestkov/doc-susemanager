@@ -351,10 +351,12 @@ a.accordion-toggle, a.accordion-collapsed {
 
 
 .nav li > a > span:after {
-    content: '\25be';
+    /*content: '\25B8'; */
+    content: '\25B8';
 }
 .nav li.active > a > span:after {
-    content: '\25b4';
+    /*content: '\25b4';*/
+    content: '\25BE';
 }
 
 .nav a:hover, .nav li.active > a {

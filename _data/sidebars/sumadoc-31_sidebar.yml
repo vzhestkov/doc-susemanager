@@ -10,8 +10,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    -
-
     - title: 3.1 Release notes
       url: /suse_mgr_release_notes_31.html
       output: web, pdf
@@ -21,17 +19,63 @@ entries:
     folderitems:
 
     - title: Overview
-      url: /overview.html
+      url: /gs-overview.html
       output: web, pdf
-      type: homepage
+      subfolders:
 
-    - title: Prerequisites
-      url: /prerequisites.html
-      output: web, pdf
+      - title: Initial Preparations
+        output: web, pdf
+        subfolderitems:
 
-    - title: Hardware and Software Requirements
-      url: /hardware-and-software-requirements.html
-      output: web, pdf
+        - title: Prerequisites
+          url: /gs-prerequisites.html
+          output: web, pdf
+
+        - title: Hardware and Software Requirements
+          url: /gs-hardware-and-software-requirements.html
+          output: web, pdf
+
+        - title: Ports Listing
+          url: /gs-ports-listing.html
+          output: web, pdf
+
+        - title: Additional Requirements
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+
+      - title: Installation Using JeOS Image
+        url: /gs-installing-suse-manager-with-jeos-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: virt-manager Configuration
+          url: /gs-virt-manager-preparation.html
+          output: web, pdf
+
+        - title: JeOS KVM Configuration
+          url: /gs-kvm-configuration-jeos.html
+          output: web, pdf
+
+        - title: Preparing JeOS for SUSE Manager
+          url: /gs-hardware-and-software-requirements.html
+          output: web, pdf
+
+      - title: Installation Using SLES 12 Media
+        output: web, pdf
+        subfolderitems:
+
+        - title: SLES 12 Requirements
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+        - title: SLES 12 KVM Configuration
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+        - title: Installation as an Extension
+          url: /gs-additional-requirements.html
+          output: web, pdf
 
 
   - title: Best Practices
@@ -94,7 +138,7 @@ entries:
         subfolderitems:
 
         - title: Overview
-          url: /overview.html
+          url: /first-steps.html
           output: web, pdf
 
         - title: All Systems
@@ -285,16 +329,83 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: Pending Actions
+          url: /webui-schedule-pending-actions.html
+          output: web, pdf
+
+        - title: Failed Actions
+          url: /webui-schedule-failed-actions.html
+          output: web, pdf
+
+        - title: Completed Actions
+          url: /webui-schedule-completed-actions.html
+          output: web, pdf
+
+        - title: Archived Actions
+          url: /webui-schedule-archived-actions.html
+          output: web, pdf
+
+        - title: Action Chains
+          url: /webui-schedule-action-chains.html
+          output: web, pdf
+
+        - title: Actions List
+          url: /webui-schedule-actions-list.html
+          output: web, pdf
+
+        - title: Action Details
+          url: /webui-schedule-action-details.html
+          output: web, pdf
+
       - title: Users
         url: /mydoc_atom_text_editor.html
         output: web, pdf
         subfolderitems:
+
+        - title: User List
+          url: /webui-users-user-list.html
+          output: web, pdf
+
+        - title: System Group Configuration
+          url: /webui-users-group-configuration.html
+          output: web, pdf
 
       - title: Admin
         url: /mydoc_atom_text_editor.html
         output: web, pdf
         subfolderitems:
 
+        - title: Setup Wizard
+          url: /webui-admin-setup-wizard.html
+          output: web, pdf
+
+        - title: Organizations
+          url: /webui-admin-organizations.html
+          output: web, pdf
+
+        - title: Users
+          url: /webui-admin-users.html
+          output: web, pdf
+
+        - title: Manager Configuration
+          url: /webui-admin-manager-configuration.html
+          output: web, pdf
+
+        - title: ISS Configuration [Inter Server Sync]
+          url: /webui-admin-iss-configuration.html
+          output: web, pdf
+
+        - title: Task Schedules
+          url: /webui-admin-task-schedules.html
+          output: web, pdf
+
+        - title: Task Engine Status
+          url: /webui-admin-task-engine-status.html
+          output: web, pdf
+
+        - title: Show Tomcat Logs
+          url: /webui-admin-show-tomcat-logs.html
+          output: web, pdf
 
   - title: Advanced Topics
     output: web, pdf

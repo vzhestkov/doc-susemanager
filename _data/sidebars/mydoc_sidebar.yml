@@ -258,7 +258,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Tag archives overview
+    - title: Tag archives first-steps
       url: /mydoc_tag_archives_overview.html
       output: web
 

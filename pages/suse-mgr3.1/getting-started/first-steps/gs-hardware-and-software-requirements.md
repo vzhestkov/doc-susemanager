@@ -2,8 +2,8 @@
 title: Hardware and Software Requirements
 keywords: hardware requirements
 sidebar: sumadoc-31_sidebar
-permalink: hardware-and-software-requirements.html
-folder: suse-mgr3.1/getting-started/overview
+permalink: gs-hardware-and-software-requirements.html
+folder: suse-mgr3.1/getting-started/first-steps
 toc: true
 ---
 
