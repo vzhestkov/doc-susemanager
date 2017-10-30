@@ -1,3 +1,13 @@
+---
+title: Additional Requirements
+keywords: requirements
+sidebar: sumadoc-31_sidebar
+permalink: gs-additional-requirements.html
+folder: suse-mgr3.1/getting-started/first-steps
+toc: false
+summary: The following requirements must be met before installation and setup of SUSE Manager.
+---
+
 ## Additional Requirements {#additional-requirements}
 
 To successfully complete this guide some network requirements must be met. The following section will walk you through these requirements.
@@ -15,9 +25,3 @@ Using a Proxy When Installing from SUSE Linux Enterprise Media.  If you are on a
 ### Naming Your Server {#naming-your-server}
 
 The hostname of SUSE Manager must not contain uppercase letters as this may cause `jabberd` to fail. Choose the hostname of your SUSE Manager server carefully. Although changing the server name is possible, it is a complex process and unsupported.
-
-For a more complete overview on SUSE Manager requirements not covered in this guide, see
-
-???
-
-.

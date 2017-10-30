@@ -43,7 +43,6 @@ entries:
           url: /gs-additional-requirements.html
           output: web, pdf
 
-
       - title: Installation Using JeOS Image
         url: /gs-installing-suse-manager-with-jeos-intro.html
         output: web, pdf
@@ -76,6 +75,15 @@ entries:
         - title: Installation as an Extension
           url: /gs-additional-requirements.html
           output: web, pdf
+
+      - title: Setup and Configuration
+        output: web, pdf
+        subfolderitems:
+
+        - title: Setup via YaST
+          url: /gs-setup-via-yast.html
+          output: web, pdf
+
 
 
   - title: Best Practices

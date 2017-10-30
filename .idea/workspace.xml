@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41958a38-94ad-4c94-8ca2-cbf4e4fc9934" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/mgr-setup/gs-setup-via-yast.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/additional_requirements.md" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-additional-requirements.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/firewall_rules.md" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-ports-listing.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,58 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sumadoc-31_sidebar.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sumadoc-31_sidebar.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
-                <element signature="e#2084#2424#0" expanded="false" />
-                <element signature="e#3447#4714#0" expanded="false" />
-                <element signature="e#4806#5122#0" expanded="false" />
-                <element signature="e#5218#5607#0" expanded="false" />
-                <element signature="e#5705#6240#0" expanded="false" />
+                <element signature="e#2272#2612#0" expanded="false" />
+                <element signature="e#3635#4902#0" expanded="false" />
+                <element signature="e#4994#5310#0" expanded="false" />
+                <element signature="e#5406#5795#0" expanded="false" />
+                <element signature="e#5893#6428#0" expanded="false" />
+                <element signature="e#10644#11011#0" expanded="false" />
+                <element signature="e#11066#11431#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webui-reference-introduction.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="551">
-                <caret line="20" column="311" lean-forward="false" selection-start-line="20" selection-start-column="311" selection-end-line="20" selection-end-column="311" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xml/xml-md-files/intro/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="494">
-                <caret line="14" column="340" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="340" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customstyles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/customstyles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="359" column="1" lean-forward="false" selection-start-line="359" selection-start-column="1" selection-end-line="359" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,9 +74,19 @@
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-hardware-and-software-requirements.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-prerequisites.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-overview.md" />
-        <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
         <option value="$PROJECT_DIR$/css/customstyles.css" />
+        <option value="$PROJECT_DIR$/xml/xml-md-files/getting-started/setup-with-yast/suse_manager_setup_via_gui.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/setup-via-yast.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-manager-setup/setup-via-yast.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-mgr-setup/setup-via-yast.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-mgrsetup/setup-via-yast.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-mgrsetup/gs-setup-via-yast.md" />
+        <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/firewall-rules.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-ports-listing.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-additional-requirements.md" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/mgr-setup/gs-setup-via-yast.md" />
       </list>
     </option>
   </component>
@@ -153,6 +129,11 @@
             <path>
               <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -164,20 +145,17 @@
             <path>
               <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="suse-mgr3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="getting-started" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="xml-md-files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-              <item name="xml-md-files" type="462c0819:PsiDirectoryNode" />
-              <item name="intro" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="suse-mgr3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="getting-started" type="462c0819:PsiDirectoryNode" />
+              <item name="first-steps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,11 +175,12 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-manager-setup" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems" />
     </key>
   </component>
@@ -327,17 +306,18 @@
       <workItem from="1509295478735" duration="47000" />
       <workItem from="1509295534053" duration="951000" />
       <workItem from="1509299577234" duration="875000" />
-      <workItem from="1509355771326" duration="1875000" />
+      <workItem from="1509355771326" duration="5515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61237000" />
+    <option name="totallyTimeSpent" value="64877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1511" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1734375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297561" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -404,16 +384,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xml/xml-md-files/systems/README.md" />
-    <entry file="file://$PROJECT_DIR$/xml/converted/SUMMARY.md" />
-    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/overview.md" />
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/home_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc_sidebar.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -447,26 +417,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product2/p2_sample1.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/mydoc/mydoc_workflow_maps.md" />
     <entry file="file://$PROJECT_DIR$/_includes/inline_image.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/image.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="0" column="258" lean-forward="false" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="258" />
         </state>
       </provider>
     </entry>
@@ -612,30 +567,13 @@
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/troubleshooting/suse-mgr31-faq.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/webui-navigation-and-home.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/system_details/README.md" />
-    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-overview.md" />
-    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/systems.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-hardware-and-software-requirements.md" />
-    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/firewall_rules.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-prerequisites.md" />
     <entry file="file://$PROJECT_DIR$/css/customstyles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="359" column="1" lean-forward="false" selection-start-line="359" selection-start-column="1" selection-end-line="359" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#2084#2424#0" expanded="false" />
-            <element signature="e#3447#4714#0" expanded="false" />
-            <element signature="e#4806#5122#0" expanded="false" />
-            <element signature="e#5218#5607#0" expanded="false" />
-            <element signature="e#5705#6240#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,6 +616,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xml/xml-md-files/getting-started/setup-with-yast/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml/xml-md-files/getting-started/setup-with-yast/suse_manager_setup_via_gui.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="152">
+            <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xml/xml-md-files/intro/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -691,16 +668,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/systems.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="551">
-            <caret line="20" column="311" lean-forward="false" selection-start-line="20" selection-start-column="311" selection-end-line="20" selection-end-column="311" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-additional-requirements.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="646">
+            <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="0" column="258" lean-forward="false" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="258" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/mgr-setup/gs-setup-via-yast.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="646">
+            <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-ports-listing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-overview.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#2272#2612#0" expanded="false" />
+            <element signature="e#3635#4902#0" expanded="false" />
+            <element signature="e#4994#5310#0" expanded="false" />
+            <element signature="e#5406#5795#0" expanded="false" />
+            <element signature="e#5893#6428#0" expanded="false" />
+            <element signature="e#10644#11011#0" expanded="false" />
+            <element signature="e#11066#11431#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

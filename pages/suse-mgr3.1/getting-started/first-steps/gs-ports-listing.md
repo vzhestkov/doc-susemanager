@@ -1,3 +1,13 @@
+---
+title: Overview
+keywords: overview
+sidebar: sumadoc-31_sidebar
+permalink: gs-ports-listing.html
+folder: suse-mgr3.1/getting-started/first-steps
+toc: false
+summary: The following table lists all ports utilized by SUSE Manager.
+---
+
 ## Firewall Rules {#firewall-rules}
 
 In a production environment SUSE Manager server and its clients should always utilize firewall rules. The following table provides an overview of required ports for use by SUSE Manager 3.1.
