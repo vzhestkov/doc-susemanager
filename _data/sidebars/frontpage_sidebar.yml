@@ -12,17 +12,21 @@ entries:
       output: web, pdf
 
     - title: 3.2 Latest Documentation
-      url: /suse_mgr_release_notes3.1.html
+      url: /suse_mgr_intro_3.2.html
       output: web, pdf
 
   - title: Contributors Guide
     output: web, pdf
     folderitems:
 
-    - title: How to Contribute
-      url: /first-steps.html
+    - title: Introduction
+      url: /contribute-intro.html
       output: web, pdf
       type: homepage
+
+    - title: How to Contribute
+      url: /how-to-contribute.html
+      output: web, pdf
 
 
 

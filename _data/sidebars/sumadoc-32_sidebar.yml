@@ -1,0 +1,455 @@
+entries:
+- title: sidebar
+  product: SUSE Manager
+  version: 3.2
+  folders:
+
+  - title: Release notes
+    output: web, pdf
+    folderitems:
+
+    - title: 3.2 Release notes
+      url: /suse_mgr_release_notes_32.html
+      output: web, pdf
+
+  - title: Getting Started
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /gs-overview.html
+      output: web, pdf
+      subfolders:
+
+      - title: Initial Preparations
+        output: web, pdf
+        subfolderitems:
+
+        - title: Prerequisites
+          url: /gs-prerequisites.html
+          output: web, pdf
+
+        - title: Hardware and Software Requirements
+          url: /gs-hardware-and-software-requirements.html
+          output: web, pdf
+
+        - title: Ports Listing
+          url: /gs-ports-listing.html
+          output: web, pdf
+
+        - title: Additional Requirements
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+      - title: Installation Using JeOS Image
+        url: /gs-installing-suse-manager-with-jeos-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: virt-manager Configuration
+          url: /gs-virt-manager-preparation.html
+          output: web, pdf
+
+        - title: JeOS KVM Configuration
+          url: /gs-kvm-configuration-jeos.html
+          output: web, pdf
+
+        - title: Preparing JeOS for SUSE Manager
+          url: /gs-hardware-and-software-requirements.html
+          output: web, pdf
+
+      - title: Installation Using SLES 12 Media
+        output: web, pdf
+        subfolderitems:
+
+        - title: SLES 12 Requirements
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+        - title: SLES 12 KVM Configuration
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+        - title: Installation as an Extension
+          url: /gs-additional-requirements.html
+          output: web, pdf
+
+      - title: Setup and Configuration
+        output: web, pdf
+        subfolderitems:
+
+        - title: Setup via YaST
+          url: /gs-setup-via-yast.html
+          output: web, pdf
+
+
+
+  - title: Best Practices
+    output: web, pdf
+    folderitems:
+
+    - title: About Ruby, Gems, Bundler, etc.
+      url: /mydoc_about_ruby_gems_etc.html
+      output: web, pdf
+
+    - title: Install Jekyll on Mac
+      url: /mydoc_install_jekyll_on_mac.html
+      output: web, pdf
+
+    - title: Install Jekyll on Windows
+      url: /mydoc_install_jekyll_on_windows.html
+      output: web, pdf
+
+  - title: WebUI Reference
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /webui-reference-introduction.html
+      output: web, pdf
+      subfolders:
+
+      - title: Navigation and Home
+        url: /webui-navigation-home-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Navigation
+          url: /webui-navigation.html
+          output: web, pdf
+
+        - title: Landing Page
+          url: /webui-landing-page.html
+          output: web, pdf
+
+        - title: User Account
+          url: /webui-user-account.html
+          output: web, pdf
+
+        - title: Your Preferences
+          url: /webui-your-preferences.html
+          output: web, pdf
+
+        - title: Locale Preferences
+          url: /webui-locale-preferences.html
+          output: web, pdf
+
+        - title: Your Organization
+          url: /webui-your-organization.html
+          output: web, pdf
+
+      - title: Systems
+        url: /webui-systems-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Overview
+          url: /first-steps.html
+          output: web, pdf
+
+        - title: All Systems
+          url: /systems.html
+          output: web, pdf
+
+        - title: System Details
+          url: /system-details.html
+          output: web, pdf
+
+        - title: System Groups
+          url: /system-details.html
+          output: web, pdf
+
+        - title: System Set Manager
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Bootstrapping[Salt]
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Visualization
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Advanced Search
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Activation Keys
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Stored Profiles
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Custom System Info
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Autoinstallation
+          url: /system-details.html
+          output: web, pdf
+
+        - title: Virtual Host Managers
+          url: /system-details.html
+          output: web, pdf
+
+
+      - title: Salt
+        url: /webui-salt-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Keys
+          url: /webui-salt-keys.html
+          output: web, pdf
+
+        - title: Remote Commands
+          url: /webui-salt-remote-commands.html
+          output: web, pdf
+
+        - title: State Catalog
+          url: /webui-salt-state catalog.html
+          output: web, pdf
+
+
+      - title: Images
+        url: /webui-images-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Images
+          url: /webui-images-images.html
+          output: web, pdf
+
+        - title: Build
+          url: /webui-images-build.html
+          output: web, pdf
+
+        - title: Profiles
+          url: /webui-images-profiles.html
+          output: web, pdf
+
+        - title: Stores
+          url: /webui-images-stores.html
+          output: web, pdf
+
+
+      - title: Patches
+        url: /webui-patches-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Relevant Patches
+          url: /webui-patches-relevant.html
+          output: web, pdf
+
+        - title: All Patches
+          url: /webui-patches-all.html
+          output: web, pdf
+
+        - title: Advanced Search
+          url: /webui-patches-advanced-search.html
+          output: web, pdf
+
+        - title: Manage Patches
+          url: /webui-patches-manage.html
+          output: web, pdf
+
+        - title: Cloning Patches
+          url: /webui-patches-cloning.html
+          output: web, pdf
+
+
+      - title: Software
+        url: /webui-software-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Channels
+          url: /webui-software-channels.html
+          output: web, pdf
+
+        - title: Package Search
+          url: /webui-software-package-search.html
+          output: web, pdf
+
+        - title: Manage Software Channels
+          url: /webui-software-manage-software-channels.html
+          output: web, pdf
+
+        - title: Distribution Channel Mapping
+          url: /webui-software-distribution-mapping.html
+          output: web, pdf
+
+      - title: Audit
+        url: /webui-audit-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: CVE Audit
+          url: /webui-audit-cve-audit.html
+          output: web, pdf
+
+        - title: Subscription Matching
+          url: /webui-audit-subscription-matching.html
+          output: web, pdf
+
+        - title: OpenSCAP
+          url: /webui-audit-openscap.html
+          output: web, pdf
+
+        - title: System Security via OpenSCAP
+          url: /webui-audit-system-security-openscap.html
+          output: web, pdf
+
+
+      - title: Configuration [Management]
+        url: /webui-configuration-management-intro.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Preparing for Configuration Management
+          url: /webui-configuration-preparing-config-management.html
+          output: web, pdf
+
+        - title: Overview Page
+          url: /webui-audit-system-security-openscap.html
+          output: web, pdf
+
+        - title: Configuration Channels
+          url: /webui-audit-system-security-openscap.html
+          output: web, pdf
+
+        - title: Configuration Files
+          url: /webui-audit-system-security-openscap.html
+          output: web, pdf
+
+        - title: Systems
+          url: /webui-audit-system-security-openscap.html
+          output: web, pdf
+
+      - title: Schedule
+        url: /mydoc_atom_text_editor.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Pending Actions
+          url: /webui-schedule-pending-actions.html
+          output: web, pdf
+
+        - title: Failed Actions
+          url: /webui-schedule-failed-actions.html
+          output: web, pdf
+
+        - title: Completed Actions
+          url: /webui-schedule-completed-actions.html
+          output: web, pdf
+
+        - title: Archived Actions
+          url: /webui-schedule-archived-actions.html
+          output: web, pdf
+
+        - title: Action Chains
+          url: /webui-schedule-action-chains.html
+          output: web, pdf
+
+        - title: Actions List
+          url: /webui-schedule-actions-list.html
+          output: web, pdf
+
+        - title: Action Details
+          url: /webui-schedule-action-details.html
+          output: web, pdf
+
+      - title: Users
+        url: /mydoc_atom_text_editor.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: User List
+          url: /webui-users-user-list.html
+          output: web, pdf
+
+        - title: System Group Configuration
+          url: /webui-users-group-configuration.html
+          output: web, pdf
+
+      - title: Admin
+        url: /mydoc_atom_text_editor.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: Setup Wizard
+          url: /webui-admin-setup-wizard.html
+          output: web, pdf
+
+        - title: Organizations
+          url: /webui-admin-organizations.html
+          output: web, pdf
+
+        - title: Users
+          url: /webui-admin-users.html
+          output: web, pdf
+
+        - title: Manager Configuration
+          url: /webui-admin-manager-configuration.html
+          output: web, pdf
+
+        - title: ISS Configuration [Inter Server Sync]
+          url: /webui-admin-iss-configuration.html
+          output: web, pdf
+
+        - title: Task Schedules
+          url: /webui-admin-task-schedules.html
+          output: web, pdf
+
+        - title: Task Engine Status
+          url: /webui-admin-task-engine-status.html
+          output: web, pdf
+
+        - title: Show Tomcat Logs
+          url: /webui-admin-show-tomcat-logs.html
+          output: web, pdf
+
+  - title: Advanced Topics
+    output: web, pdf
+    folderitems:
+
+    - title: Sidebar navigation
+      url: /mydoc_sidebar_navigation.html
+      output: web, pdf
+
+    - title: YAML tutorial in the context of Jekyll
+      url: /mydoc_yaml_tutorial.html
+      output: web, pdf
+
+    - title: Tags
+      url: /mydoc_tags.html
+      output: web, pdf
+
+    - title: Series
+      url: /mydoc_series.html
+      output: web, pdf
+
+
+  - title: Troubleshooting
+    output: web, pdf
+    folderitems:
+
+    - title: Frequently Asked Questions
+      url: /suse-mgr31-faq.html
+      output: web, pdf
+
+    - title: YAML tutorial in the context of Jekyll
+      url: /mydoc_yaml_tutorial.html
+      output: web, pdf
+
+    - title: Tags
+      url: /mydoc_tags.html
+      output: web, pdf
+
+    - title: Series
+      url: /mydoc_series.html
+      output: web, pdf
