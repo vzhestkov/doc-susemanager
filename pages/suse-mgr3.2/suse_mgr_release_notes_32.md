@@ -8,7 +8,7 @@ permalink: suse_mgr_release_notes_32.html
 folder: suse-mgr3.2
 ---
 
-# Release notes for SUSE Manager 3.2 Server
+### SUSE Manager Server 3.2
 
 Release notes will be published during the end of our current release cycle.
-Coming soon under development!
+In development!

@@ -9,3 +9,6 @@ summary: Use our guidelines as best practice to help ensure clear, properly styl
 
 ## Add Content
 
+First please take a look at our style guide. This will help you conform to some common standards and practices to save our writers valuable time!
+
+[SUSE Manager Documentation Style Guide](style-guide.html)
