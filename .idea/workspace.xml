@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41958a38-94ad-4c94-8ca2-cbf4e4fc9934" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/general-markdown-rules/spelling-and-grammar.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/adding-tooltips.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/alerts.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/icons.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/images.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/audience.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/language.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/names-of-example-items.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/terminology.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/contribute-guide/code.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/general-markdown-rules/code.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/contribute-guide/file-names-and-extensions.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/general-markdown-rules/file-names-and-extensions.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/contribute-guide/line-wrapping.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/general-markdown-rules/line-wrapping.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/contribute-guide/whitespaces.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/general-markdown-rules/whitespaces.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/mydoc_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/mydoc_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/theme-suse-mgr.css" afterPath="$PROJECT_DIR$/css/theme-suse-mgr.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contribute-guide/style-guide.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/style-guide.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/book_mgr_getting_started.xml" afterPath="$PROJECT_DIR$/xml/book_mgr_getting_started.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/bp_susecom_lifecycle_management.xml" afterPath="$PROJECT_DIR$/xml/bp_susecom_lifecycle_management.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -118,18 +97,18 @@
         <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <first_editor relative-caret-position="486">
+                <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                 <folding>
-                  <marker date="1509910503722" expanded="true" signature="11:23" ph="Introduction" />
-                  <marker date="1509910503722" expanded="true" signature="24:42" ph="tags: [1 item]" />
-                  <marker date="1509910503722" expanded="true" signature="31:41" ph="formatting" />
-                  <marker date="1509910503722" expanded="true" signature="53:85" ph="introduct…yle, guide" />
-                  <marker date="1509910503722" expanded="true" signature="100:113" ph="July 16, 2016" />
-                  <marker date="1509910503722" expanded="true" signature="123:276" ph="This docu…yle Guide." />
-                  <marker date="1509910503722" expanded="true" signature="286:303" ph="frontpage_sidebar" />
-                  <marker date="1509910503722" expanded="true" signature="309:314" ph="false" />
-                  <marker date="1509910503722" expanded="true" signature="326:343" ph="introduction.html" />
+                  <marker date="1509910840347" expanded="true" signature="11:23" ph="Introduction" />
+                  <marker date="1509910840347" expanded="true" signature="24:42" ph="tags: [1 item]" />
+                  <marker date="1509910840347" expanded="true" signature="31:41" ph="formatting" />
+                  <marker date="1509910840347" expanded="true" signature="53:85" ph="introduct…yle, guide" />
+                  <marker date="1509910840347" expanded="true" signature="100:113" ph="July 16, 2016" />
+                  <marker date="1509910840347" expanded="true" signature="123:276" ph="This docu…yle Guide." />
+                  <marker date="1509910840347" expanded="true" signature="286:303" ph="frontpage_sidebar" />
+                  <marker date="1509910840347" expanded="true" signature="309:314" ph="false" />
+                  <marker date="1509910840347" expanded="true" signature="326:343" ph="introduction.html" />
                 </folding>
               </first_editor>
               <second_editor>
@@ -482,12 +461,12 @@
       <workItem from="1509889778710" duration="71000" />
       <workItem from="1509893094779" duration="128000" />
       <workItem from="1509893243279" duration="521000" />
-      <workItem from="1509895705813" duration="10626000" />
+      <workItem from="1509895705813" duration="10963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93442000" />
+    <option name="totallyTimeSpent" value="93779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="905" width="1920" height="1173" extended-state="6" />
@@ -1247,18 +1226,18 @@
     <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <first_editor relative-caret-position="486">
+            <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
             <folding>
-              <marker date="1509910503722" expanded="true" signature="11:23" ph="Introduction" />
-              <marker date="1509910503722" expanded="true" signature="24:42" ph="tags: [1 item]" />
-              <marker date="1509910503722" expanded="true" signature="31:41" ph="formatting" />
-              <marker date="1509910503722" expanded="true" signature="53:85" ph="introduct…yle, guide" />
-              <marker date="1509910503722" expanded="true" signature="100:113" ph="July 16, 2016" />
-              <marker date="1509910503722" expanded="true" signature="123:276" ph="This docu…yle Guide." />
-              <marker date="1509910503722" expanded="true" signature="286:303" ph="frontpage_sidebar" />
-              <marker date="1509910503722" expanded="true" signature="309:314" ph="false" />
-              <marker date="1509910503722" expanded="true" signature="326:343" ph="introduction.html" />
+              <marker date="1509910840347" expanded="true" signature="11:23" ph="Introduction" />
+              <marker date="1509910840347" expanded="true" signature="24:42" ph="tags: [1 item]" />
+              <marker date="1509910840347" expanded="true" signature="31:41" ph="formatting" />
+              <marker date="1509910840347" expanded="true" signature="53:85" ph="introduct…yle, guide" />
+              <marker date="1509910840347" expanded="true" signature="100:113" ph="July 16, 2016" />
+              <marker date="1509910840347" expanded="true" signature="123:276" ph="This docu…yle Guide." />
+              <marker date="1509910840347" expanded="true" signature="286:303" ph="frontpage_sidebar" />
+              <marker date="1509910840347" expanded="true" signature="309:314" ph="false" />
+              <marker date="1509910840347" expanded="true" signature="326:343" ph="introduction.html" />
             </folding>
           </first_editor>
           <second_editor>
