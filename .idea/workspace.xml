@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41958a38-94ad-4c94-8ca2-cbf4e4fc9934" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/additional-formatting-rules.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/code.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/file-names-and-extensions.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/line-wrapping.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/contribute-guide/whitespaces.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/alerts.yml" afterPath="$PROJECT_DIR$/_data/alerts.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contribute-guide/style-guide.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/style-guide.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/suse-mgr3.2/suse_mgr_release_notes_32.md" afterPath="$PROJECT_DIR$/pages/suse-mgr3.2/suse_mgr_release_notes_32.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,66 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="topnav.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/topnav.yml">
+      <file leaf-file-name="frontpage_sidebar.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="540">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sumadoc-32_sidebar.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-              <folding>
-                <element signature="e#2157#2497#0" expanded="false" />
-                <element signature="e#3520#4787#0" expanded="false" />
-                <element signature="e#4879#5195#0" expanded="false" />
-                <element signature="e#5291#5680#0" expanded="false" />
-                <element signature="e#5778#6313#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="additional-formatting-rules.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/additional-formatting-rules.md">
+      <file leaf-file-name="style-guide.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/style-guide.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+              <first_editor relative-caret-position="18">
+                <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                 <folding>
-                  <marker date="1509887420914" expanded="true" signature="11:29" ph="Formatting Content" />
-                  <marker date="1509887420914" expanded="true" signature="40:69" ph="contribut…ing, rules" />
-                  <marker date="1509887420914" expanded="true" signature="79:96" ph="frontpage_sidebar" />
-                  <marker date="1509887420914" expanded="true" signature="102:107" ph="false" />
-                  <marker date="1509887420914" expanded="true" signature="119:151" ph="additiona…rules.html" />
-                </folding>
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contribute-intro.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="180">
-                <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-                <folding>
-                  <marker date="1509887323087" expanded="true" signature="11:23" ph="Introduction" />
-                  <marker date="1509887323087" expanded="true" signature="34:63" ph="contribut…ing, rules" />
-                  <marker date="1509887323087" expanded="true" signature="73:90" ph="frontpage_sidebar" />
-                  <marker date="1509887323087" expanded="true" signature="96:101" ph="false" />
-                  <marker date="1509887323087" expanded="true" signature="113:134" ph="contribut…intro.html" />
-                  <marker date="1509887323087" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
+                  <marker date="1509888477536" expanded="true" signature="11:31" ph="Markdown Style Guide" />
+                  <marker date="1509888477536" expanded="true" signature="19:31" ph="Documenta…tyle Guide" />
+                  <marker date="1509888477536" expanded="true" signature="20:31" ph="Style Guide" />
+                  <marker date="1509888477536" expanded="true" signature="42:54" ph="style, guide" />
+                  <marker date="1509888477536" expanded="true" signature="64:81" ph="frontpage_sidebar" />
+                  <marker date="1509888477536" expanded="true" signature="87:91" ph="true" />
+                  <marker date="1509888477536" expanded="true" signature="103:119" ph="style-guide.html" />
+                  <marker date="1509888477536" expanded="true" signature="129:391" ph="This styl…ntilli]()." />
+                  <marker date="1509888477536" expanded="true" signature="646:647" ph="..." />
                 </folding>
               </first_editor>
               <second_editor>
@@ -102,10 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/overview/supported_client_systems.md" />
-        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/overview/prerequisites.md" />
-        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/suse_mgr_release_notes_31.md" />
-        <option value="$PROJECT_DIR$/css/theme-suse-mgr.css" />
         <option value="$PROJECT_DIR$/index.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/overview/overview.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/overview.md" />
@@ -147,12 +108,16 @@
         <option value="$PROJECT_DIR$/pages/contribute-guide/styleguide.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/how-to-contribute.md" />
         <option value="$PROJECT_DIR$/_data/alerts.yml" />
-        <option value="$PROJECT_DIR$/pages/contribute-guide/style-guide.md" />
-        <option value="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.2/suse_mgr_release_notes_32.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.html" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/additional-formatting-rules.md" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/file-names-and-extensions.md" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/whitespaces.md" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/line-wrapping.md" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/style-guide.md" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/code.md" />
+        <option value="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
       </list>
     </option>
   </component>
@@ -201,6 +166,12 @@
             <path>
               <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -208,6 +179,12 @@
               <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contribute-guide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="mydoc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,17 +343,18 @@
       <workItem from="1509355771326" duration="5515000" />
       <workItem from="1509783286590" duration="273000" />
       <workItem from="1509783568629" duration="2054000" />
-      <workItem from="1509875307293" duration="6075000" />
+      <workItem from="1509875307293" duration="7132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80155000" />
+    <option name="totallyTimeSpent" value="81212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1173" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -443,29 +421,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/important.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/samplelist.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme-suse-mgr.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/mydoc/mydoc_faq.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/troubleshooting/suse-mgr31-faq.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/webui-navigation-and-home.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/system_details/README.md" />
@@ -682,29 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/style-guide.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="486">
-            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding>
-              <marker date="1509885132589" expanded="true" signature="11:31" ph="Markdown Style Guide" />
-              <marker date="1509885132589" expanded="true" signature="19:31" ph="Documenta…tyle Guide" />
-              <marker date="1509885132589" expanded="true" signature="20:31" ph="Style Guide" />
-              <marker date="1509885132589" expanded="true" signature="42:54" ph="style, guide" />
-              <marker date="1509885132589" expanded="true" signature="64:81" ph="frontpage_sidebar" />
-              <marker date="1509885132589" expanded="true" signature="87:91" ph="true" />
-              <marker date="1509885132589" expanded="true" signature="103:119" ph="style-guide.html" />
-              <marker date="1509885132589" expanded="true" signature="129:391" ph="This styl…ntilli]()." />
-              <marker date="1509885132589" expanded="true" signature="646:663" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/contribute-guide/how-to-contribute.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -738,61 +670,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/topnav.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#2157#2497#0" expanded="false" />
-            <element signature="e#3520#4787#0" expanded="false" />
-            <element signature="e#4879#5195#0" expanded="false" />
-            <element signature="e#5291#5680#0" expanded="false" />
-            <element signature="e#5778#6313#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contribute-intro.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-            <folding>
-              <marker date="1509887323087" expanded="true" signature="11:23" ph="Introduction" />
-              <marker date="1509887323087" expanded="true" signature="34:63" ph="contribut…ing, rules" />
-              <marker date="1509887323087" expanded="true" signature="73:90" ph="frontpage_sidebar" />
-              <marker date="1509887323087" expanded="true" signature="96:101" ph="false" />
-              <marker date="1509887323087" expanded="true" signature="113:134" ph="contribut…intro.html" />
-              <marker date="1509887323087" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
         </state>
       </provider>
     </entry>
@@ -817,6 +699,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/file-names-and-extensions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+            <folding>
+              <marker date="1509888196235" expanded="true" signature="11:36" ph="File Name…Extensions" />
+              <marker date="1509888196235" expanded="true" signature="47:75" ph="markdown,…formatting" />
+              <marker date="1509888196235" expanded="true" signature="85:102" ph="frontpage_sidebar" />
+              <marker date="1509888196235" expanded="true" signature="108:113" ph="false" />
+              <marker date="1509888196235" expanded="true" signature="125:155" ph="file-name…sions.html" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/contribute-guide/additional-formatting-rules.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -833,6 +734,136 @@
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#2157#2497#0" expanded="false" />
+            <element signature="e#3520#4787#0" expanded="false" />
+            <element signature="e#4879#5195#0" expanded="false" />
+            <element signature="e#5291#5680#0" expanded="false" />
+            <element signature="e#5778#6313#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/topnav.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <folding>
+              <marker date="1509887323087" expanded="true" signature="11:23" ph="Introduction" />
+              <marker date="1509887323087" expanded="true" signature="34:63" ph="contribut…ing, rules" />
+              <marker date="1509887323087" expanded="true" signature="73:90" ph="frontpage_sidebar" />
+              <marker date="1509887323087" expanded="true" signature="96:101" ph="false" />
+              <marker date="1509887323087" expanded="true" signature="113:134" ph="contribut…intro.html" />
+              <marker date="1509887323087" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/line-wrapping.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <folding>
+              <marker date="1509888320405" expanded="true" signature="11:24" ph="Line Wrapping" />
+              <marker date="1509888320405" expanded="true" signature="35:63" ph="markdown,…formatting" />
+              <marker date="1509888320405" expanded="true" signature="73:90" ph="frontpage_sidebar" />
+              <marker date="1509888320405" expanded="true" signature="96:101" ph="false" />
+              <marker date="1509888320405" expanded="true" signature="113:131" ph="line-wrapping.html" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/whitespaces.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+            <folding>
+              <marker date="1509888196203" expanded="true" signature="11:22" ph="Whitespaces" />
+              <marker date="1509888196203" expanded="true" signature="33:61" ph="markdown,…formatting" />
+              <marker date="1509888196203" expanded="true" signature="71:88" ph="frontpage_sidebar" />
+              <marker date="1509888196203" expanded="true" signature="94:99" ph="false" />
+              <marker date="1509888196203" expanded="true" signature="111:127" ph="whitespaces.html" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/style-guide.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="18">
+            <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <folding>
+              <marker date="1509888477536" expanded="true" signature="11:31" ph="Markdown Style Guide" />
+              <marker date="1509888477536" expanded="true" signature="19:31" ph="Documenta…tyle Guide" />
+              <marker date="1509888477536" expanded="true" signature="20:31" ph="Style Guide" />
+              <marker date="1509888477536" expanded="true" signature="42:54" ph="style, guide" />
+              <marker date="1509888477536" expanded="true" signature="64:81" ph="frontpage_sidebar" />
+              <marker date="1509888477536" expanded="true" signature="87:91" ph="true" />
+              <marker date="1509888477536" expanded="true" signature="103:119" ph="style-guide.html" />
+              <marker date="1509888477536" expanded="true" signature="129:391" ph="This styl…ntilli]()." />
+              <marker date="1509888477536" expanded="true" signature="646:647" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/code.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1170">
+            <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <folding>
+              <marker date="1509888477540" expanded="true" signature="11:15" ph="Code" />
+              <marker date="1509888477540" expanded="true" signature="26:54" ph="markdown,…formatting" />
+              <marker date="1509888477540" expanded="true" signature="64:81" ph="frontpage_sidebar" />
+              <marker date="1509888477540" expanded="true" signature="87:92" ph="false" />
+              <marker date="1509888477540" expanded="true" signature="104:113" ph="code.html" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

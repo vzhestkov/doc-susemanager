@@ -24,7 +24,7 @@ entries:
       output: web, pdf
       subfolders:
 
-      - title: Markdown Styleguide
+      - title: General Markdown Rules
         output: web, pdf
         subfolderitems:
 
@@ -32,7 +32,23 @@ entries:
           url: /style-guide.html
           output: web, pdf
 
-      - title: Theme Required Formatting Rules
+        - title: File Names and Extensions
+          url: /file-names-and-extensions.html
+          output: web, pdf
+
+        - title: Whitespaces
+          url: /whitespaces.html
+          output: web, pdf
+
+        - title: Line Wrapping
+          url: /line-wrapping.html
+          output: web, pdf
+
+        - title: Code
+          url: /code.html
+          output: web, pdf
+
+      - title: Formatting
         output: web, pdf
         subfolderitems:
 
