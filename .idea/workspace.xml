@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41958a38-94ad-4c94-8ca2-cbf4e4fc9934" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/style-guide-introduction.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/mydoc_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/mydoc_sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/book_mgr_getting_started.xml" afterPath="$PROJECT_DIR$/xml/book_mgr_getting_started.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/bp_susecom_lifecycle_management.xml" afterPath="$PROJECT_DIR$/xml/bp_susecom_lifecycle_management.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,34 +25,45 @@
       <file leaf-file-name="frontpage_sidebar.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="512">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alerts.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/alerts.md">
+      <file leaf-file-name="sumadoc-32_sidebar.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="122" column="26" lean-forward="true" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+              <folding>
+                <element signature="e#2157#2497#0" expanded="false" />
+                <element signature="e#3530#4797#0" expanded="false" />
+                <element signature="e#4889#5205#0" expanded="false" />
+                <element signature="e#5301#5690#0" expanded="false" />
+                <element signature="e#5788#6323#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webui-reference-introduction.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="144">
-                <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="26" />
+              <first_editor relative-caret-position="522">
+                <caret line="20" column="285" lean-forward="false" selection-start-line="20" selection-start-column="285" selection-end-line="20" selection-end-column="285" />
                 <folding>
-                  <marker date="1509909673528" expanded="true" signature="11:17" ph="Alerts" />
-                  <marker date="1509909673528" expanded="true" signature="18:36" ph="tags: [1 item]" />
-                  <marker date="1509909673528" expanded="true" signature="25:35" ph="formatting" />
-                  <marker date="1509909673528" expanded="true" signature="47:91" ph="notes, ti…dmonitions" />
-                  <marker date="1509909673528" expanded="true" signature="106:118" ph="July 3, 2016" />
-                  <marker date="1509909673528" expanded="true" signature="128:320" ph="You can i…erts.note." />
-                  <marker date="1509909673528" expanded="true" signature="330:347" ph="frontpage_sidebar" />
-                  <marker date="1509909673528" expanded="true" signature="359:370" ph="alerts.html" />
-                  <marker date="1509909673528" expanded="true" signature="2505:2563" ph="..." />
-                  <marker date="1509909673528" expanded="false" signature="2523:2529" ph=" " />
-                  <marker date="1509909673528" expanded="false" signature="2529:2535" ph=" " />
-                  <marker date="1509909673528" expanded="false" signature="2535:2541" ph=" " />
-                  <marker date="1509909673528" expanded="false" signature="2541:2547" ph=" " />
-                  <marker date="1509909673528" expanded="true" signature="9487:9499" ph="Your company" />
+                  <marker date="1509911987576" expanded="true" signature="11:39" ph="WebUI Ref…troduction" />
+                  <marker date="1509911987576" expanded="true" signature="50:73" ph="reference…tro, webui" />
+                  <marker date="1509911987576" expanded="true" signature="88:101" ph="June 27, 2017" />
+                  <marker date="1509911987576" expanded="true" signature="111:129" ph="sumadoc-31_sidebar" />
+                  <marker date="1509911987576" expanded="true" signature="141:174" ph="webui-ref…ction.html" />
+                  <marker date="1509911987576" expanded="true" signature="183:210" ph="suse-mgr3…-reference" />
+                  <marker date="1509911987576" expanded="true" signature="216:221" ph="false" />
+                  <marker date="1509911987576" expanded="true" signature="216:225" ph="false ---" />
+                  <marker date="1509911987576" expanded="true" signature="268:1434" ph="This manu…anager-3/)" />
                 </folding>
               </first_editor>
               <second_editor>
@@ -53,62 +73,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="icons.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/icons.md">
+      <file leaf-file-name="style-guide-introduction.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/style-guide-introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+              <first_editor relative-caret-position="198">
+                <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
                 <folding>
-                  <marker date="1509909780587" expanded="true" signature="11:16" ph="Icons" />
-                  <marker date="1509909780587" expanded="true" signature="17:35" ph="tags: [1 item]" />
-                  <marker date="1509909780587" expanded="true" signature="24:34" ph="formatting" />
-                  <marker date="1509909780587" expanded="true" signature="46:108" ph="font icon…glyphicons" />
-                  <marker date="1509909780587" expanded="true" signature="123:136" ph="July 16, 2016" />
-                  <marker date="1509909780587" expanded="true" signature="146:395" ph="You can i…r project." />
-                  <marker date="1509909780587" expanded="true" signature="405:422" ph="frontpage_sidebar" />
-                  <marker date="1509909780587" expanded="true" signature="434:444" ph="icons.html" />
-                  <marker date="1509909780587" expanded="true" signature="2489:2586" ph="&lt;div clas…&gt;Tip: &lt;/b&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="2593:2685" ph="&lt;div clas…Note: &lt;/b&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="2697:2793" ph="&lt;div clas…tant: &lt;/b&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="2803:2907" ph="&lt;div clas…ning: &lt;/b&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="2913:2921" ph="&lt;/div&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="2939:2983" ph="&lt;div clas…t-danger&quot;&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3001:3046" ph="&lt;div clas…-default&quot;&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3064:3109" ph="&lt;div clas…-primary&quot;&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3127:3172" ph="&lt;div clas…-success&quot;&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3187:3229" ph="&lt;div clas…out-info&quot;&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3247:3292" ph="&lt;div clas…-warning&quot;&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3304:3325" ph="&lt;hr class=&quot;faded&quot;/&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="3337:3359" ph="&lt;hr class=&quot;shaded&quot;/&gt;" />
-                  <marker date="1509909780587" expanded="true" signature="6401:6532" ph="..." />
-                  <marker date="1509909780587" expanded="true" signature="6583:6714" ph="..." />
-                  <marker date="1509909780587" expanded="true" signature="7148:7444" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="introduction.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="486">
-                <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                <folding>
-                  <marker date="1509910840347" expanded="true" signature="11:23" ph="Introduction" />
-                  <marker date="1509910840347" expanded="true" signature="24:42" ph="tags: [1 item]" />
-                  <marker date="1509910840347" expanded="true" signature="31:41" ph="formatting" />
-                  <marker date="1509910840347" expanded="true" signature="53:85" ph="introduct…yle, guide" />
-                  <marker date="1509910840347" expanded="true" signature="100:113" ph="July 16, 2016" />
-                  <marker date="1509910840347" expanded="true" signature="123:276" ph="This docu…yle Guide." />
-                  <marker date="1509910840347" expanded="true" signature="286:303" ph="frontpage_sidebar" />
-                  <marker date="1509910840347" expanded="true" signature="309:314" ph="false" />
-                  <marker date="1509910840347" expanded="true" signature="326:343" ph="introduction.html" />
+                  <marker date="1509912144667" expanded="true" signature="11:23" ph="Introduction" />
+                  <marker date="1509912144667" expanded="true" signature="24:42" ph="tags: [1 item]" />
+                  <marker date="1509912144667" expanded="true" signature="31:41" ph="formatting" />
+                  <marker date="1509912144667" expanded="true" signature="53:85" ph="introduct…yle, guide" />
+                  <marker date="1509912144667" expanded="true" signature="100:113" ph="July 16, 2016" />
+                  <marker date="1509912144667" expanded="true" signature="123:276" ph="This docu…yle Guide." />
+                  <marker date="1509912144667" expanded="true" signature="286:303" ph="frontpage_sidebar" />
+                  <marker date="1509912144667" expanded="true" signature="309:314" ph="false" />
+                  <marker date="1509912144667" expanded="true" signature="326:355" ph="style-gui…ction.html" />
+                  <marker date="1509912144667" expanded="true" signature="338:355" ph="introduction.html" />
+                  <marker date="1509912144667" expanded="true" signature="364:413" ph="contribut…tyle-guide" />
                 </folding>
               </first_editor>
               <second_editor>
@@ -123,14 +105,14 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="180">
-                <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+                <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
                 <folding>
-                  <marker date="1509887323087" expanded="true" signature="11:23" ph="Introduction" />
-                  <marker date="1509887323087" expanded="true" signature="34:63" ph="contribut…ing, rules" />
-                  <marker date="1509887323087" expanded="true" signature="73:90" ph="frontpage_sidebar" />
-                  <marker date="1509887323087" expanded="true" signature="96:101" ph="false" />
-                  <marker date="1509887323087" expanded="true" signature="113:134" ph="contribut…intro.html" />
-                  <marker date="1509887323087" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
+                  <marker date="1509911827202" expanded="true" signature="11:23" ph="Introduction" />
+                  <marker date="1509911827202" expanded="true" signature="34:63" ph="contribut…ing, rules" />
+                  <marker date="1509911827202" expanded="true" signature="73:90" ph="frontpage_sidebar" />
+                  <marker date="1509911827202" expanded="true" signature="96:101" ph="false" />
+                  <marker date="1509911827202" expanded="true" signature="113:134" ph="contribut…intro.html" />
+                  <marker date="1509911827202" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
                 </folding>
               </first_editor>
               <second_editor>
@@ -178,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_includes/tip.html" />
         <option value="$PROJECT_DIR$/_includes/important.html" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/systems/systems.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/troubleshooting/suse-mgr31-faq.md" />
@@ -189,17 +170,14 @@
         <option value="$PROJECT_DIR$/xml/xml-md-files/getting-started/setup-with-yast/suse_manager_setup_via_gui.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/setup-via-yast.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-manager-setup/setup-via-yast.md" />
-        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-mgr-setup/setup-via-yast.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-mgrsetup/setup-via-yast.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/suse-mgrsetup/gs-setup-via-yast.md" />
-        <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/firewall-rules.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-ports-listing.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-additional-requirements.md" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/mgr-setup/gs-setup-via-yast.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.2/suse_mgr_intro_3.2.md" />
         <option value="$PROJECT_DIR$/pages/how-to-contribute.md" />
         <option value="$PROJECT_DIR$/css/customstyles.css" />
@@ -210,7 +188,6 @@
         <option value="$PROJECT_DIR$/_data/alerts.yml" />
         <option value="$PROJECT_DIR$/pages/suse-mgr3.2/suse_mgr_release_notes_32.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.html" />
-        <option value="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/additional-formatting-rules.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/file-names-and-extensions.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/whitespaces.md" />
@@ -227,8 +204,13 @@
         <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/images.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/alerts.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/icons.md" />
-        <option value="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" />
+        <option value="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
+        <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/style-guide-introduction.md" />
+        <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
+        <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" />
       </list>
     </option>
   </component>
@@ -293,8 +275,14 @@
               <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="contribute-guide" type="462c0819:PsiDirectoryNode" />
-              <item name="contributors-guide" type="462c0819:PsiDirectoryNode" />
+              <item name="suse-mgr3.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-susemanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-susemanager" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="suse-mgr3.1" type="462c0819:PsiDirectoryNode" />
+              <item name="webui-reference" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -461,12 +449,12 @@
       <workItem from="1509889778710" duration="71000" />
       <workItem from="1509893094779" duration="128000" />
       <workItem from="1509893243279" duration="521000" />
-      <workItem from="1509895705813" duration="10963000" />
+      <workItem from="1509895705813" duration="13016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93779000" />
+    <option name="totallyTimeSpent" value="95832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="905" width="1920" height="1173" extended-state="6" />
@@ -549,13 +537,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/image.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="0" column="258" lean-forward="false" selection-start-line="0" selection-start-column="175" selection-end-line="0" selection-end-column="258" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/mgr-setup/gs-setup-via-yast.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-ports-listing.md" />
     <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/getting-started/first-steps/gs-overview.md" />
@@ -661,14 +642,6 @@
           <second_editor>
             <js_state />
           </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="429" column="17" lean-forward="false" selection-start-line="429" selection-start-column="17" selection-end-line="429" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,20 +757,6 @@
           <second_editor>
             <js_state />
           </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#2157#2497#0" expanded="false" />
-            <element signature="e#3523#4790#0" expanded="false" />
-            <element signature="e#4882#5198#0" expanded="false" />
-            <element signature="e#5294#5683#0" expanded="false" />
-            <element signature="e#5781#6316#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,34 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/alerts.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="26" />
-            <folding>
-              <marker date="1509909673528" expanded="true" signature="11:17" ph="Alerts" />
-              <marker date="1509909673528" expanded="true" signature="18:36" ph="tags: [1 item]" />
-              <marker date="1509909673528" expanded="true" signature="25:35" ph="formatting" />
-              <marker date="1509909673528" expanded="true" signature="47:91" ph="notes, ti…dmonitions" />
-              <marker date="1509909673528" expanded="true" signature="106:118" ph="July 3, 2016" />
-              <marker date="1509909673528" expanded="true" signature="128:320" ph="You can i…erts.note." />
-              <marker date="1509909673528" expanded="true" signature="330:347" ph="frontpage_sidebar" />
-              <marker date="1509909673528" expanded="true" signature="359:370" ph="alerts.html" />
-              <marker date="1509909673528" expanded="true" signature="2505:2563" ph="..." />
-              <marker date="1509909673528" expanded="false" signature="2523:2529" ph=" " />
-              <marker date="1509909673528" expanded="false" signature="2529:2535" ph=" " />
-              <marker date="1509909673528" expanded="false" signature="2535:2541" ph=" " />
-              <marker date="1509909673528" expanded="false" signature="2541:2547" ph=" " />
-              <marker date="1509909673528" expanded="true" signature="9487:9499" ph="Your company" />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/mydoc/mydoc_icons.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1018,44 +949,6 @@
               <marker date="1509735467945" expanded="true" signature="6417:6548" ph="..." />
               <marker date="1509735467945" expanded="true" signature="6599:6730" ph="..." />
               <marker date="1509735467945" expanded="true" signature="7164:7460" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/icons.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
-            <folding>
-              <marker date="1509909780587" expanded="true" signature="11:16" ph="Icons" />
-              <marker date="1509909780587" expanded="true" signature="17:35" ph="tags: [1 item]" />
-              <marker date="1509909780587" expanded="true" signature="24:34" ph="formatting" />
-              <marker date="1509909780587" expanded="true" signature="46:108" ph="font icon…glyphicons" />
-              <marker date="1509909780587" expanded="true" signature="123:136" ph="July 16, 2016" />
-              <marker date="1509909780587" expanded="true" signature="146:395" ph="You can i…r project." />
-              <marker date="1509909780587" expanded="true" signature="405:422" ph="frontpage_sidebar" />
-              <marker date="1509909780587" expanded="true" signature="434:444" ph="icons.html" />
-              <marker date="1509909780587" expanded="true" signature="2489:2586" ph="&lt;div clas…&gt;Tip: &lt;/b&gt;" />
-              <marker date="1509909780587" expanded="true" signature="2593:2685" ph="&lt;div clas…Note: &lt;/b&gt;" />
-              <marker date="1509909780587" expanded="true" signature="2697:2793" ph="&lt;div clas…tant: &lt;/b&gt;" />
-              <marker date="1509909780587" expanded="true" signature="2803:2907" ph="&lt;div clas…ning: &lt;/b&gt;" />
-              <marker date="1509909780587" expanded="true" signature="2913:2921" ph="&lt;/div&gt;" />
-              <marker date="1509909780587" expanded="true" signature="2939:2983" ph="&lt;div clas…t-danger&quot;&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3001:3046" ph="&lt;div clas…-default&quot;&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3064:3109" ph="&lt;div clas…-primary&quot;&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3127:3172" ph="&lt;div clas…-success&quot;&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3187:3229" ph="&lt;div clas…out-info&quot;&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3247:3292" ph="&lt;div clas…-warning&quot;&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3304:3325" ph="&lt;hr class=&quot;faded&quot;/&gt;" />
-              <marker date="1509909780587" expanded="true" signature="3337:3359" ph="&lt;hr class=&quot;shaded&quot;/&gt;" />
-              <marker date="1509909780587" expanded="true" signature="6401:6532" ph="..." />
-              <marker date="1509909780587" expanded="true" signature="6583:6714" ph="..." />
-              <marker date="1509909780587" expanded="true" signature="7148:7444" ph="..." />
             </folding>
           </first_editor>
           <second_editor>
@@ -1096,29 +989,6 @@
               <marker date="1509898564501" expanded="true" signature="120:145" ph="spelling-…ammar.html" />
               <marker date="1509898564501" expanded="true" signature="155:190" ph="This docu…ntributors" />
               <marker date="1509898564501" expanded="true" signature="201:236" ph="This docu…ntributors" />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/style-guide.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="270">
-            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-            <folding>
-              <marker date="1509896248192" expanded="true" signature="11:31" ph="Markdown Style Guide" />
-              <marker date="1509896248192" expanded="true" signature="19:31" ph="Documenta…tyle Guide" />
-              <marker date="1509896248192" expanded="true" signature="20:31" ph="Style Guide" />
-              <marker date="1509896248192" expanded="true" signature="42:54" ph="style, guide" />
-              <marker date="1509896248192" expanded="true" signature="64:81" ph="frontpage_sidebar" />
-              <marker date="1509896248192" expanded="true" signature="87:91" ph="true" />
-              <marker date="1509896248192" expanded="true" signature="103:119" ph="style-guide.html" />
-              <marker date="1509896248192" expanded="true" signature="129:391" ph="This styl…ntilli]()." />
-              <marker date="1509896248192" expanded="true" signature="646:647" ph="..." />
             </folding>
           </first_editor>
           <second_editor>
@@ -1195,54 +1065,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md">
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/icons.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <first_editor relative-caret-position="162">
+            <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             <folding>
-              <marker date="1509887323087" expanded="true" signature="11:23" ph="Introduction" />
-              <marker date="1509887323087" expanded="true" signature="34:63" ph="contribut…ing, rules" />
-              <marker date="1509887323087" expanded="true" signature="73:90" ph="frontpage_sidebar" />
-              <marker date="1509887323087" expanded="true" signature="96:101" ph="false" />
-              <marker date="1509887323087" expanded="true" signature="113:134" ph="contribut…intro.html" />
-              <marker date="1509887323087" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
+              <marker date="1509909780587" expanded="true" signature="11:16" ph="Icons" />
+              <marker date="1509909780587" expanded="true" signature="17:35" ph="tags: [1 item]" />
+              <marker date="1509909780587" expanded="true" signature="24:34" ph="formatting" />
+              <marker date="1509909780587" expanded="true" signature="46:108" ph="font icon…glyphicons" />
+              <marker date="1509909780587" expanded="true" signature="123:136" ph="July 16, 2016" />
+              <marker date="1509909780587" expanded="true" signature="146:395" ph="You can i…r project." />
+              <marker date="1509909780587" expanded="true" signature="405:422" ph="frontpage_sidebar" />
+              <marker date="1509909780587" expanded="true" signature="434:444" ph="icons.html" />
+              <marker date="1509909780587" expanded="true" signature="2489:2586" ph="&lt;div clas…&gt;Tip: &lt;/b&gt;" />
+              <marker date="1509909780587" expanded="true" signature="2593:2685" ph="&lt;div clas…Note: &lt;/b&gt;" />
+              <marker date="1509909780587" expanded="true" signature="2697:2793" ph="&lt;div clas…tant: &lt;/b&gt;" />
+              <marker date="1509909780587" expanded="true" signature="2803:2907" ph="&lt;div clas…ning: &lt;/b&gt;" />
+              <marker date="1509909780587" expanded="true" signature="2913:2921" ph="&lt;/div&gt;" />
+              <marker date="1509909780587" expanded="true" signature="2939:2983" ph="&lt;div clas…t-danger&quot;&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3001:3046" ph="&lt;div clas…-default&quot;&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3064:3109" ph="&lt;div clas…-primary&quot;&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3127:3172" ph="&lt;div clas…-success&quot;&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3187:3229" ph="&lt;div clas…out-info&quot;&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3247:3292" ph="&lt;div clas…-warning&quot;&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3304:3325" ph="&lt;hr class=&quot;faded&quot;/&gt;" />
+              <marker date="1509909780587" expanded="true" signature="3337:3359" ph="&lt;hr class=&quot;shaded&quot;/&gt;" />
+              <marker date="1509909780587" expanded="true" signature="6401:6532" ph="..." />
+              <marker date="1509909780587" expanded="true" signature="6583:6714" ph="..." />
+              <marker date="1509909780587" expanded="true" signature="7148:7444" ph="..." />
             </folding>
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/liquid-formatting/alerts.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="26" />
+            <folding>
+              <marker date="1509909673528" expanded="true" signature="11:17" ph="Alerts" />
+              <marker date="1509909673528" expanded="true" signature="18:36" ph="tags: [1 item]" />
+              <marker date="1509909673528" expanded="true" signature="25:35" ph="formatting" />
+              <marker date="1509909673528" expanded="true" signature="47:91" ph="notes, ti…dmonitions" />
+              <marker date="1509909673528" expanded="true" signature="106:118" ph="July 3, 2016" />
+              <marker date="1509909673528" expanded="true" signature="128:320" ph="You can i…erts.note." />
+              <marker date="1509909673528" expanded="true" signature="330:347" ph="frontpage_sidebar" />
+              <marker date="1509909673528" expanded="true" signature="359:370" ph="alerts.html" />
+              <marker date="1509909673528" expanded="true" signature="2505:2563" ph="..." />
+              <marker date="1509909673528" expanded="false" signature="2523:2529" ph=" " />
+              <marker date="1509909673528" expanded="false" signature="2529:2535" ph=" " />
+              <marker date="1509909673528" expanded="false" signature="2535:2541" ph=" " />
+              <marker date="1509909673528" expanded="false" signature="2541:2547" ph=" " />
+              <marker date="1509909673528" expanded="true" signature="9487:9499" ph="Your company" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/style-guide.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="270">
+            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding>
+              <marker date="1509896248192" expanded="true" signature="11:31" ph="Markdown Style Guide" />
+              <marker date="1509896248192" expanded="true" signature="19:31" ph="Documenta…tyle Guide" />
+              <marker date="1509896248192" expanded="true" signature="20:31" ph="Style Guide" />
+              <marker date="1509896248192" expanded="true" signature="42:54" ph="style, guide" />
+              <marker date="1509896248192" expanded="true" signature="64:81" ph="frontpage_sidebar" />
+              <marker date="1509896248192" expanded="true" signature="87:91" ph="true" />
+              <marker date="1509896248192" expanded="true" signature="103:119" ph="style-guide.html" />
+              <marker date="1509896248192" expanded="true" signature="129:391" ph="This styl…ntilli]()." />
+              <marker date="1509896248192" expanded="true" signature="646:647" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/style-guide-introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="198">
+            <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <folding>
+              <marker date="1509912144667" expanded="true" signature="11:23" ph="Introduction" />
+              <marker date="1509912144667" expanded="true" signature="24:42" ph="tags: [1 item]" />
+              <marker date="1509912144667" expanded="true" signature="31:41" ph="formatting" />
+              <marker date="1509912144667" expanded="true" signature="53:85" ph="introduct…yle, guide" />
+              <marker date="1509912144667" expanded="true" signature="100:113" ph="July 16, 2016" />
+              <marker date="1509912144667" expanded="true" signature="123:276" ph="This docu…yle Guide." />
+              <marker date="1509912144667" expanded="true" signature="286:303" ph="frontpage_sidebar" />
+              <marker date="1509912144667" expanded="true" signature="309:314" ph="false" />
+              <marker date="1509912144667" expanded="true" signature="326:355" ph="style-gui…ction.html" />
+              <marker date="1509912144667" expanded="true" signature="338:355" ph="introduction.html" />
+              <marker date="1509912144667" expanded="true" signature="364:413" ph="contribut…tyle-guide" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <folding>
+              <marker date="1509911827202" expanded="true" signature="11:23" ph="Introduction" />
+              <marker date="1509911827202" expanded="true" signature="34:63" ph="contribut…ing, rules" />
+              <marker date="1509911827202" expanded="true" signature="73:90" ph="frontpage_sidebar" />
+              <marker date="1509911827202" expanded="true" signature="96:101" ph="false" />
+              <marker date="1509911827202" expanded="true" signature="113:134" ph="contribut…intro.html" />
+              <marker date="1509911827202" expanded="true" signature="144:311" ph="Find a bu…nce great!" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="522">
+            <caret line="20" column="285" lean-forward="false" selection-start-line="20" selection-start-column="285" selection-end-line="20" selection-end-column="285" />
+            <folding>
+              <marker date="1509911987576" expanded="true" signature="11:39" ph="WebUI Ref…troduction" />
+              <marker date="1509911987576" expanded="true" signature="50:73" ph="reference…tro, webui" />
+              <marker date="1509911987576" expanded="true" signature="88:101" ph="June 27, 2017" />
+              <marker date="1509911987576" expanded="true" signature="111:129" ph="sumadoc-31_sidebar" />
+              <marker date="1509911987576" expanded="true" signature="141:174" ph="webui-ref…ction.html" />
+              <marker date="1509911987576" expanded="true" signature="183:210" ph="suse-mgr3…-reference" />
+              <marker date="1509911987576" expanded="true" signature="216:221" ph="false" />
+              <marker date="1509911987576" expanded="true" signature="216:225" ph="false ---" />
+              <marker date="1509911987576" expanded="true" signature="268:1434" ph="This manu…anager-3/)" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="101" column="48" lean-forward="false" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="512">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="486">
-            <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-            <folding>
-              <marker date="1509910840347" expanded="true" signature="11:23" ph="Introduction" />
-              <marker date="1509910840347" expanded="true" signature="24:42" ph="tags: [1 item]" />
-              <marker date="1509910840347" expanded="true" signature="31:41" ph="formatting" />
-              <marker date="1509910840347" expanded="true" signature="53:85" ph="introduct…yle, guide" />
-              <marker date="1509910840347" expanded="true" signature="100:113" ph="July 16, 2016" />
-              <marker date="1509910840347" expanded="true" signature="123:276" ph="This docu…yle Guide." />
-              <marker date="1509910840347" expanded="true" signature="286:303" ph="frontpage_sidebar" />
-              <marker date="1509910840347" expanded="true" signature="309:314" ph="false" />
-              <marker date="1509910840347" expanded="true" signature="326:343" ph="introduction.html" />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="122" column="26" lean-forward="true" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+          <folding>
+            <element signature="e#2157#2497#0" expanded="false" />
+            <element signature="e#3530#4797#0" expanded="false" />
+            <element signature="e#4889#5205#0" expanded="false" />
+            <element signature="e#5301#5690#0" expanded="false" />
+            <element signature="e#5788#6323#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

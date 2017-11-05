@@ -6,7 +6,8 @@ last_updated: July 16, 2016
 summary: "This document is for contributors interested in correct technical writing styles. This document is an adaptation of the SUSE Documentation Style Guide."
 sidebar: frontpage_sidebar
 toc: false
-permalink: introduction.html
+permalink: style-guide-introduction.html
+folder: contributors-guide/suse-documentation-style-guide
 ---
 
 ### Credits

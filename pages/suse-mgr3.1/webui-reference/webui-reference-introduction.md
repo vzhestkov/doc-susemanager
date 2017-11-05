@@ -1,12 +1,12 @@
 ---
-   title: WebUI Reference Introduction
-   keywords: reference, introduction, intro, webui
-   last_updated: June 27, 2017
-   sidebar: sumadoc-31_sidebar
-   permalink: webui-reference-introduction.html
-   folder: suse-mgr3.1/webui-reference
-   toc: false
-   ---
+title: WebUI Reference Introduction
+keywords: reference, intro, webui
+last_updated: June 27, 2017
+sidebar: sumadoc-31_sidebar
+permalink: webui-reference-introduction.html
+folder: suse-mgr3.1/webui-reference
+toc: false
+---
 
 ## About This Guide {#about-this-guide}
 

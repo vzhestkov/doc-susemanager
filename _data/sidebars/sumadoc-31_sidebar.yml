@@ -106,7 +106,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: introduction.md
+    - title: Reference Introduction
       url: /webui-reference-introduction.html
       output: web, pdf
       subfolders:

@@ -58,7 +58,7 @@ entries:
         subfolderitems:
 
         - title: Introduction
-          url: /introduction.html
+          url: /style-guide-introduction.html
           output: web, pdf
 
         - title: Audience
