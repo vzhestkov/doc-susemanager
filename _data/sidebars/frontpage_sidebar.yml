@@ -22,11 +22,23 @@ entries:
     - title: Introduction
       url: /contribute-intro.html
       output: web, pdf
-      type: homepage
+      subfolders:
 
-    - title: How to Contribute
-      url: /how-to-contribute.html
-      output: web, pdf
+      - title: Markdown Styleguide
+        output: web, pdf
+        subfolderitems:
+
+        - title: Documentation Style Guide
+          url: /style-guide.html
+          output: web, pdf
+
+      - title: Theme Required Formatting Rules
+        output: web, pdf
+        subfolderitems:
+
+        - title: Theme Required Formatting Rules
+          url: /additional-formatting-rules.html
+          output: web,pdf
 
 
 

@@ -12,3 +12,4 @@ folder: suse-mgr3.2
 
 Release notes will be published during the end of our current release cycle.
 In development!
+
