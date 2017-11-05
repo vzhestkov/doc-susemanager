@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41958a38-94ad-4c94-8ca2-cbf4e4fc9934" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/style-guide-introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/mydoc_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/mydoc_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" afterPath="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" afterPath="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" afterPath="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/book_mgr_getting_started.xml" afterPath="$PROJECT_DIR$/xml/book_mgr_getting_started.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/bp_susecom_lifecycle_management.xml" afterPath="$PROJECT_DIR$/xml/bp_susecom_lifecycle_management.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,53 +13,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="frontpage_sidebar.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="frontpage_sidebar.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="314">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sumadoc-32_sidebar.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="122" column="26" lean-forward="true" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
-              <folding>
-                <element signature="e#2157#2497#0" expanded="false" />
-                <element signature="e#3530#4797#0" expanded="false" />
-                <element signature="e#4889#5205#0" expanded="false" />
-                <element signature="e#5301#5690#0" expanded="false" />
-                <element signature="e#5788#6323#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webui-reference-introduction.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="522">
-                <caret line="20" column="285" lean-forward="false" selection-start-line="20" selection-start-column="285" selection-end-line="20" selection-end-column="285" />
-                <folding>
-                  <marker date="1509911987576" expanded="true" signature="11:39" ph="WebUI Ref…troduction" />
-                  <marker date="1509911987576" expanded="true" signature="50:73" ph="reference…tro, webui" />
-                  <marker date="1509911987576" expanded="true" signature="88:101" ph="June 27, 2017" />
-                  <marker date="1509911987576" expanded="true" signature="111:129" ph="sumadoc-31_sidebar" />
-                  <marker date="1509911987576" expanded="true" signature="141:174" ph="webui-ref…ction.html" />
-                  <marker date="1509911987576" expanded="true" signature="183:210" ph="suse-mgr3…-reference" />
-                  <marker date="1509911987576" expanded="true" signature="216:221" ph="false" />
-                  <marker date="1509911987576" expanded="true" signature="216:225" ph="false ---" />
-                  <marker date="1509911987576" expanded="true" signature="268:1434" ph="This manu…anager-3/)" />
-                </folding>
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
             </state>
           </provider>
         </entry>
@@ -207,9 +157,9 @@
         <option value="$PROJECT_DIR$/pages/contribute-guide/contribute-intro.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/introduction.md" />
         <option value="$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml" />
-        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
         <option value="$PROJECT_DIR$/pages/contribute-guide/contributors-guide/suse-documentation-style-guide/style-guide-introduction.md" />
         <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml" />
+        <option value="$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md" />
         <option value="$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml" />
       </list>
     </option>
@@ -449,12 +399,12 @@
       <workItem from="1509889778710" duration="71000" />
       <workItem from="1509893094779" duration="128000" />
       <workItem from="1509893243279" duration="521000" />
-      <workItem from="1509895705813" duration="13016000" />
+      <workItem from="1509895705813" duration="13363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95832000" />
+    <option name="totallyTimeSpent" value="96179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="905" width="1920" height="1173" extended-state="6" />
@@ -1199,29 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="522">
-            <caret line="20" column="285" lean-forward="false" selection-start-line="20" selection-start-column="285" selection-end-line="20" selection-end-column="285" />
-            <folding>
-              <marker date="1509911987576" expanded="true" signature="11:39" ph="WebUI Ref…troduction" />
-              <marker date="1509911987576" expanded="true" signature="50:73" ph="reference…tro, webui" />
-              <marker date="1509911987576" expanded="true" signature="88:101" ph="June 27, 2017" />
-              <marker date="1509911987576" expanded="true" signature="111:129" ph="sumadoc-31_sidebar" />
-              <marker date="1509911987576" expanded="true" signature="141:174" ph="webui-ref…ction.html" />
-              <marker date="1509911987576" expanded="true" signature="183:210" ph="suse-mgr3…-reference" />
-              <marker date="1509911987576" expanded="true" signature="216:221" ph="false" />
-              <marker date="1509911987576" expanded="true" signature="216:225" ph="false ---" />
-              <marker date="1509911987576" expanded="true" signature="268:1434" ph="This manu…anager-3/)" />
-            </folding>
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-31_sidebar.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1230,25 +1157,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/pages/suse-mgr3.1/webui-reference/webui-reference-introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <folding>
+              <marker date="1509913752284" expanded="true" signature="11:39" ph="WebUI Ref…troduction" />
+              <marker date="1509913752284" expanded="true" signature="50:73" ph="reference…tro, webui" />
+              <marker date="1509913752284" expanded="true" signature="88:101" ph="June 27, 2017" />
+              <marker date="1509913752284" expanded="true" signature="111:129" ph="sumadoc-31_sidebar" />
+              <marker date="1509913752284" expanded="true" signature="141:174" ph="webui-ref…ction.html" />
+              <marker date="1509913752284" expanded="true" signature="183:210" ph="suse-mgr3…-reference" />
+              <marker date="1509913752284" expanded="true" signature="216:221" ph="false" />
+            </folding>
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/sidebars/sumadoc-32_sidebar.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="122" column="26" lean-forward="true" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+        <state relative-caret-position="378">
+          <caret line="108" column="22" lean-forward="true" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
           <folding>
             <element signature="e#2157#2497#0" expanded="false" />
-            <element signature="e#3530#4797#0" expanded="false" />
-            <element signature="e#4889#5205#0" expanded="false" />
-            <element signature="e#5301#5690#0" expanded="false" />
-            <element signature="e#5788#6323#0" expanded="false" />
+            <element signature="e#3536#4803#0" expanded="false" />
+            <element signature="e#4895#5211#0" expanded="false" />
+            <element signature="e#5307#5696#0" expanded="false" />
+            <element signature="e#5794#6329#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/sidebars/frontpage_sidebar.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
