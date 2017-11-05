@@ -7,13 +7,14 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 3.1 Stable Documentation
+    - title: SUSE Manager Server 3.2 - Nightly
+      url: /suse_mgr_intro_3.2.html
+      output: web, pdf
+
+    - title: SUSE Manager Server 3.1 - Stable
       url: /suse_mgr_intro_3.1.html
       output: web, pdf
 
-    - title: 3.2 Latest Documentation
-      url: /suse_mgr_intro_3.2.html
-      output: web, pdf
 
   - title: Contributors Guide
     output: web, pdf
@@ -48,12 +49,52 @@ entries:
           url: /code.html
           output: web, pdf
 
-      - title: Formatting
+        - title: Spelling and Grammar
+          url: /spelling-and-grammar.html
+          output: web, pdf
+
+      - title: SUSE Documentation Style Guide
         output: web, pdf
         subfolderitems:
 
-        - title: Theme Required Formatting Rules
-          url: /additional-formatting-rules.html
+        - title: Introduction
+          url: /introduction.html
+          output: web, pdf
+
+        - title: Audience
+          url: /audience.html
+          output: web, pdf
+
+        - title: Names of Example Items
+          url: /names-of-example-items.html
+          output: web, pdf
+
+        - title: Language
+          url: /language.html
+          output: web, pdf
+
+        - title: Terminology Reference
+          url: /terminology.html
+          output: web, pdf
+
+      - title: Liquid Formatting
+        output: web, pdf
+        subfolderitems:
+
+        - title: Tooltips
+          url: /adding-tooltips.html
+          output: web, pdf
+
+        - title: Alerts
+          url: /alerts.html
+          output: web,pdf
+
+        - title: Icons
+          url: /icons.html
+          output: web,pdf
+
+        - title: Images
+          url: /images.html
           output: web,pdf
 
 

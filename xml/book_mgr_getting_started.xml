@@ -40,7 +40,7 @@
 
     <!-- Quick-start installation guide on setting up a typical SUSE Manager reference server-->
 
-    <!-- Introduction, Requirements, Hardware and Network Information -->
+    <!-- introduction.md, Requirements, Hardware and Network Information -->
     <xi:include href="quickstart3_chap_install_overview.xml"/>
 
     <!-- Installation of SUMA3 using JeOS as the base with KVM -->
@@ -52,7 +52,7 @@
     <!-- SUMA3 Post Installation Setup Guide -->
     <xi:include href="quickstart3_chap_suma_setup_with_yast.xml"/>
 
-    <!-- Introduction to activation Keys and connecting a client both Salt and Traditional -->
+    <!-- introduction.md to activation Keys and connecting a client both Salt and Traditional -->
     <xi:include href="quickstart3_chap_suma_keys_and_first_client.xml"/>
 
     <!-- Salt Getting Started Guide -->

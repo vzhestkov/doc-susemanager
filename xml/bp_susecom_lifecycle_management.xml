@@ -14,7 +14,7 @@
     <title>Advanced Patch Lifecycle Management</title>
 
     <!-- <sect1 xml:id="bp.susecom.lifecycle.management.intro"> -->
-    <!--     <title>Introduction</title> -->
+    <!--     <title>introduction.md</title> -->
         <para>Keeping systems patched and secure remains one of the greatest ongoing challenges
             that you will face as an administrator. Both proprietary and open-source companies are
             constantly working to provide updates which fix flaws discovered within their software
