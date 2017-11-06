@@ -13,6 +13,6 @@ During the next few weeks this site will be undergoing many changes. If your int
 
 As this site runs on Jekyll changes happen as soon as we push to our repository.
 
-Browse documents using the navigation bar on the left. Select a document version from the `Doc versions` dropdown above.
+Browse documents using the navigation bar on the left. Select a document version from the `Versions` dropdown above.
 
 
