@@ -181,7 +181,7 @@
     <span class="nav-text">Systems</span>
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="4">
-    <a class="nav-link" href="systems.html">Systems</a>
+    <a class="nav-link" href="systems.html">System Filters</a>
   </li>
 </ul>
   </li>
@@ -251,7 +251,7 @@
     <li class="crumb">Reference</li>
     <li class="crumb">Systems</li>
     <li class="crumb">Systems</li>
-    <li class="crumb"><a href="systems.html">Systems</a></li>
+    <li class="crumb"><a href="systems.html">System Filters</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework/docs/modules/reference/pages/systems/systems/systems.adoc">Edit this Page</a></div>
@@ -268,7 +268,7 @@
 <div class="paragraph">
 <p>The <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">All</b></span> page contains the default set of your systems.
 It displays every system you have permission to manage.
-You have permission if you are the only user in your organization, if you are a &lt;PRODUCTNAME&gt; Administrator, or if the system belongs to a group for which you have admin rights.</p>
+You have permission if you are the only user in your organization, if you are a Uyuni Administrator, or if the system belongs to a group for which you have admin rights.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -280,7 +280,7 @@ You have permission if you are the only user in your organization, if you are a 
 <h3 id="ref.webui.systems.systems.physical"><a class="anchor" href="#ref.webui.systems.systems.physical"></a><a class="link" href="#ref.webui.systems.systems.physical">Systems &gt; Physical Systems</a></h3>
 <div class="paragraph">
 <p>To reach this page, select <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Physical Systems</b></span> from the left bar.
-This page lists each physical system of which &lt;PRODUCTNAME&gt; is aware.</p>
+This page lists each physical system of which Uyuni is aware.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -292,7 +292,7 @@ This page lists each physical system of which &lt;PRODUCTNAME&gt; is aware.</p>
 <h3 id="ref.webui.systems.systems.virtual"><a class="anchor" href="#ref.webui.systems.systems.virtual"></a><a class="link" href="#ref.webui.systems.systems.virtual">Systems &gt; Virtual Systems</a></h3>
 <div class="paragraph">
 <p>To reach this page, select <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Virtual Systems</b></span> from the left bar.
-This page lists each virtual host of which &lt;PRODUCTNAME&gt; is aware and the guest systems on those hosts.</p>
+This page lists each virtual host of which Uyuni is aware and the guest systems on those hosts.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -320,7 +320,7 @@ This page lists each virtual host of which &lt;PRODUCTNAME&gt; is aware and the 
 </dl>
 </div>
 <div class="paragraph">
-<p>Only guests registered with &lt;PRODUCTNAME&gt; are displayed with blue text.
+<p>Only guests registered with Uyuni are displayed with blue text.
 Clicking the host name of such a guest system displays its <code class="guimenu">System Details</code> page.</p>
 </div>
 </div>
@@ -363,7 +363,7 @@ Click a system name to go to the systems details page to schedule a reboot.</p>
 <div class="sect2">
 <h3 id="ref.webui.systems.systems.non_compliant"><a class="anchor" href="#ref.webui.systems.systems.non_compliant"></a><a class="link" href="#ref.webui.systems.systems.non_compliant">Systems &gt; Non-compliant Systems</a></h3>
 <div class="paragraph">
-<p>Non-compliant systems have packages installed which are not available from &lt;PRODUCTNAME&gt;.
+<p>Non-compliant systems have packages installed which are not available from Uyuni.
 The <code class="guimenu">Packages</code> column shows how many installed packages are not available in the channels assigned to the system.
 A non-compliant system cannot be reinstalled.</p>
 </div>
@@ -412,7 +412,7 @@ System types are:</p>
 <div class="sect2">
 <h3 id="ref.webui.systems.systems.inact"><a class="anchor" href="#ref.webui.systems.systems.inact"></a><a class="link" href="#ref.webui.systems.systems.inact">Systems &gt; Inactive</a></h3>
 <div class="paragraph">
-<p>The <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Inactive Systems</b></span> page displays systems that have not checked in with &lt;PRODUCTNAME&gt; for 24 hours or more.</p>
+<p>The <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Inactive Systems</b></span> page displays systems that have not checked in with Uyuni for 24 hours or more.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -420,8 +420,8 @@ System types are:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Checking in means that Zypper on SUSE Linux Enterprise or Red Hat Update Agent on Red Hat Enterprise Linux client systems connects to &lt;PRODUCTNAME&gt; to see if there are any updates available or if any actions have been scheduled.
-If you see a message telling you that check-ins are not taking place, the client system is not successfully connecting to &lt;PRODUCTNAME&gt;.</p>
+<p>Checking in means that Zypper on SUSE Linux Enterprise or Red Hat Update Agent on Red Hat Enterprise Linux client systems connects to Uyuni to see if there are any updates available or if any actions have been scheduled.
+If you see a message telling you that check-ins are not taking place, the client system is not successfully connecting to Uyuni.</p>
 </div>
 <div class="paragraph">
 <p>The reason may be one of the following:</p>
@@ -429,11 +429,11 @@ If you see a message telling you that check-ins are not taking place, the client
 <div class="ulist">
 <ul>
 <li>
-<p>The system is not entitled to any &lt;PRODUCTNAME&gt; service.
+<p>The system is not entitled to any Uyuni service.
 System profiles that remain unentitled for 180 days (6 months) are removed.</p>
 </li>
 <li>
-<p>The system is entitled, but the &lt;PRODUCTNAME&gt; daemon (<code class="systemitem">rhnsd</code>) has been disabled on the system.
+<p>The system is entitled, but the Uyuni daemon (<code class="systemitem">rhnsd</code>) has been disabled on the system.
 Refer to
 <a href="#">bp_chap_systems_management.adoc#bp.contact.methods.rhnsd</a>
 for instructions on restarting and troubleshooting.</p>
@@ -445,16 +445,16 @@ for instructions on restarting and troubleshooting.</p>
 <p>The system is behind an HTTP proxy server that has not been properly configured.</p>
 </li>
 <li>
-<p>The system is connected to a &lt;PRODUCTNAME&gt; Proxy Server or &lt;PRODUCTNAME&gt; that has not been properly configured.</p>
+<p>The system is connected to a Uyuni Proxy Server or Uyuni that has not been properly configured.</p>
 </li>
 <li>
-<p>The system itself has not been properly configured, perhaps pointing at the wrong &lt;PRODUCTNAME&gt; Server.</p>
+<p>The system itself has not been properly configured, perhaps pointing at the wrong Uyuni Server.</p>
 </li>
 <li>
 <p>The system is not in the network.</p>
 </li>
 <li>
-<p>Some other barrier exists between the system and the &lt;PRODUCTNAME&gt; Server.</p>
+<p>Some other barrier exists between the system and the Uyuni Server.</p>
 </li>
 </ul>
 </div>
@@ -474,7 +474,7 @@ Use the drop-down box to specify the period in days, weeks, 30- and 180-day incr
 <div class="sect2">
 <h3 id="ref.webui.systems.systems.proxy"><a class="anchor" href="#ref.webui.systems.systems.proxy"></a><a class="link" href="#ref.webui.systems.systems.proxy">Systems &gt; Proxy</a></h3>
 <div class="paragraph">
-<p>The <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Proxy</b></span> page displays the SUSE Manager Proxy Server systems registered with your &lt;PRODUCTNAME&gt; server.</p>
+<p>The <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Proxy</b></span> page displays the SUSE Manager Proxy Server systems registered with your Uyuni server.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -494,7 +494,7 @@ Use the drop-down box to specify the period in days, weeks, 30- and 180-day incr
 </div>
 <div class="paragraph">
 <p>Active entitlements are in gray, while inactive entitlements are highlighted in yellow and their check boxes checked by default for you to delete them as needed by clicking the <b class="button">Delete Selected</b> button.
-Entitlements are inactive if the system has not checked in with &lt;PRODUCTNAME&gt; in a time specified via the drop-down box <b class="button">A system profile is inactive if its system has not checked in for:</b>.</p>
+Entitlements are inactive if the system has not checked in with Uyuni in a time specified via the drop-down box <b class="button">A system profile is inactive if its system has not checked in for:</b>.</p>
 </div>
 <div class="paragraph">
 <p>You can filter duplicate entitlements by clicking the respective tab:</p>
@@ -535,7 +535,7 @@ Inactive components of the systems are highlighted in yellow.</p>
 <p>The System Currency Report displays an overview of severity scores of patches relevant to the system.
 The weighting is defined any systems, <code class="guimenu">System Details</code> page.
 The default weight awards critical security patches with the heaviest weight and enhancements with the lowest.
-The report can be used to prioritize maintenance actions on the systems registered to &lt;PRODUCTNAME&gt;.</p>
+The report can be used to prioritize maintenance actions on the systems registered to Uyuni.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -546,7 +546,7 @@ The report can be used to prioritize maintenance actions on the systems register
 <div class="sect2">
 <h3 id="ref.webui.systems.systems.types"><a class="anchor" href="#ref.webui.systems.systems.types"></a><a class="link" href="#ref.webui.systems.systems.types">Systems &gt; System Types</a></h3>
 <div class="paragraph">
-<p>System Types define the set of functionalities available for each system in &lt;PRODUCTNAME&gt; such as the ability of installing software or creating guest virtual machines.</p>
+<p>System Types define the set of functionalities available for each system in Uyuni such as the ability of installing software or creating guest virtual machines.</p>
 </div>
 <div class="imageblock">
 <div class="content">
