@@ -257,7 +257,155 @@
 </div>
 <article class="doc">
 <h1>Systems Overview</h1>
-
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you select <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span>, an overview of all Systems appears.
+From this page you can select systems to perform actions on and may create system profiles.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ref-systems-systems-overview"><a class="anchor" href="#ref-systems-systems-overview"></a><a class="link" href="#ref-systems-systems-overview">Overview Conventions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span> page displays a list of all your registered systems.
+Several columns provide information about each system:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Select box</dt>
+<dd>
+<p>Systems without a system type cannot be selected. To select systems, mark the appropriate check boxes.
+Selected systems are added to the <strong>System Set Manager</strong>, where actions can be carried out simultaneously on all systems in the set.
+For more information, see <a href="#ref.webui.systems.ssm">[ref.webui.systems.ssm]</a>.</p>
+</dd>
+<dt class="hdlist1">System</dt>
+<dd>
+<p>The name of the system specified during registration.
+The default name is the host name of the system.
+Clicking the name of a system displays its <code class="guimenu">System Details</code> page.
+For more information, see <a href="#s3-sm-system-details">[s3-sm-system-details]</a>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="../_images/spacewalk-icon-virtual-host.svg" alt="Virtual Host"></span>&#8201;&#8212;&#8201;Virtual Host.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/spacewalk-icon-virtual-guest.svg" alt="Virtual Guest"></span>&#8201;&#8212;&#8201;Virtual Guest.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-236-non-virtual-system.svg" alt="Non-Virtual System"></span>&#8201;&#8212;&#8201;Non-Virtual System.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/spacewalk-icon-unprov-system.svg" alt="Unprovisioned System"></span>&#8201;&#8212;&#8201;Unprovisioned System.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Updates</dt>
+<dd>
+<p>Shows which type of update action is applicable to the system or confirms that the system is up-to-date.
+Some icons are linked to related tasks.
+For example, the standard Updates icon is linked to the <code class="guimenu">Upgrade</code> subtab of the packages list, while the Critical Updates icon links directly to the <code class="guimenu">Software Patches</code> page.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="../_images/fa-check-circle.svg" alt="Check Circle"></span>&#8201;&#8212;&#8201;System is up-to-date.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-exclamation-circle.svg" alt="Exclamation Circle"></span>&#8201;&#8212;&#8201;Critical patch (errata) available, update <em>strongly</em> recommended.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-warning.svg" alt="Warning"></span>&#8201;&#8212;&#8201;Updates available and recommended.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-question-circle.svg" alt="Question"></span>&#8201;&#8212;&#8201;System not checking in properly (for 24 hours or more).</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-lock.svg" alt="Lock"></span>&#8201;&#8212;&#8201;System is locked; actions prohibited.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-rocket.svg" alt="Rocket"></span>&#8201;&#8212;&#8201;System is being deployed using AutoYaST or Kickstart.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-clock-o.svg" alt="Clock"></span>&#8201;&#8212;&#8201;Updates have been scheduled.</p>
+</li>
+<li>
+<p><span class="image"><img src="../_images/fa-times-circle.svg" alt="Times"></span>&#8201;&#8212;&#8201;System not entitled to any update service.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Patches</dt>
+<dd>
+<p>Total number of patch alerts applicable to the system.</p>
+</dd>
+<dt class="hdlist1">Packages</dt>
+<dd>
+<p>Total number of package updates for the system, including packages related to patch alerts and newer versions of packages not related to patch alerts.
+For example, if a client system that has an earlier version of a package installed gets subscribed to the appropriate base channel (such as SUSE Linux Enterprise 12 SP2), that channel may have an updated version of the package.
+If so, the package appears in the list of available package updates.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Package Conflict</div>
+<div class="paragraph">
+<p>If Uyuni identifies package updates for the system, but the package updater (such as Red Hat Update Agent or YaST) responds with a message such as "Your system is fully updated", a conflict likely exists in the system&#8217;s package profile or in the <code class="path">up2date</code> configuration file.
+To resolve the conflict, either schedule a package list update or remove the packages from the package exceptions list.
+For more information, see <a href="#s3-sm-system-details">[s3-sm-system-details]</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">Configs</dt>
+<dd>
+<p>Total number of configuration files applicable to the system.</p>
+</dd>
+<dt class="hdlist1">Base Channel</dt>
+<dd>
+<p>The primary channel for the system based on its operating system.
+For more information, see <a href="#ref.webui.channels.software">[ref.webui.channels.software]</a>.</p>
+</dd>
+<dt class="hdlist1">System Type</dt>
+<dd>
+<p>Shows whether the system is managed and at what service level.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Links in the navigation bar below <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Systems</b></span> enable you to select and view predefined sets of your systems.
+All of the options described above can be applied within these pages.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ref.webui.systems.overview"><a class="anchor" href="#ref.webui.systems.overview"></a><a class="link" href="#ref.webui.systems.overview">Systems &gt; Overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span> page provides a summary of your systems, including their status, number of associated patches (errata) and packages, and their so-called system type.
+Clicking the name of a system takes you to its <code class="guimenu">System Details</code> page.
+For more information, see <a href="#s3-sm-system-details">[s3-sm-system-details]</a>.</p>
+</div>
+<div class="paragraph">
+<p>Clicking the <b class="button">View System Groups</b> button at the top of the page takes you to a summary of your system groups.
+It identifies group status and displays the number of systems contained.
+Clicking the number of systems in a group takes you to the <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems Groups</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Systems</b></span> tab.
+Selecting a group name takes you to the <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">System Groups</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Group Details</b></span> tab for that system group.
+For more information, see <a href="#ref.webui.systems.systemgroups.details">[ref.webui.systems.systemgroups.details]</a>.</p>
+</div>
+<div class="paragraph">
+<p>You can also click <b class="button">Use in SSM</b> from the <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Overview</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">View System Groups</b></span> page to go directly to the <span class="menuseq"><b class="menu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">System Set Manager</b></span>.
+For more information, see <a href="#ref.webui.systems.ssm">[ref.webui.systems.ssm]</a>.</p>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>
