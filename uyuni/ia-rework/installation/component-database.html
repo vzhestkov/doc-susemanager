@@ -84,22 +84,55 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
-    <span class="nav-text">Components</span>
+    <span class="nav-text">Architecture</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="component-server.html">Server</a>
+    <a class="nav-link" href="arch-legend-architecture.html">Diagram Legend</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="component-proxy.html">Proxy</a>
+    <a class="nav-link" href="arch-the-traditional-stack.html">The Traditional Stack</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="component-clients.html">Clients</a>
+    <a class="nav-link" href="arch-the-salt-stack.html">The Salt Stack</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="component-salt.html">Salt</a>
+    <a class="nav-link" href="arch-the-bootstrapping-ui.html">The Bootstrapping UI</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
-    <a class="nav-link" href="component-database.html">Database</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-onboarding-and-registration.html">Onboarding and Registration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-repository-synchronization.html">Repository Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Package Installation Methods</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-rhnsd.html">rhnsd</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-osad.html">osad</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-ssh-push.html">SSH Push</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-ssh-pull.html">SSH Pull</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-salt-pull.html">Salt Pull</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-salt-ssh-push.html">Salt SSH Push</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-salt-ssh-push-tunnel.html">Salt SSH Push &amp; Tunnel</a>
+  </li>
+</ul>
   </li>
 </ul>
   </li>
@@ -139,6 +172,48 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="install-proxy.html">Install Proxy</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Configure High Availability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="intro-high-availability.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components-of-high-availability.html">HA Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ha-requirements.html">System Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-the-storage-server.html">Setup the iSCSI Storage Server</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-the-two-nodes.html">Setup the Two Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-sbd.html">Setup the SBD Device</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="set-the-cluster-password.html">Set the Cluster Password</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="enable-the-cluster.html">Enable the Cluster</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="create-the-clvm-volume.html">Create the cLVM Volume</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-the-cib.html">Configure the CIB</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-certificates.html">Configure Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="install-application-on-node1.html">Install Uyuni on Node1</a>
   </li>
 </ul>
   </li>
@@ -355,12 +430,6 @@
   <button class="navigation-toggle"></button>
   <a href="../index.html" class="home-link"></a>
 <nav class="crumbs" aria-label="breadcrumbs">
-  <ul>
-    <li class="crumb"><a href="../index.html">Uyuni</a></li>
-    <li class="crumb">Installation Guide</li>
-    <li class="crumb">Components</li>
-    <li class="crumb"><a href="component-database.html">Database</a></li>
-  </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework/docs/modules/installation/pages/component-database.adoc">Edit this Page</a></div>
 </div>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create the cLVM Volume :: Uyuni Documentation</title>
+    <meta name="generator" content="Antora 1.1.1">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/site-extra.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+    <!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="https://opensource.suse.com/doc-susemanager/">Uyuni Project</a>
+        <span class="separator">//</span>
+        <a href="../../..">Docs</a>
+      </div>
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Projects</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item"><strong>Resources</strong></div>
+            <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/tree/ia-rework">Repository</a>
+            <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues">Issue Tracker</a>
+<!--
+            <hr class="navbar-divider">
+            <div class="navbar-item"><strong>Custom UI (coming soon!)</strong></div>
+            <a class="navbar-item" href="https://gitlab.com/antora/antora-ui-default">Repository</a>
+            <a class="navbar-item" href="https://gitlab.com/antora/antora-ui-default/issues">Issue Tracker</a>
+            <hr class="navbar-divider">
+          -->
+            <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/wiki/Asciidoc-getting-started">Contributing</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Community</div>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="https://gitter.im/uyuniproject/users">Uyuni Chat (Users)</a>
+            <a class="navbar-item" href="https://gitter.im/uyuniproject/develop">Uyuni Chat (Dev)</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="https://twitter.com/uyuniproject">
+          <span class="icon">
+            <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="#57aaee" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="uyuni" data-version="ia-rework">
+  <aside class="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Uyuni</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Installation Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="intro.html#installation-and-upgrade-manual-intro">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Architecture</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-legend-architecture.html">Diagram Legend</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-the-traditional-stack.html">The Traditional Stack</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-the-salt-stack.html">The Salt Stack</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-the-bootstrapping-ui.html">The Bootstrapping UI</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-onboarding-and-registration.html">Onboarding and Registration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="arch-repository-synchronization.html">Repository Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Package Installation Methods</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-rhnsd.html">rhnsd</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-osad.html">osad</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-ssh-push.html">SSH Push</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-ssh-pull.html">SSH Pull</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-salt-pull.html">Salt Pull</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-salt-ssh-push.html">Salt SSH Push</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="arch-package-installation-salt-ssh-push-tunnel.html">Salt SSH Push &amp; Tunnel</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Requirements</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="hardware-requirements.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="storage-requirements.html">Storage</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="network-requirements.html">Network</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Install Uyuni Server</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x86-64.html">x86_64</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ibm-zsystem.html">IBM zSystem</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="power.html">Power PC</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Install Uyuni Proxy</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="install-proxy.html">Install Proxy</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Configure High Availability</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="intro-high-availability.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components-of-high-availability.html">HA Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ha-requirements.html">System Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-the-storage-server.html">Setup the iSCSI Storage Server</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-the-two-nodes.html">Setup the Two Nodes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-sbd.html">Setup the SBD Device</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="set-the-cluster-password.html">Set the Cluster Password</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="enable-the-cluster.html">Enable the Cluster</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="create-the-clvm-volume.html">Create the cLVM Volume</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-the-cib.html">Configure the CIB</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="configure-certificates.html">Configure Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="install-application-on-node1.html">Install Uyuni on Node1</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Automated Installation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="unattended.html">Unattended</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Client Configuration Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../client-configuration/intro.html#client-configuration-intro">Introduction</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Upgrade Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/migration-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/migrate-2x-3x.html">Migrate the Server 2.x &#8594; 3.x</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/migrate-3.x-4x.html">Migrate the Server 3.x &#8594; 4.x</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/perform-service-pack-upgrade.html">Performing a Service Pack Upgrade</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/maintenance-window-steps.html">Maintenance Window Tasks</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrade/troubleshooting-upgrades.html">Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Administration Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/intro.html#admin-manual-introduction">Introduction</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Reference Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reference/intro.html#reference-manual-intro">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Home</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reference/home/home-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reference/home/notification-messages.html">Notification Messages</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">User Account</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/user-account/your-account.html">Your Account</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/user-account/addresses.html">Addresses</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/user-account/change-email.html">Change Email</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/user-account/account-deactivation.html">Account Deactivation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reference/home/your-preferences.html">Your Preferences</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Your Organization</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/your-organization/your-org-configuration.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/your-organization/your-org-trusts.html">Organization Trusts</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/home/your-organization/your-org-configuration-channels.html">Configuration Channels</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Systems</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reference/systems/systems-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">System Details</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/systems/system-details/system-details-overview.html">System Details Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Systems</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/systems/systems/systems.html">System Filters</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../reference/systems/system-groups.html">System Groups</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">System Set Manager</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/systems/system-set-manager/ssm-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/systems/system-set-manager/ssm-task-log.html">Task Log</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Salt Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../salt/intro.html#salt-guide-intro">Introduction</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Uyuni</span>
+    <span class="version">ia-rework</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Uyuni</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">ia-rework</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="crumbs" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="../index.html">Uyuni</a></li>
+    <li class="crumb">Installation Guide</li>
+    <li class="crumb">Configure High Availability</li>
+    <li class="crumb"><a href="create-the-clvm-volume.html">Create the cLVM Volume</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework/docs/modules/installation/pages/create-the-clvm-volume.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Create the cLVM Volume</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>To create cLVM volume there are several services needed within the cluster.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_the_required_services"><a class="anchor" href="#_setup_the_required_services"></a>Setup the Required Services</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>on <strong>node1</strong> run the command:</p>
+<div class="listingblock">
+<div class="content">
+<pre>crm configure edit</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the following (replacing the correct IP address):</p>
+<div class="listingblock">
+<div class="content">
+<pre>primitive admin-ip IPaddr2 \
+        params ip=192.168.188.105 \
+        op monitor interval=10 timeout=20
+primitive pri_clvmd ocf:lvm2:clvmd \
+        op stop interval=0 timeout=100 \
+        op start interval=0 timeout=90 \
+        op monitor interval=20 timeout=60
+primitive pri_dlm ocf:pacemaker:controld \
+        op start interval=0 timeout=90 \
+        op stop interval=0 timeout=100 \
+        op monitor interval=60 timeout=60
+primitive res_sbd-fencing stonith:external/sbd \
+        params pcmk_delay_max=30s
+group grp_base_clvm pri_dlm pri_clvmd
+clone cln_clvm grp_base_clvm \
+        meta interleave=true
+rsc_defaults rsc-options: \
+        resource-stickiness=1 \
+        migration-threshold=3</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_the_device_names"><a class="anchor" href="#_check_the_device_names"></a>Check the Device Names</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On <strong>node1</strong> check the file systems to see the correct lun device names:</p>
+</div>
+<div class="literalblock small">
+<div class="content">
+<pre>lsscsi -sku
+
+[1:0:1:0]    cd/dvd  ATA     QEMU DVD-ROM            _ /dev/sr0        -
+[2:0:0:0]    disk    6001405d5543b23418c4956b44e30f80  /dev/sda    104MB <i class="conum" data-value="1"></i><b>(1)</b>
+[2:0:0:1]    disk    6001405d95a9d1d21444099bbd2b563b  /dev/sdb    107GB <i class="conum" data-value="2"></i><b>(2)</b>
+[2:0:0:2]    disk    600140500d9ddf1d8244b51b73733d1e  /dev/sdc   53.6GB <i class="conum" data-value="3"></i><b>(3)</b>
+[2:0:0:3]    disk    60014057835fe8b95b64afb88b5d21be  /dev/sdd   27.4GB <i class="conum" data-value="4"></i><b>(4)</b>
+[2:0:0:4]    disk    60014054774ef2d9ddf4e76b30c29b82  /dev/sde   10.7GB <i class="conum" data-value="5"></i><b>(5)</b>
+[2:0:0:5]    disk    60014054d1141cd69fc444a8f92b53ed  /dev/sdf   54.7GB <i class="conum" data-value="6"></i><b>(6)</b></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>/dev/sda (sdb device)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>/dev/sdb (spacewalk storage)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>/dev/sdc (pgsql storage)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>/dev/sdd (cacherhn storage)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="5"></i><b>5</b></td>
+<td>/dev/sde (srv storage)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="6"></i><b>6</b></td>
+<td>/dev/sdf (other storage)</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_the_volumes"><a class="anchor" href="#_create_the_volumes"></a>Create the Volumes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run the following commands in order to create the volumes based on the device names from above:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create the /dev/sdf volume:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>pvcreate /dev/sdf</code></p>
+</li>
+<li>
+<p><code>vgcreate vg_c01_spacewalk /dev/sdf</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_spacewalk -l 100%FREE vg_c01_spacewalk</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_spacewalk/lv_c01_spacewalk</code></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create the <em>/dev/sde</em> <strong>pgsql</strong> volume:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>pvcreate /dev/sde</code></p>
+</li>
+<li>
+<p><code>vgcreate vg_c01_pgsql /dev/sde</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_pgsql -l 100%FREE vg_c01_pgsql</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_pgsql/lv_c01_pgsql</code></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create the <em>/dev/sdd</em> <strong>cacherhn</strong> volume:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>pvcreate /dev/sdd</code></p>
+</li>
+<li>
+<p><code>vgcreate vg_c01_spacewalk /dev/sdd</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_cacherhn -l 100%FREE vg_c01_cacherhn</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_cacherhn/lv_c01_cacherhn</code></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create the <em>/dev/sdc</em> <strong>srv</strong> volume:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>pvcreate /dev/sdc</p>
+</li>
+<li>
+<p>vgcreate vg_c01_srv /dev/sdc</p>
+</li>
+<li>
+<p>lvcreate -n lv_c01_srv -l 100%FREE vg_c01_srv</p>
+</li>
+<li>
+<p>mkfs -t xfs /dev/vg_c01_srv/lv_c01_srv</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create the <em>/dev/sdb</em> <strong>other</strong> volume (This volume includes: <em>varcachesalt, varlibspacewalk, varlibrhn, varlibjabberd, varlibsalt, varliblibvirtimages, sysconfigrhn, etcrhn, etcsalt, and etctomcat</em>):</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>pvcreate /dev/sdb</code></p>
+</li>
+<li>
+<p><code>vgcreate vg_c01_other /dev/sdb</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othervarcachesalt -L 250M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_other/lv_c01_othervarcachesalt</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othervarlibspacewalk -L 50M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_other/lv_c01_othervarlibspacewalk</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othervarlibrhn -L 500M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_other/lv_c01_othervarlibrhn</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othervarlibjabberd -L 50M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_other/lv_c01_othervarlibjabberd</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othervarlibsalt -L 50M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_other/lv_c01_othervarlibsalt</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othervarliblibvirtimages -L 100M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t xfs /dev/vg_c01_other/lv_c01_othervarliblibvirtimages</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_othersyssysconfigrhn -L 10M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t ext3 /dev/vg_c01_other/lv_c01_othersyssysconfigrhn</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_otheretcrhn -L 10M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t ext3 /dev/vg_c01_other/lv_c01_otheretcrhn</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_otheretcsalt -L 10M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t ext3 /dev/vg_c01_other/lv_c01_otheretcsalt</code></p>
+</li>
+<li>
+<p><code>lvcreate -n lv_c01_otheretctomcat -L 10M vg_c01_other</code></p>
+</li>
+<li>
+<p><code>mkfs -t ext3 /dev/vg_c01_other/lv_c01_otheretctomcat</code></p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_the_file_systems"><a class="anchor" href="#_check_the_file_systems"></a>Check the File Systems</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After completing the above steps the filesystems should look like the following:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>lvs
+  LV                              VG               Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  lv_c01_cacherhn                 vg_c01_cacherhn  -wi-a-----  25.58g
+  lv_c01_otheretcrhn              vg_c01_other     -wi-a-----  12.00m
+  lv_c01_otheretcsalt             vg_c01_other     -wi-a-----  12.00m
+  lv_c01_otheretctomcat           vg_c01_other     -wi-a-----  12.00m
+  lv_c01_othersyssysconfigrhn     vg_c01_other     -wi-a-----  12.00m
+  lv_c01_othervarcachesalt        vg_c01_other     -wi-a----- 252.00m
+  lv_c01_othervarlibjabberd       vg_c01_other     -wi-a-----  52.00m
+  lv_c01_othervarliblibvirtimages vg_c01_other     -wi-a----- 100.00m
+  lv_c01_othervarlibrhn           vg_c01_other     -wi-a----- 500.00m
+  lv_c01_othervarlibsalt          vg_c01_other     -wi-a-----  52.00m
+  lv_c01_othervarlibspacewalk     vg_c01_other     -wi-a-----  52.00m
+  lv_c01_pgsql                    vg_c01_pgsql     -wi-a-----  49.99g
+  lv_c01_spacewalk                vg_c01_spacewalk -wi-a-----  99.99g
+  lv_c01_srv                      vg_c01_srv       -wi-a-----   9.99g</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>pvs
+  PV         VG               Fmt  Attr PSize  PFree
+  /dev/sdb   vg_c01_other     lvm2 a--  50.97g 49.94g
+  /dev/sdc   vg_c01_srv       lvm2 a--   9.99g     0
+  /dev/sdd   vg_c01_cacherhn  lvm2 a--  25.58g     0
+  /dev/sde   vg_c01_pgsql     lvm2 a--  49.99g     0
+  /dev/sdf   vg_c01_spacewalk lvm2 a--  99.99g     0</pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>Copyright (C) 2017-2018 <a href="https://gitlab.com/jcayouette/uyuni-prototype">Uyuni Project</a></p>
+  <p>Testing Disclaimer...</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
+<script>
+function focusSearchInput () { document.querySelector('#search-input').focus() }
+var search = docsearch({
+  appId: '3F9C504TVA',
+  apiKey: '72c8bc420354328a066360837f11319e',
+  indexName: 'uyuni-project',
+  inputSelector: '#search-input',
+  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
+  algoliaOptions: { hitsPerPage: 10 }
+}).autocomplete
+search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
+focusSearchInput()
+window.addEventListener('load', focusSearchInput)
+</script>
+<script src="../../../_/js/site.js"></script>
+<script src="../../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>
