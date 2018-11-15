@@ -83,10 +83,10 @@
     <a class="nav-link" href="arch-legend-architecture.html">Diagram Legend</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="arch-the-traditional-stack.html">The Traditional Stack</a>
+    <a class="nav-link" href="arch-the-salt-stack.html">The Salt Stack</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="arch-the-salt-stack.html">The Salt Stack</a>
+    <a class="nav-link" href="arch-the-traditional-stack.html">The Legacy Stack</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="arch-the-bootstrapping-ui.html">The Bootstrapping UI</a>
@@ -502,7 +502,41 @@
 </div>
 <article class="doc">
 <h1>Database</h1>
-
+<div id="preamble">
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Functions</div>
+<div class="paragraph">
+<p>The database is a primary component of Uyuni. It performs the following functions in the stack.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Stores most application data</strong></p>
+</li>
+<li>
+<p><strong>Functions as a data exchange area between components</strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Log Files</div>
+<div class="paragraph">
+<p><em>Logs for the database can be located in:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>/var/lib/pgsql/data/pg_log/*</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>
