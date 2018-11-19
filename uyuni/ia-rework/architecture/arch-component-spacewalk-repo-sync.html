@@ -502,7 +502,97 @@
 </div>
 <article class="doc">
 <h1>spacewalk-repo-sync</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Functions</div>
+<div class="paragraph">
+<p><strong>spacewalk-repo-sync</strong> is a command line tool for Uyuni. It performs the following functions.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Copies a repo’s metadata to the database</strong></p>
+</li>
+<li>
+<p><strong>Copies a repo’s RPM files to the filesystem</strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">mgr-sync --help</div>
+<div class="paragraph">
+<p><em>The following options are available for the <strong>spacewalk-repo-sync</strong> tool:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>spacewalk-repo-sync --help
+Usage: spacewalk-repo-sync [options]
 
+Options:
+  -h, --help            show this help message and exit
+  -l, --list            List the custom channels with the assosiated
+                        repositories.
+  -s, --show-packages   List all packages in a specified channel.
+  -u URL, --url=URL     The url of the repository. Can be used multiple times.
+  -c CHANNEL_LABEL, --channel=CHANNEL_LABEL
+                        The label of the channel to sync packages to. Can be
+                        used multiple times.
+  -p PARENT_LABEL, --parent-channel=PARENT_LABEL
+                        Synchronize the parent channel and all its child
+                        channels.
+  -d, --dry-run         Test run. No sync takes place.
+  --latest              Sync latest packages only. Use carefully - you might
+                        need to fix some dependencies on your own.
+  -g CONFIG, --config=CONFIG
+                        Configuration file
+  -t REPO_TYPE, --type=REPO_TYPE
+                        Force type of repository ("yum", "uln" and "deb" are
+                        supported)
+  -f, --fail            If a package import fails, fail the entire operation
+  -n, --non-interactive
+                        Do not ask anything, use default answers
+  -i FILTERS, --include=FILTERS
+                        Comma or space separated list of included packages or
+                        package groups.
+  -e FILTERS, --exclude=FILTERS
+                        Comma or space separated list of excluded packages or
+                        package groups.
+  --email               e-mail a report of what was synced/imported
+  --traceback-mail=TRACEBACK_MAIL
+                        alternative email address(es) for sync output (--email
+                        option)
+  --no-errata           Do not sync errata
+  --no-packages         Do not sync packages
+  --sync-kickstart      Sync kickstartable tree
+  --force-all-errata    Process metadata of all errata, not only missing.
+  --batch-size=BATCH_SIZE
+                        max. batch size for package import (debug only)
+  -Y, --deep-verify     Do not use cached package checksums
+  -v, --verbose         Verbose output. Possible to accumulate: -vvv</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Log Files</div>
+<div class="paragraph">
+<p><em>Logs for the <strong>spacewalk-repo-sync</strong> tool are located in:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>/var/log/rhn/reposync/*</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>
