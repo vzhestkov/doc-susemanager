@@ -159,7 +159,7 @@
     <a class="nav-link" href="arch-component-jabberd.html">jabberd</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="arch-component-rhn_check.html">rhn_check</a>
+    <a class="nav-link" href="arch-component-mgr_check.html">mgr_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="arch-component-plugin-zypp-spacewalk.html">zypp-plugin-spacewalk</a>
@@ -502,7 +502,55 @@
 </div>
 <article class="doc">
 <h1>rhnsd</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Functions</div>
+<div class="paragraph">
+<p><strong>rhnsd</strong> is a primary component of Uyuni. It performs the following functions in the stack.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Client-side daemon for legacy clients</strong></p>
+</li>
+<li>
+<p><strong>Periodically calls mgr_check(symlinked to rhn_check)</strong></p>
+</li>
+<li>
+<p><strong>Randomizes check time not to overload the server</strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">rhnsd --help</div>
+<div class="paragraph">
+<p>The following options are available for use with rhnsd on your legacy clients:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>rhnsd --help
+Usage: rhnsd [OPTION...]
+Spacewalk Services Daemon
 
+  -f, --foreground           Run in foreground
+  -i, --interval=MINS        Connect to Spacewalk every MINS minutes
+  -?, --help                 Give this help list
+      --usage                Give a short usage message
+  -V, --version              Print program version
+
+Mandatory or optional arguments to long options are also mandatory or optional
+for any corresponding short options.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>

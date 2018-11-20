@@ -159,7 +159,7 @@
     <a class="nav-link" href="arch-component-jabberd.html">jabberd</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="arch-component-rhn_check.html">rhn_check</a>
+    <a class="nav-link" href="arch-component-mgr_check.html">mgr_check</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="arch-component-plugin-zypp-spacewalk.html">zypp-plugin-spacewalk</a>
@@ -502,7 +502,65 @@
 </div>
 <article class="doc">
 <h1>osad</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Functions</div>
+<div class="paragraph">
+<p><strong>osad</strong> is a primary component of Uyuni. It performs the following functions in the stack.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Client-side daemon for legacy clients</strong></p>
+</li>
+<li>
+<p><strong>Calls mgr_check(rhn_check) when notified by Jabber</strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">osad --help</div>
+<div class="paragraph">
+<p>The following options are available for use with <strong>osad</strong> on your legacy clients:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>osad --help
+Usage: osad [options]
 
+Options:
+  -v, --verbose         Increase verbosity
+  -N, --nodetach        Suppress backgrounding and detachment of the process
+  --pid-file=PID_FILE   Write to this PID file
+  --logfile=LOGFILE     Write log information to this file
+  --cfg=CFG             Use this configuration file for defaults
+  --jabber-server=JABBER_SERVER
+                        Primary jabber server to connect to
+  -h, --help            show this help message and exit</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Log Files</div>
+<div class="paragraph">
+<p><em>Logs for <strong>osad</strong> are located in:</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>/var/log/osad</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>
