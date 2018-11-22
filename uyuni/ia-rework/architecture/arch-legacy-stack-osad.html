@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Method (SSH Push) :: Uyuni Documentation</title>
+    <title>Contact Method (osad) :: Uyuni Documentation</title>
     <meta name="generator" content="Antora 1.1.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -114,13 +114,13 @@
     <a class="nav-link" href="arch-legacy-contact-method-overview.html">Legacy Contact Methods</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#">arch-legacy-stack-rhnsd.adoc</a>
+    <a class="nav-link" href="arch-legacy-stack-rhnsd.html">rhnsd</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="arch-legacy-stack-osad.html">osad</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#">arch-legacy-stack-osad.adoc</a>
-  </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="#">arch-legacy-stack-ssh-push.adoc</a>
+    <a class="nav-link" href="arch-legacy-stack-ssh-push.html">SSH Push</a>
   </li>
 </ul>
   </li>
@@ -499,14 +499,179 @@
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
     <li class="crumb"><a href="../index.html">Uyuni</a></li>
-    <li class="crumb"><a href="arch-contact-method-ssh-push.html">Contact Method (SSH Push)</a></li>
+    <li class="crumb">Architecture</li>
+    <li class="crumb"><a href="arch-the-legacy-stack.html">The Legacy Stack</a></li>
+    <li class="crumb"><a href="arch-legacy-stack-osad.html">osad</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework/docs/modules/architecture/pages/arch-contact-method-ssh-push.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework/docs/modules/architecture/pages/arch-legacy-stack-osad.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>Contact Method (SSH Push)</h1>
-
+<h1>Contact Method (osad)</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>OSAD is an alternative contact method between Uyuni and its clients.
+By default, Uyuni uses <code class="systemitem">rhnsd</code>, which contacts the server every four hours to execute scheduled actions.
+OSAD allows registered client systems to execute scheduled actions immediately.</p>
+</div>
+<div class="paragraph">
+<p>OSAD has several distinct components:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code class="systemitem">osa-dispatcher</code> service runs on the server, and uses database checks  to determine if clients need to be pinged, or if actions need to be executed.</p>
+</li>
+<li>
+<p>The <code class="systemitem">osad</code> service runs on the client. It responds to pings from <code class="systemitem">osa-dispatcher</code> and runs <code class="command">mgr_check</code> to execute actions when directed to do so.</p>
+</li>
+<li>
+<p>The <code class="systemitem">jabberd</code> service is a daemon that uses the <code class="systemitem">XMPP</code> protocol for communication between the client and the server.
+The <code class="systemitem">jabberd</code> service also handles authentication.</p>
+</li>
+<li>
+<p>The <code class="command">mgr_check</code> tool runs on the client to execute actions.
+It is triggered by communication from the <code class="systemitem">osa-dispatcher</code> service.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <code class="systemitem">osa-dispatcher</code> periodically runs a query to check when clients last showed network activity.
+If it finds a client that has not shown activity recently, it will use <code class="systemitem">jabberd</code> to ping all <code class="systemitem">osad</code> instances running on all clients registered with your Uyuni server.
+The <code class="systemitem">osad</code> instances respond to the ping using <code class="systemitem">jabberd</code>, which is running in the background on the server.
+When the <code class="systemitem">osa-dispatcher</code> receives the response, it marks the client as online.
+If the <code class="systemitem">osa-dispatcher</code> fails to receive a response within a certain period of time, it marks the client as offline.</p>
+</div>
+<div class="paragraph">
+<p>When you schedule actions on an OSAD-enabled system, the task will be carried out  immediately.
+The <code class="systemitem">osa-dispatcher</code> periodically checks clients for actions that need to be executed.
+If an outstanding action is found, it uses <code class="systemitem">jabberd</code> to execute <code class="command">mgr_check</code> on the client, which will then execute the action.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/dia-osad.png" alt="dia osad">
+</div>
+<div class="title">Figure 1. osad Contact Method</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enabling_and_configuring_osad"><a class="anchor" href="#_enabling_and_configuring_osad"></a><a class="link" href="#_enabling_and_configuring_osad">Enabling and Configuring OSAD</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section covers enabling the <code class="systemitem">osa-dispatcher</code> and <code class="systemitem">osad</code> services, and performing initial setup.</p>
+</div>
+<div class="paragraph">
+<p>OSAD clients use the fully qualified domain name (FQDN) of the server to communicate with the <code class="systemitem">osa-dispatcher</code> service.</p>
+</div>
+<div class="paragraph">
+<p>SSL is required for <code class="systemitem">osad</code> communication.
+If SSL certificates are not available, the daemon on your client systems will fail to connect.
+Make sure your firewall rules are set to allow the required ports.
+For more information, see <a href="#tab.install.ports.server">[tab.install.ports.server]</a>.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure: Enabling OSAD</div>
+<ol class="arabic">
+<li>
+<p>On your Uyuni server, as the root user, start the <code class="systemitem">osa-dispatcher</code> service:</p>
+<div class="listingblock">
+<div class="content">
+<pre>systemctl start osa-dispatcher</pre>
+</div>
+</div>
+</li>
+<li>
+<p>On each client machine, install the <code class="systemitem">osad</code> package from the <code class="systemitem">Tools</code> child channel.
+The <code class="systemitem">osad</code> package should be installed on clients only.
+If you install the <code class="systemitem">osad</code> package on your Uyuni Server, it will conflict with the <code class="systemitem">osa-dispatcher</code> package.</p>
+</li>
+<li>
+<p>On the client systems, as the root user, start the <code class="systemitem">osad</code> service:</p>
+<div class="listingblock">
+<div class="content">
+<pre>systemctl start osad</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Because <code class="systemitem">osad</code> and <code class="systemitem">osa-dispatcher</code> are run as services, you can use standard commands to manage them, including <code class="command">stop</code>, <code class="command">restart</code>, and <code class="command">status</code>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Configuration and Log Files</div>
+<p>Each OSAD component is configured by local configuration files.
+We recommend you keep the default configuration parameters for all OSAD components.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Component</th>
+<th class="tableblock halign-left valign-top">Location</th>
+<th class="tableblock halign-left valign-top">Path to Configuration File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="systemitem">osa-dispatcher</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="path">/etc/rhn/rhn.conf</code> Section: <code class="systemitem">OSA configuration</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="systemitem">osad</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="path">/etc/sysconfig/rhn/osad.conf</code> <code class="path">/etc/syseconfig/rhn/up2date</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="systemitem">osad</code>  log file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="path">/var/log/osad</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="systemitem">jabberd</code> log file</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Both</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="path">/var/log/messages</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<div class="title">Troubleshooting OSAD</div>
+<p>If your OSAD clients cannot connect to the server, or if the <code class="systemitem">jabberd</code> service takes a lot of time responding to port 5552, it could be because you have exceeded the open file count.</p>
+</div>
+<div class="paragraph">
+<p>Every client needs one always-open TCP connection to the server, which consumes a single file handler.
+If the number of file handlers currently open exceeds the maximum number of files that <code class="systemitem">jabberd</code> is allowed to use, <code class="systemitem">jabberd</code> will queue the requests, and refuse connections.</p>
+</div>
+<div class="paragraph">
+<p>To resolve this issue, you can increase the file limits for <code class="systemitem">jabberd</code> by editing the <code class="path">/etc/security/limits.conf</code> configuration file and adding these lines:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>jabbersoftnofile5100
+jabberhardnofile6000</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Calculate the limits required for your environment by adding 100 to the number of clients for the soft limit, and 1000 to the current number of clients for the soft limit.
+In the example above, we have assumed 500 current clients, so the soft limit is 5100, and the hard limit is 6000.</p>
+</div>
+<div class="paragraph">
+<p>You will also need to update the <code class="systemitem">max_fds</code> parameter in the <code class="path">/etc/jabberd/c2s.xml</code> file with your chosen hard limit:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;max_fds&gt;6000&lt;/max_fds&gt;</pre>
+</div>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>
