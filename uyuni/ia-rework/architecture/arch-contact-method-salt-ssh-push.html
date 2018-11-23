@@ -514,7 +514,210 @@
 </div>
 <article class="doc">
 <h1>Salt SSH Push</h1>
-
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Salt SSH Push is intended to be used in environments where your Salt clients cannot reach the Uyuni server directly to regularly checking in and, for example, fetch package updates.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Push via SSH</div>
+<div class="paragraph">
+<p>This feature is not related to Push via SSH for the traditional clients.
+For Push via SSH, see <a href="#bp.contact.methods.ssh.push">[bp.contact.methods.ssh.push]</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a><a class="link" href="#_overview">Overview</a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/salt-ssh-contact-taigon.png" alt="salt ssh contact taigon">
+</div>
+<div class="title">Figure 1. Push via Salt SSH Contact Method</div>
+</div>
+<div class="paragraph">
+<p>Salt provides &#8220;Salt SSH&#8221;
+ (<code class="command">salt-ssh</code>), a feature to manage clients from a server.
+It works without installing Salt related software on clients.
+Using Salt SSH there is no need to have minions connected to the Salt master.
+Using this as a Uyuni connect method, this feature provides similar functionality for Salt clients as the traditional Push via SSH feature for traditional clients.</p>
+</div>
+<div class="paragraph">
+<p>This feature allows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Managing Salt entitled systems with the Push via SSH contact method using Salt SSH.</p>
+</li>
+<li>
+<p>Bootstrapping such systems.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements"><a class="anchor" href="#_requirements"></a><a class="link" href="#_requirements">Requirements</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>SSH daemon must be running on the remote system and reachable by the <code class="systemitem">salt-api</code> daemon (typically running on the Uyuni server).</p>
+</li>
+<li>
+<p>Python must be available on the remote system (Python must be supported by the installed Salt). Currently: python 2.6.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Unsupported Systems</div>
+<div class="paragraph">
+<p>Red Hat Enterprise Linux
+and CentOS versions &#8656; 5 are not supported because they do not have Python 2.6 by default.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bootstrapping"><a class="anchor" href="#_bootstrapping"></a><a class="link" href="#_bootstrapping">Bootstrapping</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To bootstrap a Salt SSH system, proceed as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <span class="menuseq"><b class="menu">Bootstrap Minions</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">] dialog in the Web UI (menu:Systems[Bootstrapping</b></span> ).</p>
+</li>
+<li>
+<p>Fill out the required fields. Select an <span class="menuseq"><b class="menu">Activation Key</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">] with the menu:Push via SSH[</b></span> contact method configured. For more information about activation keys, see <a href="#ref.webui.systems.activ-keys">[ref.webui.systems.activ-keys]</a>.</p>
+</li>
+<li>
+<p>Check the <b class="menuref">Manage system completely via SSH</b> option.</p>
+</li>
+<li>
+<p>Confirm with clicking the <b class="menuref">Bootstrap</b> button.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Now the system will be bootstrapped and registered in Uyuni.
+If done successfully, it will appear in the <b class="menuref">Systems</b> list.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a><a class="link" href="#_configuration">Configuration</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are two kinds of parameters for Push via Salt SSH:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bootstrap-time parameters — configured in the <b class="menuref">Bootstrapping</b> page:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Host</p>
+</li>
+<li>
+<p>Activation key</p>
+</li>
+<li>
+<p>Password — used only for bootstrapping, not saved anywhere; all future SSH sessions are authorized via a key/certificate pair</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Persistent parameters — configured Uyuni-wide:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>sudo user — same as in <a href="#bp.contact.methods.ssh.push.sudo">[bp.contact.methods.ssh.push.sudo]</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_action_execution"><a class="anchor" href="#_action_execution"></a><a class="link" href="#_action_execution">Action Execution</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Push via Salt SSH feature uses a taskomatic job to execute scheduled actions using <code class="command">salt-ssh</code>.
+The taskomatic job periodically checks for scheduled actions and executes them.
+While on traditional clients with SSH push configured only <code class="command">rhn_check</code> is executed via SSH, the Salt SSH push job executes a complete <code class="command">salt-ssh</code> call based on the scheduled action.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_known_limitation"><a class="anchor" href="#_known_limitation"></a><a class="link" href="#_known_limitation">Known Limitation</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>OpenSCAP auditing is not available on Salt SSH minions.</p>
+</li>
+<li>
+<p>Beacons do not work with Salt SSH.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Installing a package on a system using <code class="command">zypper</code> will not invoke the package refresh.</p>
+</li>
+<li>
+<p>Virtual Host functions (for example, a host to guests) will not work if the virtual host system is Salt SSH-based.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_for_more_information"><a class="anchor" href="#_for_more_information"></a><a class="link" href="#_for_more_information">For More Information</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For more information, see</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://wiki.microfocus.com/index.php/SUSE_Manager/SaltSSHServerPush" class="bare">https://wiki.microfocus.com/index.php/SUSE_Manager/SaltSSHServerPush</a></p>
+</li>
+<li>
+<p><a href="https://docs.saltstack.com/en/latest/topics/ssh/" class="bare">https://docs.saltstack.com/en/latest/topics/ssh/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </article>
   </main>
 </div>
