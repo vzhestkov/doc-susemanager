@@ -114,13 +114,13 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
-    <span class="nav-text">Legacy</span>
+    <span class="nav-text">Traditional</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../architecture/arch-the-legacy-stack.html">Legacy Overview</a>
+    <a class="nav-link" href="../architecture/arch-the-legacy-stack.html">Traditional Overview</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../architecture/arch-legacy-contact-method-overview.html">Legacy Contact Methods</a>
+    <a class="nav-link" href="../architecture/arch-legacy-contact-method-overview.html">Traditional Contact Methods</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../architecture/arch-legacy-stack-rhnsd.html">rhnsd</a>
@@ -137,7 +137,34 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../architecture/arch-repository-synchronization.html">Repository Synchronization</a>
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Repositories</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../architecture/arch-repositories-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Repository Types</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../architecture/arch-repositories-pool.html">Pool Repos</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../architecture/arch-repositories-devel.html">Devel Repos</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../architecture/arch-repositories-tools.html">Tools Repos</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../architecture/arch-repositories-maintenance.html">Maintenance Repos</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../architecture/arch-repository-synchronization.html">Repo Synchronization</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
@@ -526,7 +553,7 @@
 </li>
 <li>
 <p>Add the following primitives:</p>
-<div class="listingblock">
+<div class="listingblock small">
 <div class="content">
 <pre>primitive pri_fs_c01_cacherhn Filesystem \
         params device="/dev/vg_c01_cacherhn/lv_c01_cacherhn" directory="/var/cache/rhn" fstype=xfs options="noatime,defaults" \
