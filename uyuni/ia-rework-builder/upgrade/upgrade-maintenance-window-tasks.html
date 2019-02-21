@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Migrating Uyuni version 3.1 to 3.2 :: Uyuni Documentation</title>
+    <title>Working Within a Maintenance Window :: Uyuni Documentation</title>
     <meta name="generator" content="Antora 1.1.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -166,10 +166,10 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
-    <a class="nav-link" href="../client-configuration/client-cfg-overview.html#client-cfg-overview">Overview</a>
+    <a class="nav-link" href="../client-configuration/client-cfg-overview.html">Overview</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/client-cfg-scc.html#client-cfg-scc">SUSE Customer Center</a>
+    <a class="nav-link" href="../client-configuration/client-cfg-scc.html">SUSE Customer Center</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/client-cfg-activation-keys.html">Activation Keys</a>
@@ -178,7 +178,7 @@
     <a class="nav-link" href="../client-configuration/client-cfg-traditional-vs-salt.html">Traditional VS Salt</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../client-configuration/client-cfg-bootstrapping.html#client-cfg-bootstrapping">Bootstrapping</a>
+    <a class="nav-link" href="../client-configuration/client-cfg-bootstrapping.html">Bootstrapping</a>
   </li>
 </ul>
   </li>
@@ -232,47 +232,34 @@
     <span class="nav-text">Upgrade Guide</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#intro">[intro]</a>
+    <a class="nav-link" href="upgrade-migration-overview.html">Overview</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migration-overview.html#bp.sp.migration.sp.intro">migration-overview.adoc#bp.sp.migration.sp.intro</a>
+    <a class="nav-link" href="upgrade-server-upgrade.html">Server Update</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="sp-migration.html#bp.sp.migration.sp">sp-migration.adoc#bp.sp.migration.sp</a>
+    <a class="nav-link" href="upgrade-migrate-2x-3x.html">Server Upgrade 2.x &#8594; 3.x</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="server-upgrade.html#update.suse.manager">server-upgrade.adoc#update.suse.manager</a>
+    <a class="nav-link" href="upgrade-migrate-3x-3x.html">Server Upgrade 3.x &#8594; 3.x</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migrate-2x-3x.html#bp.chap.mgr.migration">migrate-2x-3x.adoc#bp.chap.mgr.migration</a>
+    <a class="nav-link" href="upgrade-migrate-3x-4x.html">Server Upgrade 3.x &#8594; 4.x</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="migrate-3x-4x.html">Migrate the Server 3.x &#8594; 4.x</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#bp.sp.migration.version">migrate-3_1-3_2.adoc#bp.sp.migration.version</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="perform-service-pack-upgrade.html">Performing a Service Pack Upgrade</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="maintenance-window-steps.html">Maintenance Window Tasks</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="troubleshooting-upgrades.html">Troubleshooting</a>
-  </li>
-</ul>
-  </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="0">
-<ul class="nav-list">
-  <li class="nav-item" data-depth="1">
     <button class="nav-toggle"></button>
-    <span class="nav-text">Administration Guide</span>
+    <a class="nav-link" href="upgrade-sp-migration.html">Service Pack Migration</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="upgrade-perform-sp-migration.html">Migrate to a New Service Pack</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="upgrade-maintenance-window-tasks.html">Maintenance Window Tasks</a>
+  </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/intro.html#admin-manual-introduction">Introduction</a>
+    <a class="nav-link" href="upgrade-troubleshooting-upgrades.html">Troubleshooting Upgrades</a>
   </li>
 </ul>
   </li>
@@ -376,6 +363,19 @@
 </ul>
   </li>
 </ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Administration Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/intro.html#admin-manual-introduction">Introduction</a>
   </li>
 </ul>
   </li>
@@ -578,167 +578,17 @@
   <ul>
     <li class="crumb"><a href="../index.html">Uyuni</a></li>
     <li class="crumb">Upgrade Guide</li>
-    <li class="crumb"><a href="#bp.sp.migration.version">migrate-3_1-3_2.adoc#bp.sp.migration.version</a></li>
+    <li class="crumb"><a href="upgrade-maintenance-window-tasks.html">Maintenance Window Tasks</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework-builder/docs/modules/upgrade/pages/migrate-3_1-3_2.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/ia-rework-builder/docs/modules/upgrade/pages/upgrade-maintenance-window-tasks.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>Migrating Uyuni version 3.1 to 3.2</h1>
+<h1>Working Within a Maintenance Window</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The migration can either be done with the Online Migration tool (YaST) or with the Zypper command line tool.</p>
-</div>
-<div class="paragraph">
-<div class="title">Requirements</div>
-<p>Uyuni 4.0 requires SLES 12 SP3 or later, with PostgreSQL version 9.6.
-Check the release notes for more information about these requirements.
-If you want to upgrade from an earlier version of Uyuni, check the relevant product documentation.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title">Reduce Installation Size</div>
-<div class="paragraph">
-<p>When performing the migration, YaST will install all recommended packages.
-Especially in the case of custom minimal installations, this may increase the installation size of the system significantly.</p>
-</div>
-<div class="paragraph">
-<p>To change this default behavior and allow only required packages, adjust <code class="path">/etc/zypp/zypp.conf</code> and set the following variable:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>solver.onlyRequires = true
-installRecommends=false # or commented</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This changes the behavior of all package operations, such as the installation of patches or new packages.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.sp.migration.version.yast"><a class="anchor" href="#bp.sp.migration.version.yast"></a><a class="link" href="#bp.sp.migration.version.yast">Using YaST</a></h2>
-<div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="title">Checking PostgreSQL Version</div>
-<div class="paragraph">
-<p>Before migrating to SLES 12 SP3 or later, check whether PostgreSQL is already updated to version 9.6.
-For more information, see <a href="#bp.postgresql.database.migration">[bp.postgresql.database.migration]</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To perform the migration with YaST, use the <b class="menuref">Online Migration</b> tool:</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Migrating using YaST</div>
-<ol class="arabic">
-<li>
-<p>If you are logged into a GNOME session running on the machine you are going to update, switch to a text console.
-Running the update from within a GNOME session is not recommended.
-This does not apply when being logged in from a remote machine (unless you are running a VNC session with GNOME).</p>
-</li>
-<li>
-<p>Start in YaST<span class="menuseq"><b class="menu">System</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Online Migration</b></span> (<code class="command">yast2 migration</code>).
-YaST will show possible migration targets with detailed summaries.</p>
-<div class="paragraph">
-<p>In case of trouble, resolve the following issues first:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If the <b class="menuref">Online Migration</b> is not available, install the <span class="package">yast2-migration</span> package and its dependencies.
-Restart YaST , otherwise the newly installed module will not be shown in the control center.</p>
-</li>
-<li>
-<p>If there are &#8220;old&#8221; online updates available for installation, the migration tool will warn and ask to install them now before starting the actual migration.
-It is recommended to install all updates before proceeding.</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.sp.migration.version.zypper"><a class="anchor" href="#bp.sp.migration.version.zypper"></a><a class="link" href="#bp.sp.migration.version.zypper">Using zypper</a></h2>
-<div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-<div class="title">Checking PostgreSQL Version</div>
-<div class="paragraph">
-<p>Before migrating to SLES 12 SP3 or later, check whether PostgreSQL is already updated to version 9.6.
-For more information, see <a href="#bp.postgresql.database.migration">[bp.postgresql.database.migration]</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To perform the migration with Zypper on the command-line, use the <code class="command">zypper migration</code> subcommand tool:</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Migrating using <code class="command">zypper migration</code></div>
-<ol class="arabic">
-<li>
-<p>If you are logged into a GNOME session running on the machine you are going to update, switch to a text console.
-Running the update from within a GNOME session is not recommended.
-This does not apply when being logged in from a remote machine (unless you are running a VNC session with GNOME).</p>
-</li>
-<li>
-<p>The <code class="command">zypper migration</code> subcommand show possible migration targets and a summary.</p>
-<div class="paragraph">
-<p>In case of trouble, resolve the following issues first:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>If the <code class="command">migration</code> subcommand is not available install the <span class="package">zypper-migration-plugin</span> package and its dependencies.</p>
-</li>
-<li>
-<p>If there are &#8220;old&#8221; online updates available for installation, the migration tool will warn and ask to install them now before starting the actual migration.
-It is recommended to install all updates before proceeding.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>If more than one migration target is available for your system, select one from the list (specify the number).</p>
-</li>
-<li>
-<p>Read the notification and update the Uyuni database schema as described (<code class="command">spacewalk-schema-upgrade</code>).</p>
-</li>
-<li>
-<p>Make sure Uyuni is up and running (<code class="command">spacewalk-service start</code>).</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>After finishing the migration procedure Uyuni 3.2 on SLES 12 SP3 or later is available to be used.</p>
+<p>Coming Soon&#8230;&#8203;</p>
 </div>
 </div>
 </div>
