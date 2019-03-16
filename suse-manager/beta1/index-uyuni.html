@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation Release Notes for Version 4.0 :: SUSE Manager Documentation</title>
-    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/beta1/release-notes-version-4.0.html">
+    <title>SUSE Manager 4.0 Draft Documentation :: SUSE Manager Documentation</title>
+    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/beta1/index-uyuni.html">
     <meta name="generator" content="Antora 1.1.1">
     <link rel="stylesheet" href="../../_/css/site.css">
     <link rel="stylesheet" href="../../_/css/site-extra.css">
@@ -81,7 +81,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="release-notes-version-4.0.html">Release Notes</a>
   </li>
 </ul>
@@ -1128,224 +1128,82 @@
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
     <li class="crumb"><a href="index-suma.html">SUSE Manager</a></li>
-    <li class="crumb"><a href="release-notes-version-4.0.html">Release Notes</a></li>
+    <li class="crumb"><a href="index-uyuni.html">SUSE Manager 4.0 Draft Documentation</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/beta1/modules/ROOT/pages/release-notes-version-4.0.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/beta1/modules/ROOT/pages/index-uyuni.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>Documentation Release Notes for Version 4.0</h1>
+<h1>SUSE Manager 4.0 Draft Documentation</h1>
 <div class="sect1">
-<h2 id="_latest_changes"><a class="anchor" href="#_latest_changes"></a><a class="link" href="#_latest_changes">Latest Changes</a></h2>
+<h2 id="_what_is_suse_manager"><a class="anchor" href="#_what_is_suse_manager"></a><a class="link" href="#_what_is_suse_manager">What is SUSE Manager?</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>V4.0 March 1, 2019</p>
-</div>
-<div class="sect2">
-<h3 id="_updated_documentation_structure"><a class="anchor" href="#_updated_documentation_structure"></a><a class="link" href="#_updated_documentation_structure">Updated Documentation Structure</a></h3>
-<div class="paragraph">
-<p>We have received an overwhelming amount of positive feedback about our documentation over the years, but we have also received some excellent ideas for improvement.
-That is how we know that the content we have is great, but it was sometimes difficult to find.
-In this release, we have reorganized our documentation and updated our tooling to make it clearer where information is, and make it easier for you to find the content you need, when you need it.</p>
+<p>SUSE Manager is a solution for organizations that require absolute control over maintenance and package deployment on their servers.
+SUSE Manager enables you to manage large sets of Linux systems and keep them up to date, with automated software management, asset management, and system provisioning.
+SUSE Manager allows you to maintain a high level of security while effectively managing system life-cycle requirements.</p>
 </div>
 <div class="paragraph">
-<p>Please keep the feedback coming!
-In this new layout, you can propose changes directly by clicking the <b class="button">Edit this Page</b> button.
-Otherwise, you can always email us at <a href="mailto:TBD@suse.de">TBD@suse.de</a>
-TODO:: check email address</p>
+<p>SUSE Manager uses <em>Salt</em> to provide event-driven configuration and management control.
+The Salt-master orchestrates thousands of Salt-minions (SUSE Manager Clients) using remote execution.</p>
 </div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
 <div class="paragraph">
-<p>Do not use this documentation for production!
-The documentation on this site is being offered as a preview of changes to come.
-They are for testing purposes only.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_goals_for_this_release"><a class="anchor" href="#_goals_for_this_release"></a><a class="link" href="#_goals_for_this_release">Goals for this Release</a></h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#cleanup-ia">Content Cleanup</a></p>
-</li>
-<li>
-<p><a href="#search">Real Time Search</a></p>
-</li>
-<li>
-<p><a href="#new-ui">Antora Static Site</a></p>
-</li>
-<li>
-<p><a href="#view-branches">Documentation by Version</a></p>
-</li>
-<li>
-<p><a href="#contribute">User Contributions</a></p>
-</li>
-<li>
-<p><a href="#publishing">Faster Publishing</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="cleanup-ia"><a class="anchor" href="#cleanup-ia"></a><a class="link" href="#cleanup-ia">Content Cleanup</a></h3>
-<div class="paragraph">
-<p>All SUSE Manager books have been reworked into a new structure.</p>
-</div>
-<div class="sect3">
-<h4 id="_old_naming_format"><a class="anchor" href="#_old_naming_format"></a><a class="link" href="#_old_naming_format">Old Naming Format</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Getting Started</p>
-</li>
-<li>
-<p>Best Practices</p>
-</li>
-<li>
-<p>Reference</p>
-</li>
-<li>
-<p>Advanced Topics</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_new_naming_format"><a class="anchor" href="#_new_naming_format"></a><a class="link" href="#_new_naming_format">New Naming Format</a></h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Installation Guide (Requirements, supported platforms, installation methods, etc)</p>
-</li>
-<li>
-<p>Client Configuration Guide (Configuring and connecting clients to SUSE Manager)</p>
-</li>
-<li>
-<p>Upgrade Guide (Migrate and update clients and SUSE Manager)</p>
-</li>
-<li>
-<p>Reference Manual (Comprehensive guide to the Web UI)</p>
-</li>
-<li>
-<p>Administration Guide (Maintenance and administration tasks in SUSE Manager)</p>
-</li>
-<li>
-<p>Salt Guide (A comprehensive guide to Salt for system administrators)</p>
-</li>
-<li>
-<p>Architecture (Details on components, salt/traditional architectures, and diagrams)</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="search"><a class="anchor" href="#search"></a><a class="link" href="#search">Real Time Search</a></h3>
-<div class="paragraph">
-<p>We have added a prototype of real time search using Algolia.
-We are still developing an alternative for offline reading.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Do not use this feature for production!
-The search feature is currently a prototype and points to development and testing sources.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="new-ui"><a class="anchor" href="#new-ui"></a><a class="link" href="#new-ui">Antora Static Site</a></h3>
-<div class="paragraph">
-<p>All SUSE Manager documentation is now written in AsciiDoc and built with Antora.
-This makes it significantly easier for readers to become contributors by being able to edit the page directly in plain text (no more XML!).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="view-branches"><a class="anchor" href="#view-branches"></a><a class="link" href="#view-branches">Documentation by Version</a></h3>
-<div class="paragraph">
-<p>Beginning with SUSE Manager&#160;4.0, you will be able to select which version of the documentation you want to view, by using the version switcher at the bottom of the navigation pane.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="contribute"><a class="anchor" href="#contribute"></a><a class="link" href="#contribute">User Contributions</a></h3>
-<div class="paragraph">
-<p>You may now contribute directly to any document you are currently viewing.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Contributing to documentation</div>
-<ol class="arabic">
-<li>
-<p>Select the <b class="button">Edit this page</b> link (Top right of the document)</p>
-</li>
-<li>
-<p>You will be directed to Github. Login, make your changes then submit a pull request.</p>
-</li>
-<li>
-<p>Your request will be reviewed by a technical writer and published.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="publishing"><a class="anchor" href="#publishing"></a><a class="link" href="#publishing">Faster Publishing</a></h3>
-<div class="paragraph">
-<p>Our new documentation site implements continuous integration with TravisCI.
-As soon as as change is approved, TravisCI rebuilds the documentation and updates the published version within 3-5 minutes.</p>
-</div>
+<p>SUSE Manager offers seamless management of SUSE Linux Enterprise, Red Hat Enterprise Linux, Ubuntu, CentOS, and Scientific Linux client systems and is fully compatible with Red Hat Satellite Server.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_known_issues"><a class="anchor" href="#_known_issues"></a><a class="link" href="#_known_issues">Known Issues</a></h2>
+<h2 id="_available_draft_documentation"><a class="anchor" href="#_available_draft_documentation"></a><a class="link" href="#_available_draft_documentation">Available Draft Documentation</a></h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_pdf_output"><a class="anchor" href="#_pdf_output"></a><a class="link" href="#_pdf_output">PDF Output</a></h3>
 <div class="paragraph">
-<p>We do not currently have PDF versions of books available.
-This is expected in the beta2 release.</p>
+<p>The following documentation is available for SUSE Manager version 4.0.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_cross_references"><a class="anchor" href="#_cross_references"></a><a class="link" href="#_cross_references">Cross references</a></h3>
-<div class="paragraph">
-<p>Cross references between docs are not currently working as expected, as a result of the conversion process.
-During the beta, the correct references will be added and these will begin to work correctly.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_missing_content"><a class="anchor" href="#_missing_content"></a><a class="link" href="#_missing_content">Missing Content</a></h3>
-<div class="paragraph">
-<p>You might notice some placeholder text or blank pages in some sections.
-This is either content that we have not yet written, or content that has not yet been moved from its old home.
-These will be corrected during the beta.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_images"><a class="anchor" href="#_images"></a><a class="link" href="#_images">Images</a></h3>
-<div class="paragraph">
-<p>Some images might be missing, or might fail to load.
-This is either because we need to take new screenshots, develop new graphics, or content that has not yet been moved from its old home.
-These will be corrected during the beta.</p>
-</div>
-</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Available Draft Documentation</th>
+<th class="tableblock halign-left valign-top">Formats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Installation Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="installation/install-intro.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_installation_guide.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Client Configuration Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="client-configuration/client-config-overview.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_client_configuration_guide.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Upgrade Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="upgrade/upgrade-overview.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_upgrade_guide.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="reference/intro.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_reference_manual.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administration Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="administration/intro.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_administration_guide.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Salt Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="salt/intro.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_salt_guide.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Retail Guide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="retail/retail-introduction.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_retail_guide.pdf">PDF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Architecture</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="architecture/architecture-intro.html" class="page">HTML</a> <a href="https://www.uyuni-project.org/uyuni-docs/pdf/uyuni_architecture.pdf">PDF</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>
