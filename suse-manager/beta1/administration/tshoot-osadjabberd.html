@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troubleshooting :: SUSE Manager Documentation</title>
-    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/beta1/administration/troubleshooting.html">
+    <title>Troubleshooting OSAD and jabberd :: SUSE Manager Documentation</title>
+    <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/beta1/administration/tshoot-osadjabberd.html">
     <meta name="generator" content="Antora 1.1.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/css/site-extra.css">
@@ -172,6 +172,9 @@
     <a class="nav-link" href="../client-configuration/traditional-vs-salt.html">Traditional VS Salt</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../client-configuration/channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../client-configuration/bootstrapping-clients.html">Bootstrapping</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -295,7 +298,37 @@
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
+    <button class="nav-toggle"></button>
     <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/top-bar.html">Top Bar</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/left-navigation-bar.html">Left Navigation Bar</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/categories-and-pages.html">Main Menu Categories</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/tabs-subtabs.html">Tabs and Subtabs</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/patch-alert-icons.html">Patch Alert Icons</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/notification-messages-icon.html">Notification Messages Icon</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/navigation-search.html">Search</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/systems-selected.html">Systems Selected</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/navigation/navigation-lists.html">Navigation Lists</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-toggle"></button>
@@ -330,7 +363,7 @@
   </li>
   <li class="nav-item" data-depth="4">
     <button class="nav-toggle"></button>
-    <span class="nav-text">Your Organization</span>
+    <a class="nav-link" href="../reference/home/your-organization-menu.html">Your Organization</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="../reference/home/your-organization-configuration.html">Configuration</a>
@@ -476,8 +509,14 @@
     <a class="nav-link" href="../reference/patches/patches-menu.html">Patches</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/patches/applying-patches.html">Applying Patches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/patches/patch-details.html">Patch Details</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <button class="nav-toggle"></button>
-    <a class="nav-link" href="../reference/patches/patch-list.html">Patch List</a>
+    <span class="nav-text">Patch List</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="../reference/patches/patch-list-relevant.html">Relevant</a>
@@ -494,6 +533,9 @@
     <button class="nav-toggle"></button>
     <a class="nav-link" href="../reference/patches/manage-patches.html">Manage Patches</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../reference/patches/create-and-edit-patches.html">Create and Edit Patches</a>
+  </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="../reference/patches/manage-patches-published.html">Published</a>
   </li>
@@ -832,6 +874,9 @@
     <a class="nav-link" href="image-management.html">Image Management</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="channel-management.html">Channel Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="live-patching.html">Live Patching</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -841,13 +886,16 @@
     <a class="nav-link" href="kubernetes.html">Kubernetes</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="virtualization.html">Virtualization</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="virtual-hosts.html">Virtual Hosts</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="security.html">Security</a>
+    <a class="nav-link" href="master-fingerprint.html">Master Fingerprint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="repo-metadata.html">Repository Metadata</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="mirror-sources.html">Mirror Sources</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="auth-methods.html">Authentication Methods</a>
@@ -859,13 +907,31 @@
     <a class="nav-link" href="backup-restore.html">Backing Up and Restoring</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="optimization-scalability.html">Optimization and Scalability</a>
-  </li>
-  <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+    <a class="nav-link" href="tuning-apachetomcat.html">Tuning Apache and Tomcat</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="autoyast-example.html">AutoYaST Example</a>
+    <a class="nav-link" href="tuning-largedeploys.html">Tuning Large Deployments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tshoot-corruptrepo.html">Troubleshooting Corrupt Repositores</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tshoot-localcert.html">Troubleshooting Local Certificates</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tshoot-packages.html">Troubleshooting Packages</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tshoot-reports.html">Troubleshooting Reports</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="common_gfdl1.2_i.html">License</a>
@@ -1129,285 +1195,13 @@
   <ul>
     <li class="crumb"><a href="../index-suma.html">SUSE Manager</a></li>
     <li class="crumb"><a href="intro.html">Administration Guide</a></li>
-    <li class="crumb"><a href="troubleshooting.html">Troubleshooting</a></li>
+    <li class="crumb"><a href="tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/beta1/modules/administration/pages/troubleshooting.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/beta1/modules/administration/pages/tshoot-osadjabberd.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>Troubleshooting</h1>
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>This chapter provides guidance on registering cloned systems with SUSE Manager.
-This includes both Salt and Traditional clients.
-For more information, see <a href="https://www.novell.com/support/kb/doc.php?id=7012170" class="bare">https://www.novell.com/support/kb/doc.php?id=7012170</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.chapt.suma3.troubleshooting.registering.cloned.salt.systems"><a class="anchor" href="#bp.chapt.suma3.troubleshooting.registering.cloned.salt.systems"></a><a class="link" href="#bp.chapt.suma3.troubleshooting.registering.cloned.salt.systems">Registering Cloned Salt Minions</a></h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<div class="title">Procedure: Registering a Cloned Salt Minion with SUSE Manager</div>
-<ol class="arabic">
-<li>
-<p>Clone your system (for example using the existing cloning mechanism of your favorite Hypervisor)</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title">Quick Tips</div>
-Each step in this section is performed on the cloned system, this procedure does not manipulate the original system, which will still be registered to SUSE Manager.
-The cloned virtual machine should have a different UUID from the original (this UUID is generated by your hypervisor) or SUSE Manager will overwrite the original system data with the new one.
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Make sure your machines have different hostnames and IP addresses, also check that /etc/hosts contains the changes you made and the correct host entries.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The next step you take will depend on the Operating System of the clone.</p>
-</div>
-<div class="paragraph">
-<p>The following scenario can occur after on-boarding cloned Salt minions.
-If after accepting all cloned minion keys from the onboarding page and you see only one minion on the System Overview page, this is likely due to these machines being clones of the original and using a duplicate machine-id.
-Perform the following steps to resolve this conflict based on OS.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: SLES 12 Registering Salt Clones</div>
-<ol class="arabic">
-<li>
-<p>SLES 12: If your machines have the same machine ids then delete the file on each minion and recreate it:</p>
-<div class="listingblock">
-<div class="content">
-<pre># rm /etc/machine-id
-# rm /var/lib/dbus/machine-id
-# dbus-uuidgen --ensure
-# systemd-machine-id-setup</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: SLES 11 Registering Salt Clones</div>
-<ol class="arabic">
-<li>
-<p>SLES 11: As there is no systemd machine id, generate one from dbus:</p>
-<div class="listingblock">
-<div class="content">
-<pre># rm /var/lib/dbus/machine-id
-# dbus-uuidgen --ensure</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>If your machines still have the same minion id then delete the minion_id file on each minion (FQDN will be used when it is regenerated on minion restart):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre># rm /etc/salt/minion_id</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Finally delete accepted keys from Onboarding page and system profile from SUSE Manager, and restart the minion with:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre># systemctl restart salt-minion</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should be able to re-register them again, but each minion will use a different '/etc/machine-id' and should now be correctly displayed on the System Overview page.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.chapt.suma3.troubleshooting.registering.cloned.traditional.systems"><a class="anchor" href="#bp.chapt.suma3.troubleshooting.registering.cloned.traditional.systems"></a><a class="link" href="#bp.chapt.suma3.troubleshooting.registering.cloned.traditional.systems">Registering Cloned Traditional Systems</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section provides guidance on troubleshooting cloned traditional systems registered via bootstrap.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Registering a Cloned System with SUSE Manager (Traditional Systems)</div>
-<ol class="arabic">
-<li>
-<p>Clone your system (using your favorite hypervisor.)</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title">Quick Tips</div>
-Each step in this section is performed on the cloned system, this procedure does not manipulate the original system, which will still be registered to SUSE Manager.
-The cloned virtual machine should have a different UUID from the original (this UUID is generated by your hypervisor) or SUSE Manager will overwrite the original system data with the new one.
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Change the Hostname and IP addresses, also make sure /etc/hosts contains the changes you made and the correct host entries.</p>
-</li>
-<li>
-<p>Stop rhnsd daemon with:</p>
-<div class="listingblock">
-<div class="content">
-<pre># /etc/init.d/rhnsd stop</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>or alternativly:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre># rcrhnsd stop</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Stop osad with:</p>
-<div class="listingblock">
-<div class="content">
-<pre># /etc/init.d/osad stop</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>or alternativly:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre># rcosad stop</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Remove the osad authentifcation configuration file and the systemid with:</p>
-<div class="listingblock">
-<div class="content">
-<pre># rm -f /etc/sysconfig/rhn/{osad-auth.conf,systemid}</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The next step you take will depend on the Operating System of the clone.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: SLES 12 Registering A Cloned Traditional System</div>
-<ol class="arabic">
-<li>
-<p></p>
-<div class="paragraph">
-<p>If your machines have the same machine ids then delete the file on each client and recreate it:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre># rm /etc/machine-id
-# rm /var/lib/dbus/machine-id
-# dbus-uuidgen --ensure
-# systemd-machine-id-setup</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Remove the following credential files:</p>
-<div class="listingblock">
-<div class="content">
-<pre># rm  -f /etc/zypp/credentials.d/{SCCcredentials,NCCcredentials}</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Re-run the bootstrap script. You should now see the cloned system in SUSE Manager without overwriting the system it was cloned from.</p>
-</li>
-</ol>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: SLES 11 Registering A Cloned Traditional System</div>
-<ol class="arabic">
-<li>
-<p>Continued from section 1 step 5:</p>
-<div class="listingblock">
-<div class="content">
-<pre># suse_register -E</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>(--erase-local-regdata, Erase all local files created from a previous executed registration.
-This option make the system look like never registered)</p>
-</div>
-</li>
-<li>
-<p>Re-run the bootstrap script. You should now see the cloned system in SUSE Manager without overwriting the system it was cloned from.</p>
-</li>
-</ol>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: SLES 10 Registering A Cloned Traditional System</div>
-<ol class="arabic">
-<li>
-<p>Continued from section 1 step 5:</p>
-<div class="listingblock">
-<div class="content">
-<pre># rm -rf /etc/{zmd,zypp}</pre>
-</div>
-</div>
-</li>
-<li>
-<p></p>
-<div class="listingblock">
-<div class="content">
-<pre># ¡¡¡¡¡ everthing in /var/lib/zypp/ except /var/lib/zypp/db/products/ !!!!!
-# check whether this command works for you
-# rm -rf /var/lib/zypp/!(db)</pre>
-</div>
-</div>
-</li>
-<li>
-<p></p>
-<div class="listingblock">
-<div class="content">
-<pre># rm -rf /var/lib/zmd/</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Re-run the bootstrap script. You should now see the cloned system in SUSE Manager without overwriting the system it was cloned from.</p>
-</li>
-</ol>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: RHEL 5,6 and 7</div>
-<ol class="arabic">
-<li>
-<p>Continued from section 1 step 5:</p>
-<div class="listingblock">
-<div class="content">
-<pre># rm  -f /etc/NCCcredentials</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Re-run the bootstrap script. You should now see the cloned system in SUSE Manager without overwriting the system it was cloned from.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
+<h1>Troubleshooting OSAD and jabberd</h1>
 <div class="sect1">
 <h2 id="bp.chapt.suma3.troubleshooting.osad.jabberd"><a class="anchor" href="#bp.chapt.suma3.troubleshooting.osad.jabberd"></a><a class="link" href="#bp.chapt.suma3.troubleshooting.osad.jabberd">Typical OSAD/jabberd Challenges</a></h2>
 <div class="sectionbody">
@@ -1615,327 +1409,6 @@ The following procedures provide information on capturing data from both the cli
 </li>
 </ol>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.chapt.suma3.troubleshooting.spacewalk-report"><a class="anchor" href="#bp.chapt.suma3.troubleshooting.spacewalk-report"></a><a class="link" href="#bp.chapt.suma3.troubleshooting.spacewalk-report">Gathering Information with <code class="command">spacewalk-report</code></a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The <code class="command">spacewalk-report</code> command is used to produce a variety of reports for system administrators.
-These reports can be helpful for taking inventory of your entitlements, subscribed systems, users, and organizations.
-Using reports is often simpler than gathering information manually from the SUSE Manager Web UI, especially if you have many systems under management.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title"><code class="package">spacewalk-reports</code> Package</div>
-To use spacewalk-report, you must have the <code class="package">spacewalk-reports</code> package installed.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p><code class="command">spacewalk-report</code> allows administrators to organize and display reports about content, systems, and user resources across SUSE Manager.
-Using <code class="command">spacewalk-report</code>, you can receive reports on:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>System Inventory: lists all of the systems registered to SUSE Manager.</p>
-</li>
-<li>
-<p>Entitlements: lists all organizations on SUSE Manager, sorted by system or channel entitlements.</p>
-</li>
-<li>
-<p>Patches: lists all the patches relevant to the registered systems and sorts patches by severity, as well as the systems that apply to a particular patch.</p>
-</li>
-<li>
-<p>Users: lists all the users registered to SUSE Manager and any systems associated with a particular user.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><code class="command">spacewalk-report</code> allows administrators to organize and display reports about content, systems, and user resources across SUSE Manager.
-To get the report in CSV format, run the following at the command line of your SUSE Manager server.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>spacewalk-report report_name</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The following reports are available:</p>
-</div>
-<table id="tab.bp.troubleshooting.spacewalk-report" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. <code class="command">spacewalk-report</code> Reports</caption>
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Report</th>
-<th class="tableblock halign-left valign-top">Invoked as</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Channel Packages</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">channel-packages</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of packages in a channel.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Channel Report</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">channels</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Detailed report of a given channel.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cloned Channel Report</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">cloned-channels</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Detailed report of cloned channels.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Custom Info</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">custom-info</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">System custom information.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Entitlements</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">entitlements</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all organizations on SUSE Manager with their system or channel entitlements.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Patches in Channels</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">errata-channels</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lists of patches in channels.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Patches Details</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">errata-list</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all patches that affect systems registered to SUSE Manager.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All patches</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">errata-list-all</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Complete list of all patches.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Patches for Systems</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">errata-systems</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lists applicable patches and any registered systems that are affected.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Host Guests</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">host-guests</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of host-guests mapping.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inactive Systems</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">inactive-systems</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of inactive systems.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">System Inventory</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">inventory</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of systems registered to the server, together with hardware and software information.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kickstart Trees</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">kickstartable-trees</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of kickstartable trees.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">All Upgradable Versions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">packages-updates-all</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of all newer package versions that can be upgraded.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Newest Upgradable Version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">packages-updates-newest</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of only newest package versions that can be upgraded.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Result of SCAP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">scap-scan</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Result of OpenSCAP sccdf eval.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Result of SCAP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">scap-scan-results</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Result of OpenSCAP sccdf eval, in a different format.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">System Data</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">splice-export</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">System data needed for splice integration.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">System Groups</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">system-groups</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of system groups.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Activation Keys for System Groups</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">system-groups-keys</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of activation keys for system groups.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Systems in System Groups</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">system-groups-systems</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of systems in system groups.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">System Groups Users</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">system-groups-users</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Report of system groups users.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Installed Packages</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">system-packages-installed</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of packages installed on systems.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Users in the System</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">users</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lists all users registered to SUSE Manager.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Systems administered</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code class="command">users-systems</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">List of systems that individual users can administer.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>For more information about an individual report, run <code class="command">spacewalk-report</code> with the option <code class="option">--info</code> or <code class="option">--list-fields-info</code> and the report name.
-The description and list of possible fields in the report will be shown.</p>
-</div>
-<div class="paragraph">
-<p>For further information on program invocations and options, see the <code class="literal">spacewalk-report(8)</code> man page as well as the <code class="option">--help</code>parameter of the <code class="command">spacewalk-report</code>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.troubleshooting.timeouts"><a class="anchor" href="#bp.troubleshooting.timeouts"></a><a class="link" href="#bp.troubleshooting.timeouts">RPC Connection Timeout Settings</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p></p>
-</div>
-<div class="paragraph">
-<p></p>
-</div>
-<div class="paragraph">
-<p>RPC connection timeouts are configurable on the SUSE Manager server, SUSE Manager Proxy server, and the clients.
-For example, if package downloads take longer then expected, you can increase timeout values. <code class="command">spacewalk-proxy restart</code> should be run after the setting is added or modified.</p>
-</div>
-<div class="paragraph">
-<p>Set the following variables to a value in seconds specifying how long an RPC connection may take at maximum:</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Server -<code class="path">/etc/rhn/rhn.conf</code> </dt>
-<dd>
-<div class="listingblock">
-<div class="content">
-<pre>server.timeout =`number`</pre>
-</div>
-</div>
-</dd>
-<dt class="hdlist1">Proxy Server -<code class="path">/etc/rhn/rhn.conf</code> </dt>
-<dd>
-<div class="listingblock">
-<div class="content">
-<pre>proxy.timeout =`number`</pre>
-</div>
-</div>
-</dd>
-<dt class="hdlist1">SUSE Linux Enterprise Server Clients (using <span class="package">zypp-plugin-spacewalk</span> ) -<code class="path">/etc/zypp/zypp.conf</code> </dt>
-<dd>
-<div class="listingblock">
-<div class="content">
-<pre>## Valid values:  [0,3600]
-## Default value: 180
-download.transfer_timeout = 180</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>This is the maximum time in seconds that a transfer operation is allowed to take.
-This is useful for preventing batch jobs from hanging for hours due to slow networks or links going down.
-If limiting operations to less than a few minutes, you risk aborting perfectly normal operations.</p>
-</div>
-</dd>
-<dt class="hdlist1">Red Hat Enterprise Linux Clients (using <span class="package">yum-rhn-plugin</span> ) -<code class="path">/etc/yum.conf</code> </dt>
-<dd>
-<div class="listingblock">
-<div class="content">
-<pre>timeout =`number`</pre>
-</div>
-</div>
-</dd>
-</dl>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.troubleshooting.package.inconsistency"><a class="anchor" href="#bp.troubleshooting.package.inconsistency"></a><a class="link" href="#bp.troubleshooting.package.inconsistency">Client/Server Package Inconsistency</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>In some cases, updates are available in the web interface, but not appearing on the client.
-If you schedule an update on the client, it will fail with an error stating that no updates are available.
-This can be caused by a metadata regeneration problem, or because update packages have been locked.</p>
-</div>
-<div class="paragraph">
-<p>The notice that updates are available will appear immediately, but new metadata is only generated on the server after synchronizing.
-In this case, an inconsistency can occur if taskomatic crashes, or because taskomatic is still running and creating new metadata.</p>
-</div>
-<div class="paragraph">
-<p>To address this issue, check the <code class="path">/var/log/rhn/rhn_taskomatic_daemon.log</code> file to determine if any processess are still running, or an exception which could indicate a crash.
-In the case of a crash, restart taskomatic.</p>
-</div>
-<div class="paragraph">
-<p>Check package locks and exclude lists to determine if packages are locked or excluded on the client:</p>
-</div>
-<div class="paragraph">
-<p>On Expanded Support Platform, check <code class="path">/etc/yum.conf</code> and search for <code>exclude=</code>.</p>
-</div>
-<div class="paragraph">
-<p>On SUSE Linux Enterprise Server, use the <code class="command">zypper locks</code> command.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.troubleshooting.Corrupt.Repo.Data"><a class="anchor" href="#bp.troubleshooting.Corrupt.Repo.Data"></a><a class="link" href="#bp.troubleshooting.Corrupt.Repo.Data">Corrupted Repository Data</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>If the information in <code class="path">/var/cache/rhn/repodata/sles12-sp3-updates-x86_64</code> becomes out of date, it will cause problems with updating the server.
-The repository data file can be regenerated using the <code class="command">spacemd</code> command:</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Rebuild repodata file</div>
-<ol class="arabic">
-<li>
-<p>Remove all files from <code class="path">/var/cache/rhn/repodata/sles12-sp3-updates-x86_64</code></p>
-</li>
-<li>
-<p>Regenerate the file with <code>spacecmd softwarechannel_regenerateyumcache sles12-sp3-updates-x86_64</code></p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="bp.troubleshooting.Local.Issuer.Certificate"><a class="anchor" href="#bp.troubleshooting.Local.Issuer.Certificate"></a><a class="link" href="#bp.troubleshooting.Local.Issuer.Certificate">Unable to Get Local Issuer Certificate</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Some older bootstrap scripts will will create a link to the local certificate in the wrong place, which can cause problems with zypper returning an <code>Unrecognized error</code> about the local issuer certificate.
-In this case, ensure that the link to the local issuer certificate has been created in <code class="path">/etc/ssl/certs/</code>, and consider updating your bootstrap scripts.</p>
 </div>
 </div>
 </div>
