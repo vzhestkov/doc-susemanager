@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installing SUSE Manager Server on x86 :: SUSE Manager Documentation</title>
+    <title>Installing SUSE Manager Server :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/beta1/installation/install-server.html">
     <meta name="generator" content="Antora 1.1.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
@@ -96,15 +96,9 @@
     <a class="nav-link" href="install-intro.html">Introduction</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="install-overview.html">Overview</a>
-  </li>
-  <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
-    <span class="nav-text">Requirements</span>
+    <a class="nav-link" href="general-requirements.html">Requirements</a>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="general-requirements.html">General</a>
-  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="hardware-requirements.html">Hardware</a>
   </li>
@@ -118,23 +112,14 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
-    <span class="nav-text">First Installation</span>
+    <span class="nav-text">Installation</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="install-vm.html">Install VM</a>
-  </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="install-server.html">Install Server</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="install-server-setup.html">Server Setup</a>
+    <a class="nav-link" href="install-proxy.html">Install Proxy</a>
   </li>
-</ul>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <button class="nav-toggle"></button>
-    <span class="nav-text">IBM zSystems</span>
-<ul class="nav-list">
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="install-zsystems.html">Install IBM zSystems</a>
   </li>
@@ -142,10 +127,13 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
-    <span class="nav-text">Proxy</span>
+    <span class="nav-text">Setting Up</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="install-proxy.html">Install Proxy</a>
+    <a class="nav-link" href="server-setup.html">Server Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="proxy-setup.html">Proxy Setup</a>
   </li>
 </ul>
   </li>
@@ -179,6 +167,21 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../client-configuration/contact-methods.html">Client Contact Methods</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Registering Clients on a Proxy</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/client-proxy.html">Clients on a Proxy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/salt-client-proxy.html">Salt Clients on a Proxy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/script-client-proxy.html">Registering Clients on a Proxy with a Script</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
@@ -230,6 +233,15 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../client-configuration/subscription-management.html">Subscription Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../client-configuration/system-management.html">System Management</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/using-ssm.html">Using the System Set Manager</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../client-configuration/common_gfdl1.2_i.html">License</a>
@@ -342,7 +354,7 @@
   </li>
   <li class="nav-item" data-depth="4">
     <button class="nav-toggle"></button>
-    <span class="nav-text">User Account</span>
+    <a class="nav-link" href="../reference/home/user-account-menu.html">User Account Menu</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="../reference/home/user-account-your-account.html">Your Account</a>
@@ -554,6 +566,9 @@
     <a class="nav-link" href="../reference/software/software-menu.html">Software</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/software/channel-details.html">Channel Details</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <button class="nav-toggle"></button>
     <a class="nav-link" href="../reference/software/software-channel-list-menu.html">Channel List</a>
 <ul class="nav-list">
@@ -590,6 +605,9 @@
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/audit/system-details-audit.html">System Details Audit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/audit/audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -599,6 +617,9 @@
     <button class="nav-toggle"></button>
     <a class="nav-link" href="../reference/audit/openscap-menu.html">OpenSCAP</a>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../reference/audit/audit-openscap-overview.html">OpenSCAP Overview</a>
+  </li>
   <li class="nav-item" data-depth="5">
     <a class="nav-link" href="../reference/audit/openscap-all-scans.html">All Scans</a>
   </li>
@@ -800,58 +821,58 @@
     <a class="nav-link" href="../reference/spacecmd/spacecmd-functions.html">spacecmd Functions</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/activationkey_.html">activationkey_</a>
+    <a class="nav-link" href="../reference/spacecmd/activationkey_.html">activationkey_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/api.html">api</a>
+    <a class="nav-link" href="../reference/spacecmd/api.html">api</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/clear.html">clear</a>
+    <a class="nav-link" href="../reference/spacecmd/clear.html">clear</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/clear_caches.html">clear_caches</a>
+    <a class="nav-link" href="../reference/spacecmd/clear_caches.html">clear_caches</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/configchannel_.html">configchannel_</a>
+    <a class="nav-link" href="../reference/spacecmd/configchannel_.html">configchannel_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/cryptokey_.html">cryptokey_</a>
+    <a class="nav-link" href="../reference/spacecmd/cryptokey_.html">cryptokey_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/custominfo_.html">custominfo_</a>
+    <a class="nav-link" href="../reference/spacecmd/custominfo_.html">custominfo_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/distribution_.html">distribution_</a>
+    <a class="nav-link" href="../reference/spacecmd/distribution_.html">distribution_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/errata_.html">errata_</a>
+    <a class="nav-link" href="../reference/spacecmd/errata_.html">errata_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/filepreservation_.html">filepreservation_</a>
+    <a class="nav-link" href="../reference/spacecmd/filepreservation_.html">filepreservation_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/get_.html">get_</a>
+    <a class="nav-link" href="../reference/spacecmd/get_.html">get_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/group_.html">group_</a>
+    <a class="nav-link" href="../reference/spacecmd/group_.html">group_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/kickstart_.html">kickstart_</a>
+    <a class="nav-link" href="../reference/spacecmd/kickstart_.html">kickstart_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/list_proxies.html">list_proxies</a>
+    <a class="nav-link" href="../reference/spacecmd/list_proxies.html">list_proxies</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/login.html">login</a>
+    <a class="nav-link" href="../reference/spacecmd/login.html">login</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/logout.html">logout</a>
+    <a class="nav-link" href="../reference/spacecmd/logout.html">logout</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/org_.html">org_</a>
+    <a class="nav-link" href="../reference/spacecmd/org_.html">org_</a>
   </li>
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/spacecmd/functions/package_.html">package_</a>
+    <a class="nav-link" href="../reference/spacecmd/package_.html">package_</a>
   </li>
 </ul>
   </li>
@@ -913,25 +934,31 @@
     <a class="nav-link" href="../administration/tuning-largedeploys.html">Tuning Large Deployments</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-corruptrepo.html">Troubleshooting Corrupt Repositores</a>
+    <button class="nav-toggle"></button>
+    <span class="nav-text">Troubleshooting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-corruptrepo.html">Corrupt Repositores</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-localcert.html">Troubleshooting Local Certificates</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-localcert.html">Local Certificates</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-osadjabberd.html">OSAD and jabberd</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-packages.html">Troubleshooting Packages</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-packages.html">Packages</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-registerclones.html">Registering Cloned Clients</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-reports.html">Troubleshooting Reports</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-reports.html">Reports</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-rpctimeout.html">RPC Timeouts</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/common_gfdl1.2_i.html">License</a>
@@ -1195,149 +1222,24 @@
   <ul>
     <li class="crumb"><a href="../index-suma.html">SUSE Manager</a></li>
     <li class="crumb">Installation Guide</li>
-    <li class="crumb">First Installation</li>
+    <li class="crumb">Installation</li>
     <li class="crumb"><a href="install-server.html">Install Server</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/SUSE/doc-susemanager/edit/beta1/modules/installation/pages/install-server.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>Installing SUSE Manager Server on x86</h1>
+<h1>Installing SUSE Manager Server</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>This chapter provides the required KVM settings for installation of SUSE Linux Enterprise Server media as the base for SUSE Manager.
-A kernel virtual machine KVM combined with Virtual Machine Manager (<code class="command">virt-manager</code>) will be used as a sandbox for this installation.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_sles_kvm_requirements"><a class="anchor" href="#_sles_kvm_requirements"></a><a class="link" href="#_sles_kvm_requirements">SLES KVM Requirements</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Enter the following settings when creating a new virtual machine using <code class="command">virt-manager</code> (replace <code class="replaceable">version</code> with the actual version string):</p>
-</div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">KVM Settings for SLES</th>
-<th class="tableblock halign-left valign-top">Installation Method:</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Local install media (ISO image or CDROM)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OS:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Linux</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Version:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>SLE-[replaceable]</code>version<code>-Server-x86_64-GM-DVD1.iso</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Memory:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4096&#160;MB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CPUs:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Format:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ISO 3&#160;GB</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Disk Space:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">234&#160;GB split between 4&#160;GB swap and 130&#160;GB mounted at <code class="path">/var/spacewalk/</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Virtual Disk 1) and 50&#160;GB mounted at <code class="path">/var/lib/pgsql</code></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Virtual Disk 2).  The rest for the root partition (100&#160;GB+).</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name:</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">example-server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Network</p></td>
-</tr>
-</tbody>
-</table>
-<div class="sect2">
-<h3 id="sles.installation.within.kvm.media"><a class="anchor" href="#sles.installation.within.kvm.media"></a><a class="link" href="#sles.installation.within.kvm.media">SLES KVM Settings</a></h3>
-<div class="paragraph">
-<p>This section provides guidance on installation of SUSE Manager
-utilizing the full installation media with KVM and <code class="command">virt-manager</code>.
-This section assumes you have previously setup an account with SCC and downloaded the SLES full installation media.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Procedure: Preparing for SLES Installation</div>
-<ol class="arabic">
-<li>
-<p>In <code class="command">virt-manager</code> select <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">New Virtual Machine</b></span>.</p>
-</li>
-<li>
-<p>Select <b class="button">Local install media (ISO image or CDROM)</b>.</p>
-</li>
-<li>
-<p>Ensure <b class="button">Use ISO Image</b> is selected then click <b class="button">Browse</b> and locate the full SLES image you downloaded from your SCC account.</p>
-</li>
-<li>
-<p>Configure your machine with at least 4096 MB RAM and a minimum of 2 CPUs.</p>
-</li>
-<li>
-<p>Create a storage device with a minimum of 234 GB storage space for the installation.
-During the partitioning setup of the SLES installation this disk should be partitioned into the following disks:</p>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Disk Space Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4&#160;GB Swap space</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">130&#160;GB XFS partition (or dedicated virtual disk) for <code class="path">/var/spacewalk/</code></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">50&#160;GB XFS partition (or dedicated virtual disk) for <code class="path">/var/lib/pgsql/</code></p></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>The remaining storage space will be used by the operating system for the root partition.
-Select <b class="button">Finish</b> to begin the installation.</p>
-</li>
-</ol>
+<p>SUSE Manager Server is a SUSE base product from version 4.0.
+This section describes how to install SUSE Manager Server from SUSE Linux Enterprise Server installation media.
+It assumes you have already registered the SUSE Manager product with the SUSE Customer Center and have a registration code.</p>
 </div>
 <div class="paragraph">
-<p>Installation of SUSE Linux Enterprise Server will begin.
-For more information on completing an installation of SUSE Linux Enterprise Server, see: <a href="https://www.suse.com/documentation/sles-12/book_quickstarts/data/sec_sle_installquick.html">SUSE Linux Enterprise Installation Quickstart</a>.</p>
+<p>For information on registering with SUSE Customer Center, or obtaining installation media, see xref:<code>installation-general-requirements</code>.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="quickstart3.sec.suma.installation.sles.sumaext"><a class="anchor" href="#quickstart3.sec.suma.installation.sles.sumaext"></a><a class="link" href="#quickstart3.sec.suma.installation.sles.sumaext">Selecting the SUSE Manager Extension</a></h2>
-<div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>During SUSE Linux Enterprise Server installation, you will be presented with the <code class="systemitem">Extension and Module Selection</code> screen.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1346,26 +1248,85 @@ For more information on completing an installation of SUSE Linux Enterprise Serv
 </td>
 <td class="content">
 <div class="paragraph">
-<p>This screen will not be shown if you have skipped the registration step at the beginning of the installation process.
-Ensure you have registered with SUSE and logged in.</p>
+<p>If you want to install SUSE Manager on a virtual machine, ensure your virtual machine has enough disk space and RAM by checking the requirements at xref:[install-hardware-requirements]</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
+<div class="olist arabic">
+<div class="title">Procedure: Installing SUSE Manager Server from a DVD image</div>
+<ol class="arabic">
+<li>
+<p>Boot your server from the installation image, you might need to adjust the boot order in the BIOS.</p>
 </li>
 <li>
-<p>Select the SUSE Manager Extension and then click the <b class="button">Next</b> button.</p>
+<p>When prompted, select <code class="guimenu">Installation</code>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/unifiedinstaller-install.png" alt="unifiedinstaller install">
+</div>
+</div>
 </li>
 <li>
-<p>Complete the SUSE Linux Enterprise Server installation.</p>
+<p>In the <code class="guimenu">Language, Keyboard and Product Selection</code> screen, check the <code class="guimenu">SUSE Manager Server</code> checkbox, and click <b class="button">Next</b>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="_images/unifiedinstaller-product.png" alt="unifiedinstaller product">
+</div>
+</div>
+</li>
+<li>
+<p>Read and agree to the End User Licence Agreement, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Registration</code> screen, check the <code class="guimenu">Register System via scc.suse.com</code> checkbox, enter your SUSE Customer Center credentials, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>OPTIONAL: In the <code class="guimenu">Add On Product</code> screen, select any additional or add-on products you require, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">System Role</code> screen, check the <code class="guimenu">SUSE Manager Server</code> checkbox, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Suggested Partitioning</code> screen, accept the default values, or use the <b class="button">Guided Setup</b> or <b class="button">Expert Partitioner</b> options to customize your partitioning model, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Clock and Time Zone</code> screen, enter your region and timezone, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">Local Users</code> screen, create a new user, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>In the <code class="guimenu">System Administrator "root"</code> screen, create the "root" user, and click <b class="button">Next</b>.</p>
+</li>
+<li>
+<p>Review the settings on the <code class="guimenu">Installation Settings</code> screen, and then click <b class="button">Install</b>.</p>
 </li>
 </ol>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/manager-extension.png" alt="manager extension">
+<div class="paragraph">
+<p>When the installation procedure has finished, you can check that you have all the required modules by using the <code class="command">SUSEConnect --status-text</code> command at a command prompt.
+For SUSE Manager Server, the expected modules are:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>SUSE Linux Enterprise Server Basesystem Module</p>
+</li>
+<li>
+<p>Python 2 Module</p>
+</li>
+<li>
+<p>Server Applications Module</p>
+</li>
+<li>
+<p>Web and Scripting Module</p>
+</li>
+<li>
+<p>SUSE Manager Server Module</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
