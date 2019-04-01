@@ -933,32 +933,32 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="administration/tuning-largedeploys.html">Tuning Large Deployments</a>
   </li>
-  <li class="nav-item" data-depth="2">
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-toggle"></button>
     <span class="nav-text">Troubleshooting</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-corruptrepo.html">Corrupt Repositores</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-corruptrepo.html">Troubleshooting Corrupt Repositories</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-localcert.html">Local Certificates</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-localcert.html">Troubleshooting Local Certificates</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-osadjabberd.html">OSAD and jabberd</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-packages.html">Packages</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-packages.html">Troubleshooting Packages</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-registerclones.html">Registering Cloned Clients</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-reports.html">Reports</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-reports.html">Troubleshooting Reports</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="administration/tshoot-rpctimeout.html">RPC Timeouts</a>
-  </li>
-</ul>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="administration/tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="administration/common_gfdl1.2_i.html">License</a>
@@ -1232,7 +1232,7 @@
 <h2 id="_latest_changes"><a class="anchor" href="#_latest_changes"></a><a class="link" href="#_latest_changes">Latest Changes</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>V4.0 March 1, 2019</p>
+<p>Beta 2 March 28, 2019</p>
 </div>
 <div class="sect2">
 <h3 id="_updated_documentation_structure"><a class="anchor" href="#_updated_documentation_structure"></a><a class="link" href="#_updated_documentation_structure">Updated Documentation Structure</a></h3>
@@ -1282,6 +1282,9 @@ They are for testing purposes only.</p>
 </li>
 <li>
 <p><a href="#contribute">User Contributions</a></p>
+</li>
+<li>
+<p><a href="#pdf-output">PDF Output</a></p>
 </li>
 <li>
 <p><a href="#publishing">Faster Publishing</a></p>
@@ -1398,6 +1401,14 @@ This makes it significantly easier for readers to become contributors by being a
 </div>
 </div>
 <div class="sect2">
+<h3 id="pdf-output"><a class="anchor" href="#pdf-output"></a><a class="link" href="#pdf-output">PDF Output</a></h3>
+<div class="paragraph">
+<p>Draft PDF documents are now available from the documentation index page.
+Asciidoctor-pdf is currently used to produce PDF documents from our antora nav lists.
+These documents are draft and should not be used in production.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="publishing"><a class="anchor" href="#publishing"></a><a class="link" href="#publishing">Faster Publishing</a></h3>
 <div class="paragraph">
 <p>Our new documentation site implements continuous integration with TravisCI.
@@ -1409,13 +1420,6 @@ As soon as as change is approved, TravisCI rebuilds the documentation and update
 <div class="sect1">
 <h2 id="_known_issues"><a class="anchor" href="#_known_issues"></a><a class="link" href="#_known_issues">Known Issues</a></h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_pdf_output"><a class="anchor" href="#_pdf_output"></a><a class="link" href="#_pdf_output">PDF Output</a></h3>
-<div class="paragraph">
-<p>We do not currently have PDF versions of books available.
-This is expected in the beta2 release.</p>
-</div>
-</div>
 <div class="sect2">
 <h3 id="_cross_references"><a class="anchor" href="#_cross_references"></a><a class="link" href="#_cross_references">Cross references</a></h3>
 <div class="paragraph">

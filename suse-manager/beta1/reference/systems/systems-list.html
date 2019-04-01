@@ -933,32 +933,32 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/tuning-largedeploys.html">Tuning Large Deployments</a>
   </li>
-  <li class="nav-item" data-depth="2">
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-toggle"></button>
     <span class="nav-text">Troubleshooting</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-corruptrepo.html">Corrupt Repositores</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-corruptrepo.html">Troubleshooting Corrupt Repositories</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-localcert.html">Local Certificates</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-localcert.html">Troubleshooting Local Certificates</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-osadjabberd.html">OSAD and jabberd</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-packages.html">Packages</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-packages.html">Troubleshooting Packages</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-registerclones.html">Registering Cloned Clients</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-reports.html">Reports</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-reports.html">Troubleshooting Reports</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-rpctimeout.html">RPC Timeouts</a>
-  </li>
-</ul>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/common_gfdl1.2_i.html">License</a>
@@ -1414,8 +1414,9 @@ System types are:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Checking in means that Zypper on SUSE Linux Enterprise or Red Hat Update Agent on Red Hat Enterprise Linux client systems connects to SUSE Manager to see if there are any updates available or if any actions have been scheduled.
-If you see a message telling you that check-ins are not taking place, the client system is not successfully connecting to SUSE Manager.</p>
+<p>On traditional clients, checking in is performed periodically by client tools (specifically <code>mgr_check</code>) - client systems connect to SUSE Manager to see if there are any updates available or if any actions have been scheduled.
+For Salt systems, a Taskomatic job checks on the minions periodically by pinging them when otherwise inactive.
+If you see a message telling you that check-ins are not taking place, the system is not successfully connecting to SUSE Manager.</p>
 </div>
 <div class="paragraph">
 <p>The reason may be one of the following:</p>
@@ -1449,6 +1450,9 @@ for instructions on restarting and troubleshooting.</p>
 </li>
 <li>
 <p>Some other barrier exists between the system and the SUSE Manager Server.</p>
+</li>
+<li>
+<p>For Salt minions, Taskomatic might not be operational.</p>
 </li>
 </ul>
 </div>

@@ -933,32 +933,32 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/tuning-largedeploys.html">Tuning Large Deployments</a>
   </li>
-  <li class="nav-item" data-depth="2">
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
     <button class="nav-toggle"></button>
     <span class="nav-text">Troubleshooting</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-corruptrepo.html">Corrupt Repositores</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-corruptrepo.html">Troubleshooting Corrupt Repositories</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-localcert.html">Local Certificates</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-localcert.html">Troubleshooting Local Certificates</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-osadjabberd.html">OSAD and jabberd</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-osadjabberd.html">Troubleshooting OSAD and jabberd</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-packages.html">Packages</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-packages.html">Troubleshooting Packages</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-registerclones.html">Registering Cloned Clients</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-registerclones.html">Troubleshooting Registering Cloned Clients</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-reports.html">Reports</a>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-reports.html">Troubleshooting Reports</a>
   </li>
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../../administration/tshoot-rpctimeout.html">RPC Timeouts</a>
-  </li>
-</ul>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/tshoot-rpctimeout.html">Troubleshooting RPC Timeouts</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/common_gfdl1.2_i.html">License</a>
@@ -1337,6 +1337,20 @@ Use <code>HTTP</code> instead to avoid errors.</p>
 <p>Your newly registered minion should now show up within the Web UI under <span class="menuseq"><b class="menu">Salt</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Keys</b></span>.
 Accept the <code class="guimenu">pending</code> key to begin management.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting_salt_clients"><a class="anchor" href="#_troubleshooting_salt_clients"></a><a class="link" href="#_troubleshooting_salt_clients">Troubleshooting Salt Clients</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_mounting_tmp_with_noexec"><a class="anchor" href="#_mounting_tmp_with_noexec"></a><a class="link" href="#_mounting_tmp_with_noexec">Mounting /tmp with noexec</a></h3>
+<div class="paragraph">
+<p>Salt runs remote commands from <code class="filename">/tmp</code> of the client&#8217;s filesystem.
+Therefore you must not mount <code class="filename">/tmp</code> with the <code class="option">noexec</code> option.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cloned_salt_clients"><a class="anchor" href="#_cloned_salt_clients"></a><a class="link" href="#_cloned_salt_clients">Cloned Salt Clients</a></h3>
 <div class="paragraph">
 <p>If you have used your hypervisor clone utility, and attempted to register the cloned Salt client, you might get this error:</p>
 </div>
@@ -1351,6 +1365,7 @@ You can adjust this manually to correct the error and register the cloned system
 </div>
 <div class="paragraph">
 <p>For more information and instructions, see xref:FILENAME.adoc#bp.chapt.suma3.troubleshooting.registering.cloned.salt.systems[].</p>
+</div>
 </div>
 </div>
 </div>
