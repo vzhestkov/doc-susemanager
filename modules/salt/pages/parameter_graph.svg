@@ -1,0 +1,407 @@
+<svg width="1499pt" height="642pt" viewBox="0 0 1499 642" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 637.6)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-637.6 1494.8157,-637.6 1494.8157,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster input</title>
+<polygon fill="none" stroke="#000000" points="829.1722,-568 829.1722,-625.6 1402.1722,-625.6 1402.1722,-568 829.1722,-568"></polygon>
+</g>
+<!-- Network\nBandwidth -->
+<g id="node1" class="node">
+<title>Network\nBandwidth</title>
+<polygon fill="none" stroke="#000000" points="1142.1125,-617.4019 1068.2319,-617.4019 1064.2319,-613.4019 1064.2319,-576.1981 1138.1125,-576.1981 1142.1125,-580.1981 1142.1125,-617.4019"></polygon>
+<polyline fill="none" stroke="#000000" points="1138.1125,-613.4019 1064.2319,-613.4019 "></polyline>
+<polyline fill="none" stroke="#000000" points="1138.1125,-613.4019 1138.1125,-576.1981 "></polyline>
+<polyline fill="none" stroke="#000000" points="1138.1125,-613.4019 1142.1125,-617.4019 "></polyline>
+<text text-anchor="middle" x="1103.1722" y="-601" font-family="Times,serif" font-size="14.00" fill="#000000">Network</text>
+<text text-anchor="middle" x="1103.1722" y="-584.2" font-family="Times,serif" font-size="14.00" fill="#000000">Bandwidth</text>
+</g>
+<!-- Proxy count -->
+<g id="node12" class="node">
+<title>Proxy count</title>
+<polygon fill="none" stroke="#000000" points="1166.2206,-540 1086.1238,-540 1082.1238,-536 1082.1238,-504 1162.2206,-504 1166.2206,-508 1166.2206,-540"></polygon>
+<polyline fill="none" stroke="#000000" points="1162.2206,-536 1082.1238,-536 "></polyline>
+<polyline fill="none" stroke="#000000" points="1162.2206,-536 1162.2206,-504 "></polyline>
+<polyline fill="none" stroke="#000000" points="1162.2206,-536 1166.2206,-540 "></polyline>
+<text text-anchor="middle" x="1124.1722" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">Proxy count</text>
+</g>
+<!-- Network\nBandwidth&#45;&gt;Proxy count -->
+<g id="edge10" class="edge">
+<title>Network\nBandwidth-&gt;Proxy count</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1109.0219,-575.964C1111.2898,-567.8858 1113.9205,-558.5156 1116.347,-549.8726"></path>
+<polygon fill="#000000" stroke="#000000" points="1119.7344,-550.7554 1119.0677,-540.1816 1112.995,-548.8633 1119.7344,-550.7554"></polygon>
+</g>
+<!-- Client count -->
+<g id="node2" class="node">
+<title>Client count</title>
+<polygon fill="none" stroke="#000000" points="921.5006,-614.8 840.8438,-614.8 836.8438,-610.8 836.8438,-578.8 917.5006,-578.8 921.5006,-582.8 921.5006,-614.8"></polygon>
+<polyline fill="none" stroke="#000000" points="917.5006,-610.8 836.8438,-610.8 "></polyline>
+<polyline fill="none" stroke="#000000" points="917.5006,-610.8 917.5006,-578.8 "></polyline>
+<polyline fill="none" stroke="#000000" points="917.5006,-610.8 921.5006,-614.8 "></polyline>
+<text text-anchor="middle" x="879.1722" y="-592.6" font-family="Times,serif" font-size="14.00" fill="#000000">Client count</text>
+</g>
+<!-- java.message_queue_thread_pool_size -->
+<g id="node7" class="node">
+<title>java.message_queue_thread_pool_size</title>
+<polygon fill="none" stroke="#a020f0" points="1029.9804,-396 796.364,-396 796.364,-360 1029.9804,-360 1029.9804,-396"></polygon>
+<text text-anchor="middle" x="913.1722" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">java.message_queue_thread_pool_size</text>
+</g>
+<!-- Client count&#45;&gt;java.message_queue_thread_pool_size -->
+<g id="edge2" class="edge">
+<title>Client count-&gt;java.message_queue_thread_pool_size</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M882.0125,-578.5216C887.9523,-540.2975 901.7205,-451.6949 908.7981,-406.1484"></path>
+<polygon fill="#000000" stroke="#000000" points="912.2868,-406.4914 910.3639,-396.0725 905.3698,-405.4165 912.2868,-406.4914"></polygon>
+</g>
+<!-- java.salt_batch_size -->
+<g id="node8" class="node">
+<title>java.salt_batch_size</title>
+<polygon fill="none" stroke="#a020f0" points="128.5171,-540 -.1727,-540 -.1727,-504 128.5171,-504 128.5171,-540"></polygon>
+<text text-anchor="middle" x="64.1722" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">java.salt_batch_size</text>
+</g>
+<!-- Client count&#45;&gt;java.salt_batch_size -->
+<g id="edge3" class="edge">
+<title>Client count-&gt;java.salt_batch_size</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M836.7006,-595.9495C724.2429,-593.1862 409.4352,-582.1299 138.6401,-539.9079"></path>
+<polygon fill="#000000" stroke="#000000" points="139.0445,-536.4285 128.6214,-538.3283 137.9542,-543.3431 139.0445,-536.4285"></polygon>
+</g>
+<!-- java.salt_presence_ping_gather_job_timeout -->
+<g id="node9" class="node">
+<title>java.salt_presence_ping_gather_job_timeout</title>
+<polygon fill="none" stroke="#a020f0" points="413.4347,-540 146.9097,-540 146.9097,-504 413.4347,-504 413.4347,-540"></polygon>
+<text text-anchor="middle" x="280.1722" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">java.salt_presence_ping_gather_job_timeout</text>
+</g>
+<!-- Client count&#45;&gt;java.salt_presence_ping_gather_job_timeout -->
+<g id="edge4" class="edge">
+<title>Client count-&gt;java.salt_presence_ping_gather_job_timeout</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M836.6398,-591.5488C757.5176,-581.7723 582.0697,-560.0581 423.5147,-540.1672"></path>
+<polygon fill="#000000" stroke="#000000" points="423.9369,-536.6928 413.5789,-538.9203 423.0652,-543.6383 423.9369,-536.6928"></polygon>
+</g>
+<!-- java.salt_presence_ping_timeout -->
+<g id="node10" class="node">
+<title>java.salt_presence_ping_timeout</title>
+<polygon fill="none" stroke="#a020f0" points="631.0636,-540 431.2808,-540 431.2808,-504 631.0636,-504 631.0636,-540"></polygon>
+<text text-anchor="middle" x="531.1722" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">java.salt_presence_ping_timeout</text>
+</g>
+<!-- Client count&#45;&gt;java.salt_presence_ping_timeout -->
+<g id="edge5" class="edge">
+<title>Client count-&gt;java.salt_presence_ping_timeout</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M836.5006,-587.6281C784.1715,-576.3803 693.9553,-556.989 625.1165,-542.1926"></path>
+<polygon fill="#000000" stroke="#000000" points="625.6344,-538.7241 615.1221,-540.0444 624.1633,-545.5678 625.6344,-538.7241"></polygon>
+</g>
+<!-- org.quartz.threadPool.threadCount -->
+<g id="node11" class="node">
+<title>org.quartz.threadPool.threadCount</title>
+<polygon fill="none" stroke="#a020f0" points="1258.1744,-396 1048.17,-396 1048.17,-360 1258.1744,-360 1258.1744,-396"></polygon>
+<text text-anchor="middle" x="1153.1722" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">org.quartz.threadPool.threadCount</text>
+</g>
+<!-- Client count&#45;&gt;org.quartz.threadPool.threadCount -->
+<g id="edge6" class="edge">
+<title>Client count-&gt;org.quartz.threadPool.threadCount</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M902.062,-578.5216C951.2423,-539.2491 1067.0188,-446.797 1122.4912,-402.5"></path>
+<polygon fill="#000000" stroke="#000000" points="1124.91,-405.0476 1130.5402,-396.0725 1120.542,-399.5776 1124.91,-405.0476"></polygon>
+</g>
+<!-- Client count&#45;&gt;Proxy count -->
+<g id="edge7" class="edge">
+<title>Client count-&gt;Proxy count</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M908.4713,-578.7619C915.709,-574.8182 923.5708,-570.9473 931.1722,-568 977.4088,-550.0727 1032.6799,-537.7609 1072.201,-530.4184"></path>
+<polygon fill="#000000" stroke="#000000" points="1072.9331,-533.8428 1082.1475,-528.6135 1071.6832,-526.9553 1072.9331,-533.8428"></polygon>
+</g>
+<!-- rhn&#45;search.java.maxmemory -->
+<g id="node13" class="node">
+<title>rhn-search.java.maxmemory</title>
+<polygon fill="none" stroke="#a020f0" points="825.3239,-540 649.0205,-540 649.0205,-504 825.3239,-504 825.3239,-540"></polygon>
+<text text-anchor="middle" x="737.1722" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">rhn-search.java.maxmemory</text>
+</g>
+<!-- Client count&#45;&gt;rhn&#45;search.java.maxmemory -->
+<g id="edge8" class="edge">
+<title>Client count-&gt;rhn-search.java.maxmemory</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M844.798,-578.693C825.493,-568.5239 801.2132,-555.7343 780.6029,-544.8776"></path>
+<polygon fill="#000000" stroke="#000000" points="782.2008,-541.7635 771.7221,-540.1995 778.9384,-547.9568 782.2008,-541.7635"></polygon>
+</g>
+<!-- worker_threads -->
+<g id="node14" class="node">
+<title>worker_threads</title>
+<polygon fill="none" stroke="#0000ff" points="1059.7396,-252 956.6048,-252 956.6048,-216 1059.7396,-216 1059.7396,-252"></polygon>
+<text text-anchor="middle" x="1008.1722" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">worker_threads</text>
+</g>
+<!-- Client count&#45;&gt;worker_threads -->
+<g id="edge9" class="edge">
+<title>Client count-&gt;worker_threads</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M870.3347,-578.6882C848.1122,-532.9857 791.3716,-415.2474 787.1722,-396 783.7616,-380.3677 781.3718,-374.9116 787.1722,-360 812.4341,-295.0567 890.5032,-262.3041 946.692,-246.7313"></path>
+<polygon fill="#000000" stroke="#000000" points="947.7946,-250.0598 956.5602,-244.1088 945.9967,-243.2947 947.7946,-250.0598"></polygon>
+</g>
+<!-- Channel count -->
+<g id="node3" class="node">
+<title>Channel count</title>
+<ellipse fill="none" stroke="#000000" cx="1327.1722" cy="-596.8" rx="67.1787" ry="18"></ellipse>
+<text text-anchor="middle" x="1327.1722" y="-592.6" font-family="Times,serif" font-size="14.00" fill="#000000">Channel count</text>
+</g>
+<!-- java.taskomatic_channel_repodata_workers -->
+<g id="node6" class="node">
+<title>java.taskomatic_channel_repodata_workers</title>
+<polygon fill="none" stroke="#a020f0" points="1490.9594,-540 1229.385,-540 1229.385,-504 1490.9594,-504 1490.9594,-540"></polygon>
+<text text-anchor="middle" x="1360.1722" y="-517.8" font-family="Times,serif" font-size="14.00" fill="#000000">java.taskomatic_channel_repodata_workers</text>
+</g>
+<!-- Channel count&#45;&gt;java.taskomatic_channel_repodata_workers -->
+<g id="edge1" class="edge">
+<title>Channel count-&gt;java.taskomatic_channel_repodata_workers</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1335.1606,-578.693C1339.0233,-569.9375 1343.743,-559.2395 1348.0376,-549.5051"></path>
+<polygon fill="#000000" stroke="#000000" points="1351.3088,-550.7615 1352.143,-540.1995 1344.9043,-547.9359 1351.3088,-550.7615"></polygon>
+</g>
+<!-- OS mix -->
+<g id="node4" class="node">
+<title>OS mix</title>
+<ellipse fill="none" stroke="#000000" cx="1201.1722" cy="-596.8" rx="40.6302" ry="18"></ellipse>
+<text text-anchor="middle" x="1201.1722" y="-592.6" font-family="Times,serif" font-size="14.00" fill="#000000">OS mix</text>
+</g>
+<!-- OS mix&#45;&gt;Proxy count -->
+<g id="edge11" class="edge">
+<title>OS mix-&gt;Proxy count</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1184.0834,-580.1995C1174.1477,-570.5476 1161.4225,-558.186 1150.2572,-547.3398"></path>
+<polygon fill="#000000" stroke="#000000" points="1152.4418,-544.5823 1142.8302,-540.1249 1147.5642,-549.6033 1152.4418,-544.5823"></polygon>
+</g>
+<!-- taskomatic.java.maxmemory -->
+<g id="node15" class="node">
+<title>taskomatic.java.maxmemory</title>
+<polygon fill="none" stroke="#a020f0" points="1448.9046,-468 1271.4398,-468 1271.4398,-432 1448.9046,-432 1448.9046,-468"></polygon>
+<text text-anchor="middle" x="1360.1722" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">taskomatic.java.maxmemory</text>
+</g>
+<!-- OS mix&#45;&gt;taskomatic.java.maxmemory -->
+<g id="edge12" class="edge">
+<title>OS mix-&gt;taskomatic.java.maxmemory</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1200.032,-578.5516C1199.7511,-558.0681 1202.4312,-524.9645 1220.1722,-504 1231.9573,-490.0735 1247.7715,-479.7254 1264.5283,-472.0401"></path>
+<polygon fill="#000000" stroke="#000000" points="1266.0886,-475.1798 1273.9151,-468.0386 1263.3435,-468.7405 1266.0886,-475.1798"></polygon>
+</g>
+<!-- User count -->
+<g id="node5" class="node">
+<title>User count</title>
+<ellipse fill="none" stroke="#000000" cx="993.1722" cy="-596.8" rx="53.2703" ry="18"></ellipse>
+<text text-anchor="middle" x="993.1722" y="-592.6" font-family="Times,serif" font-size="14.00" fill="#000000">User count</text>
+</g>
+<!-- MaxClients -->
+<g id="node16" class="node">
+<title>MaxClients</title>
+<polygon fill="none" stroke="#ff0000" points="1208.9997,-468 1127.3447,-468 1127.3447,-432 1208.9997,-432 1208.9997,-468"></polygon>
+<text text-anchor="middle" x="1168.1722" y="-445.8" font-family="Times,serif" font-size="14.00" fill="#000000">MaxClients</text>
+</g>
+<!-- User count&#45;&gt;MaxClients -->
+<g id="edge14" class="edge">
+<title>User count-&gt;MaxClients</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1005.5071,-579.1301C1020.0488,-559.1774 1045.7324,-526.5599 1073.1722,-504 1087.5049,-492.2163 1104.7524,-481.5545 1120.5954,-472.8775"></path>
+<polygon fill="#000000" stroke="#000000" points="1122.5535,-475.7998 1129.7286,-468.0044 1119.2583,-469.6239 1122.5535,-475.7998"></polygon>
+</g>
+<!-- java.taskomatic_channel_repodata_workers&#45;&gt;taskomatic.java.maxmemory -->
+<g id="edge19" class="edge">
+<title>java.taskomatic_channel_repodata_workers-&gt;taskomatic.java.maxmemory</title>
+<path fill="none" stroke="#000000" d="M1360.1722,-503.8314C1360.1722,-496.131 1360.1722,-486.9743 1360.1722,-478.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1363.6723,-478.4132 1360.1722,-468.4133 1356.6723,-478.4133 1363.6723,-478.4132"></polygon>
+</g>
+<!-- hibernate.c3p0.max_size -->
+<g id="node17" class="node">
+<title>hibernate.c3p0.max_size</title>
+<polygon fill="none" stroke="#a020f0" points="1230.8421,-324 1075.5023,-324 1075.5023,-288 1230.8421,-288 1230.8421,-324"></polygon>
+<text text-anchor="middle" x="1153.1722" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">hibernate.c3p0.max_size</text>
+</g>
+<!-- java.message_queue_thread_pool_size&#45;&gt;hibernate.c3p0.max_size -->
+<g id="edge16" class="edge">
+<title>java.message_queue_thread_pool_size-&gt;hibernate.c3p0.max_size</title>
+<path fill="none" stroke="#000000" d="M973.4245,-359.9243C1006.8045,-349.9103 1048.4654,-337.412 1083.2721,-326.97"></path>
+<polygon fill="#000000" stroke="#000000" points="1084.3225,-330.3091 1092.8951,-324.0831 1082.3111,-323.6043 1084.3225,-330.3091"></polygon>
+</g>
+<!-- thread_pool -->
+<g id="node19" class="node">
+<title>thread_pool</title>
+<polygon fill="none" stroke="#0000ff" points="1057.5433,-324 974.8011,-324 974.8011,-288 1057.5433,-288 1057.5433,-324"></polygon>
+<text text-anchor="middle" x="1016.1722" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">thread_pool</text>
+</g>
+<!-- java.message_queue_thread_pool_size&#45;&gt;thread_pool -->
+<g id="edge17" class="edge">
+<title>java.message_queue_thread_pool_size-&gt;thread_pool</title>
+<path fill="none" stroke="#000000" d="M939.1634,-359.8314C952.0938,-350.7927 967.8944,-339.7476 981.8105,-330.0198"></path>
+<polygon fill="#000000" stroke="#000000" points="983.9985,-332.7608 990.1893,-324.1628 979.9879,-327.0235 983.9985,-332.7608"></polygon>
+</g>
+<!-- Tomcat &#45;Xmx -->
+<g id="node20" class="node">
+<title>Tomcat -Xmx</title>
+<polygon fill="none" stroke="#a52a2a" points="956.593,-324 861.7514,-324 861.7514,-288 956.593,-288 956.593,-324"></polygon>
+<text text-anchor="middle" x="909.1722" y="-301.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tomcat -Xmx</text>
+</g>
+<!-- java.message_queue_thread_pool_size&#45;&gt;Tomcat &#45;Xmx -->
+<g id="edge18" class="edge">
+<title>java.message_queue_thread_pool_size-&gt;Tomcat -Xmx</title>
+<path fill="none" stroke="#000000" d="M912.1628,-359.8314C911.735,-352.131 911.2263,-342.9743 910.7509,-334.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="914.2446,-334.2037 910.1952,-324.4133 907.2553,-334.592 914.2446,-334.2037"></polygon>
+</g>
+<!-- org.quartz.threadPool.threadCount&#45;&gt;hibernate.c3p0.max_size -->
+<g id="edge26" class="edge">
+<title>org.quartz.threadPool.threadCount-&gt;hibernate.c3p0.max_size</title>
+<path fill="none" stroke="#000000" d="M1153.1722,-359.8314C1153.1722,-352.131 1153.1722,-342.9743 1153.1722,-334.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1156.6723,-334.4132 1153.1722,-324.4133 1149.6723,-334.4133 1156.6723,-334.4132"></polygon>
+</g>
+<!-- org.quartz.threadPool.threadCount&#45;&gt;thread_pool -->
+<g id="edge27" class="edge">
+<title>org.quartz.threadPool.threadCount-&gt;thread_pool</title>
+<path fill="none" stroke="#000000" d="M1118.6013,-359.8314C1100.7537,-350.4516 1078.7948,-338.9112 1059.7922,-328.9244"></path>
+<polygon fill="#000000" stroke="#000000" points="1061.2123,-325.7168 1050.732,-324.1628 1057.9558,-331.9132 1061.2123,-325.7168"></polygon>
+</g>
+<!-- Proxy count&#45;&gt;MaxClients -->
+<g id="edge13" class="edge">
+<title>Proxy count-&gt;MaxClients</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1135.2753,-503.8314C1140.2396,-495.7079 1146.1944,-485.9637 1151.665,-477.0118"></path>
+<polygon fill="#000000" stroke="#000000" points="1154.6916,-478.7712 1156.9196,-468.4133 1148.7186,-475.121 1154.6916,-478.7712"></polygon>
+</g>
+<!-- memory usage -->
+<g id="node21" class="node">
+<title>memory usage</title>
+<ellipse fill="none" stroke="#000000" cx="1008.1722" cy="-162" rx="67.7391" ry="18"></ellipse>
+<text text-anchor="middle" x="1008.1722" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">memory usage</text>
+</g>
+<!-- rhn&#45;search.java.maxmemory&#45;&gt;memory usage -->
+<g id="edge31" class="edge">
+<title>rhn-search.java.maxmemory-&gt;memory usage</title>
+<path fill="none" stroke="#000000" d="M735.7218,-503.8284C733.6715,-476.5296 730.1722,-423.3034 730.1722,-378 730.1722,-378 730.1722,-378 730.1722,-306 730.1722,-214.297 850.9154,-180.9218 933.2536,-168.8235"></path>
+<polygon fill="#000000" stroke="#000000" points="933.9229,-172.2641 943.3444,-167.418 932.9572,-165.3311 933.9229,-172.2641"></polygon>
+</g>
+<!-- worker_threads&#45;&gt;memory usage -->
+<g id="edge36" class="edge">
+<title>worker_threads-&gt;memory usage</title>
+<path fill="none" stroke="#000000" d="M1008.1722,-215.8314C1008.1722,-208.131 1008.1722,-198.9743 1008.1722,-190.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1011.6723,-190.4132 1008.1722,-180.4133 1004.6723,-190.4133 1011.6723,-190.4132"></polygon>
+</g>
+<!-- taskomatic.java.maxmemory&#45;&gt;memory usage -->
+<g id="edge32" class="edge">
+<title>taskomatic.java.maxmemory-&gt;memory usage</title>
+<path fill="none" stroke="#000000" d="M1427.6366,-431.9482C1445.1172,-423.8823 1461.8972,-412.361 1472.1722,-396 1480.6816,-382.4505 1480.3506,-373.7519 1472.1722,-360 1403.6564,-244.7907 1331.5854,-265.8896 1207.1722,-216 1182.0714,-205.9346 1117.281,-188.9403 1068.3939,-176.7021"></path>
+<polygon fill="#000000" stroke="#000000" points="1069.0842,-173.2671 1058.5345,-174.2442 1067.3909,-180.0593 1069.0842,-173.2671"></polygon>
+</g>
+<!-- maxThreads -->
+<g id="node22" class="node">
+<title>maxThreads</title>
+<polygon fill="none" stroke="#a52a2a" points="1361.8646,-396 1276.4798,-396 1276.4798,-360 1361.8646,-360 1361.8646,-396"></polygon>
+<text text-anchor="middle" x="1319.1722" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">maxThreads</text>
+</g>
+<!-- MaxClients&#45;&gt;maxThreads -->
+<g id="edge21" class="edge">
+<title>MaxClients-&gt;maxThreads</title>
+<path fill="none" stroke="#000000" d="M1206.2759,-431.8314C1226.2917,-422.2874 1250.9989,-410.5065 1272.1916,-400.4013"></path>
+<polygon fill="#000000" stroke="#000000" points="1273.8225,-403.5013 1281.3425,-396.038 1270.8097,-397.1828 1273.8225,-403.5013"></polygon>
+</g>
+<!-- ServerLimit -->
+<g id="node23" class="node">
+<title>ServerLimit</title>
+<polygon fill="none" stroke="#ff0000" points="1462.8209,-396 1379.5235,-396 1379.5235,-360 1462.8209,-360 1462.8209,-396"></polygon>
+<text text-anchor="middle" x="1421.1722" y="-373.8" font-family="Times,serif" font-size="14.00" fill="#000000">ServerLimit</text>
+</g>
+<!-- MaxClients&#45;&gt;ServerLimit -->
+<g id="edge22" class="edge">
+<title>MaxClients-&gt;ServerLimit</title>
+<path fill="none" stroke="#000000" d="M1208.906,-440.2539C1248.0115,-430.6558 1308.8994,-415.0815 1369.757,-396.3319"></path>
+<polygon fill="#000000" stroke="#000000" points="1371.0109,-399.6074 1379.5206,-393.2959 1368.9324,-392.9231 1371.0109,-399.6074"></polygon>
+</g>
+<!-- max_connections -->
+<g id="node18" class="node">
+<title>max_connections</title>
+<polygon fill="none" stroke="#c0c0c0" points="1198.147,-252 1084.1974,-252 1084.1974,-216 1198.147,-216 1198.147,-252"></polygon>
+<text text-anchor="middle" x="1141.1722" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">max_connections</text>
+</g>
+<!-- hibernate.c3p0.max_size&#45;&gt;max_connections -->
+<g id="edge15" class="edge">
+<title>hibernate.c3p0.max_size-&gt;max_connections</title>
+<path fill="none" stroke="#000000" d="M1150.1441,-287.8314C1148.8607,-280.131 1147.3346,-270.9743 1145.9083,-262.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1149.3375,-261.7018 1144.2411,-252.4133 1142.4328,-262.8526 1149.3375,-261.7018"></polygon>
+</g>
+<!-- max_connections&#45;&gt;memory usage -->
+<g id="edge20" class="edge">
+<title>max_connections-&gt;memory usage</title>
+<path fill="none" stroke="#000000" d="M1107.6107,-215.8314C1089.1425,-205.8335 1066.1398,-193.3809 1046.9113,-182.9715"></path>
+<polygon fill="#000000" stroke="#000000" points="1048.5529,-179.8803 1038.0925,-178.1975 1045.2203,-186.0361 1048.5529,-179.8803"></polygon>
+</g>
+<!-- thread_pool&#45;&gt;worker_threads -->
+<g id="edge33" class="edge">
+<title>thread_pool-&gt;worker_threads</title>
+<path fill="none" stroke="#000000" d="M1014.1535,-287.8314C1013.2979,-280.131 1012.2805,-270.9743 1011.3296,-262.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1014.8011,-261.9656 1010.2181,-252.4133 1007.8439,-262.7386 1014.8011,-261.9656"></polygon>
+</g>
+<!-- Tomcat &#45;Xmx&#45;&gt;memory usage -->
+<g id="edge34" class="edge">
+<title>Tomcat -Xmx-&gt;memory usage</title>
+<path fill="none" stroke="#000000" d="M914.1883,-287.8872C920.049,-268.8015 931.0448,-238.4544 947.1722,-216 955.325,-204.6487 966.2722,-194.015 976.6419,-185.2362"></path>
+<polygon fill="#000000" stroke="#000000" points="978.8679,-187.9373 984.4033,-178.9034 974.4425,-182.5136 978.8679,-187.9373"></polygon>
+</g>
+<!-- effective_cache_size -->
+<g id="node24" class="node">
+<title>effective_cache_size</title>
+<polygon fill="none" stroke="#c0c0c0" points="1074.2565,-36 942.0879,-36 942.0879,0 1074.2565,0 1074.2565,-36"></polygon>
+<text text-anchor="middle" x="1008.1722" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">effective_cache_size</text>
+</g>
+<!-- memory usage&#45;&gt;effective_cache_size -->
+<g id="edge24" class="edge">
+<title>memory usage-&gt;effective_cache_size</title>
+<path fill="none" stroke="#000000" d="M1008.1722,-143.7623C1008.1722,-119.201 1008.1722,-75.2474 1008.1722,-46.3541"></path>
+<polygon fill="#000000" stroke="#000000" points="1011.6723,-46.0896 1008.1722,-36.0896 1004.6723,-46.0897 1011.6723,-46.0896"></polygon>
+</g>
+<!-- RAM -->
+<g id="node25" class="node">
+<title>RAM</title>
+<polygon fill="none" stroke="#000000" points="1159.1722,-108 1109.1722,-108 1105.1722,-104 1105.1722,-72 1155.1722,-72 1159.1722,-76 1159.1722,-108"></polygon>
+<polyline fill="none" stroke="#000000" points="1155.1722,-104 1105.1722,-104 "></polyline>
+<polyline fill="none" stroke="#000000" points="1155.1722,-104 1155.1722,-72 "></polyline>
+<polyline fill="none" stroke="#000000" points="1155.1722,-104 1159.1722,-108 "></polyline>
+<text text-anchor="middle" x="1132.1722" y="-85.8" font-family="Times,serif" font-size="14.00" fill="#000000">RAM</text>
+</g>
+<!-- memory usage&#45;&gt;RAM -->
+<g id="edge25" class="edge">
+<title>memory usage-&gt;RAM</title>
+<path fill="none" stroke="#000000" d="M1036.6203,-145.4817C1054.3975,-135.1595 1077.4411,-121.7794 1096.4445,-110.7451"></path>
+<polygon fill="#000000" stroke="#000000" points="1098.2418,-113.7488 1105.1322,-105.7006 1094.7268,-107.6953 1098.2418,-113.7488"></polygon>
+</g>
+<!-- maxThreads&#45;&gt;hibernate.c3p0.max_size -->
+<g id="edge23" class="edge">
+<title>maxThreads-&gt;hibernate.c3p0.max_size</title>
+<path fill="none" stroke="#000000" d="M1277.2834,-359.8314C1255.0819,-350.2018 1227.63,-338.295 1204.1938,-328.1299"></path>
+<polygon fill="#000000" stroke="#000000" points="1205.3267,-324.8062 1194.7598,-324.038 1202.5413,-331.2282 1205.3267,-324.8062"></polygon>
+</g>
+<!-- RAM&#45;&gt;effective_cache_size -->
+<g id="edge28" class="edge">
+<title>RAM-&gt;effective_cache_size</title>
+<path fill="none" stroke="#000000" d="M1104.9599,-74.1993C1088.2954,-64.5231 1066.6734,-51.9685 1048.094,-41.1804"></path>
+<polygon fill="#000000" stroke="#000000" points="1049.658,-38.0413 1039.2526,-36.0467 1046.143,-44.0949 1049.658,-38.0413"></polygon>
+</g>
+<!-- shared_buffers -->
+<g id="node26" class="node">
+<title>shared_buffers</title>
+<polygon fill="none" stroke="#c0c0c0" points="1288.8478,-36 1189.4966,-36 1189.4966,0 1288.8478,0 1288.8478,-36"></polygon>
+<text text-anchor="middle" x="1239.1722" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">shared_buffers</text>
+</g>
+<!-- RAM&#45;&gt;shared_buffers -->
+<g id="edge29" class="edge">
+<title>RAM-&gt;shared_buffers</title>
+<path fill="none" stroke="#000000" d="M1159.1728,-71.8314C1172.6053,-62.7927 1189.0195,-51.7476 1203.4761,-42.0198"></path>
+<polygon fill="#000000" stroke="#000000" points="1205.8376,-44.6494 1212.1802,-36.1628 1201.9297,-38.8418 1205.8376,-44.6494"></polygon>
+</g>
+<!-- swappiness -->
+<g id="node27" class="node">
+<title>swappiness</title>
+<polygon fill="none" stroke="#000000" points="1171.9328,-36 1092.4116,-36 1092.4116,0 1171.9328,0 1171.9328,-36"></polygon>
+<text text-anchor="middle" x="1132.1722" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">swappiness</text>
+</g>
+<!-- RAM&#45;&gt;swappiness -->
+<g id="edge30" class="edge">
+<title>RAM-&gt;swappiness</title>
+<path fill="none" stroke="#000000" d="M1132.1722,-71.8314C1132.1722,-64.131 1132.1722,-54.9743 1132.1722,-46.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1135.6723,-46.4132 1132.1722,-36.4133 1128.6723,-46.4133 1135.6723,-46.4132"></polygon>
+</g>
+<!-- work_mem -->
+<g id="node28" class="node">
+<title>work_mem</title>
+<polygon fill="none" stroke="#c0c0c0" points="1173.9356,-180 1094.4088,-180 1094.4088,-144 1173.9356,-144 1173.9356,-180"></polygon>
+<text text-anchor="middle" x="1134.1722" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#000000">work_mem</text>
+</g>
+<!-- work_mem&#45;&gt;RAM -->
+<g id="edge35" class="edge">
+<title>work_mem-&gt;RAM</title>
+<path fill="none" stroke="#000000" d="M1133.6675,-143.8314C1133.4536,-136.131 1133.1993,-126.9743 1132.9616,-118.4166"></path>
+<polygon fill="#000000" stroke="#000000" points="1136.4601,-118.3122 1132.6837,-108.4133 1129.4628,-118.5066 1136.4601,-118.3122"></polygon>
+</g>
+</g>
+</svg>
