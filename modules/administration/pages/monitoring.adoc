@@ -151,19 +151,19 @@ It is important to understand how this file is structured.
 For example:
 
 ----
-yaml
-- job_name: 'suse-manager-server'
-  static_configs:
-    - targets:
-      - 'suse-manager.local:9100'  # Node exporter
-      - 'suse-manager.local:9187'  # PostgreSQL exporter
-      - 'suse-manager.local:5556'  # JMX exporter (Tomcat)
-      - 'suse-manager.local:5557'  # JMX exporter (Taskomatic)
-      - 'suse-manager.local:9800'  # Taskomatic
-    - targets:
-      - 'suse-manager.local:80'    # Message queue
-      labels:
-        __metrics_path__: /rhn/metrics
+scrape_configs:
+ - job_name: 'suse-manager-server'
+   static_configs:
+     - targets:
+       - 'suse-manager.local:9100'  # Node exporter
+       - 'suse-manager.local:9187'  # PostgreSQL exporter
+       - 'suse-manager.local:5556'  # JMX exporter (Tomcat)
+       - 'suse-manager.local:5557'  # JMX exporter (Taskomatic)
+       - 'suse-manager.local:9800'  # Taskomatic
+     - targets:
+       - 'suse-manager.local:80'    # Message queue
+       labels:
+         __metrics_path__: /rhn/metrics
 ----
 
 For more information about configuring Prometheus, see the official Prometheus documentation at https://prometheus.io/docs/prometheus/latest/configuration/configuration/
