@@ -129,7 +129,7 @@ Opening these ports allows network traffic from the {productname} Proxy to commu
 |===
 | Port number | Protocol | Used By | Notes
 | 80          |          |         | Used to reach the server.
-| 443         | TCP      | HTTPS   | Required for {scc}.
+| 443         | TCP      | HTTPS   | Used to reach the server.
 | 5269        | TCP      |         | Required to push actions to and from the server.
 |===
 
